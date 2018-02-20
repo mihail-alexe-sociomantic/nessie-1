@@ -13510,6 +13510,7 @@ var Label = function Label(_ref) {
             _react2.default.createElement(
                 _Text2.default,
                 {
+                    className: cssMap.label,
                     noWrap: noWrap,
                     overflowIsHidden: overflowIsHidden },
                 children || label
@@ -16367,8 +16368,12 @@ var Checkbox = function Checkbox(props) {
 
 Checkbox.propTypes = {
   /**
-  *  Label text string
-  */
+   *  Label content (JSX node; overrides label prop)
+   */
+  children: _propTypes2.default.node,
+  /**
+   *  Label content (string)
+   */
   label: _propTypes2.default.string,
   /**
   *  Display as checked
@@ -21440,12 +21445,25 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var DatePicker = function DatePicker(_ref) {
     var className = _ref.className,
         cssMap = _ref.cssMap,
+        month = _ref.month,
+        year = _ref.year,
         headers = _ref.headers,
+        hourIsDisabled = _ref.hourIsDisabled,
+        hourPlaceholder = _ref.hourPlaceholder,
+        hourValue = _ref.hourValue,
         isDisabled = _ref.isDisabled,
         isReadOnly = _ref.isReadOnly,
         items = _ref.items,
         label = _ref.label,
+        minuteIsDisabled = _ref.minuteIsDisabled,
+        minutePlaceholder = _ref.minutePlaceholder,
+        minuteValue = _ref.minuteValue,
+        mode = _ref.mode,
         nextIsDisabled = _ref.nextIsDisabled,
+        onBlur = _ref.onBlur,
+        onChange = _ref.onChange,
+        onFocus = _ref.onFocus,
+        onKeyPress = _ref.onKeyPress,
         onClickItem = _ref.onClickItem,
         onClickNext = _ref.onClickNext,
         onClickPrev = _ref.onClickPrev,
@@ -21458,10 +21476,23 @@ var DatePicker = function DatePicker(_ref) {
             isDisabled: isDisabled,
             isReadOnly: isReadOnly,
             label: label,
+            month: month,
+            year: year,
             nextIsDisabled: nextIsDisabled,
             onClickNext: onClickNext,
             onClickPrev: onClickPrev,
-            prevIsDisabled: prevIsDisabled }),
+            prevIsDisabled: prevIsDisabled,
+            hourIsDisabled: hourIsDisabled,
+            hourPlaceholder: hourPlaceholder,
+            hourValue: hourValue,
+            minuteIsDisabled: minuteIsDisabled,
+            minutePlaceholder: minutePlaceholder,
+            minuteValue: minuteValue,
+            mode: mode,
+            onBlur: onBlur,
+            onChange: onChange,
+            onFocus: onFocus,
+            onKeyPress: onKeyPress }),
         items && _react2.default.createElement(
             'table',
             { className: cssMap.calendar },
@@ -21511,32 +21542,58 @@ DatePicker.propTypes = {
     className: _propTypes2.default.string,
     cssMap: _propTypes2.default.objectOf(_propTypes2.default.string),
     headers: _propTypes2.default.arrayOf(_propTypes2.default.objectOf(_propTypes2.default.string)),
+    hourIsDisabled: _propTypes2.default.bool,
+    hourPlaceholder: _propTypes2.default.string,
+    hourValue: _propTypes2.default.string,
     isDisabled: _propTypes2.default.bool,
     isReadOnly: _propTypes2.default.bool,
     items: _propTypes2.default.arrayOf(_propTypes2.default.arrayOf(_propTypes2.default.object)),
     label: _propTypes2.default.string,
+    minuteIsDisabled: _propTypes2.default.bool,
+    minutePlaceholder: _propTypes2.default.string,
+    minuteValue: _propTypes2.default.string,
+    mode: _propTypes2.default.oneOf(['default', 'date', 'month']),
+    month: _propTypes2.default.string,
     nextIsDisabled: _propTypes2.default.bool,
+    onBlur: _propTypes2.default.func,
+    onChange: _propTypes2.default.func,
     onClickItem: _propTypes2.default.func,
     onClickNext: _propTypes2.default.func,
     onClickPrev: _propTypes2.default.func,
+    onFocus: _propTypes2.default.func,
+    onKeyPress: _propTypes2.default.func,
     prevIsDisabled: _propTypes2.default.bool,
-    type: _propTypes2.default.oneOf(['day', 'month'])
+    type: _propTypes2.default.oneOf(['day', 'month']),
+    year: _propTypes2.default.string
 };
 
 DatePicker.defaultProps = {
     className: undefined,
     cssMap: _datePicker2.default,
     headers: undefined,
+    hourIsDisabled: false,
+    hourPlaceholder: undefined,
+    hourValue: undefined,
     isDisabled: false,
     isReadOnly: false,
     items: undefined,
     label: undefined,
+    minuteIsDisabled: false,
+    minutePlaceholder: undefined,
+    minuteValue: undefined,
+    mode: 'default',
+    month: undefined,
     nextIsDisabled: false,
+    onBlur: undefined,
+    onChange: undefined,
     onClickItem: undefined,
     onClickNext: undefined,
     onClickPrev: undefined,
+    onFocus: undefined,
+    onKeyPress: undefined,
     prevIsDisabled: false,
-    type: 'day'
+    type: 'day',
+    year: undefined
 };
 
 exports.default = DatePicker;
@@ -21571,10 +21628,6 @@ var _withDropdown = __webpack_require__(54);
 var _withDropdown2 = _interopRequireDefault(_withDropdown);
 
 var _utils = __webpack_require__(4);
-
-var _TimeInput = __webpack_require__(232);
-
-var _TimeInput2 = _interopRequireDefault(_TimeInput);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21615,36 +21668,35 @@ var DateTimeInput = function DateTimeInput(_ref) {
       weeks = _ref.weeks;
 
   var datePicker = _react2.default.createElement(_index.DatePicker, {
+    key: 'datePicker',
     headers: mode !== 'month' ? days : undefined,
     isDisabled: isDisabled,
     isReadOnly: isReadOnly,
     items: mode === 'month' ? months : weeks,
-    label: mode === 'month' ? currentYear : currentMonth + ' ' + currentYear,
+    month: currentMonth,
+    year: currentYear,
     onClickNext: onClickNext,
     onClickPrev: onClickPrev,
     nextIsDisabled: nextIsDisabled,
     prevIsDisabled: prevIsDisabled,
     onClickItem: onClickCell,
-    type: mode === 'month' ? 'month' : 'day' });
-
-  var timePicker = mode === 'default' && _react2.default.createElement(_TimeInput2.default, {
+    type: mode === 'month' ? 'month' : 'day',
     hourIsDisabled: hourIsDisabled,
     hourPlaceholder: hourPlaceholder,
     hourValue: hourValue,
-    isDisabled: isDisabled,
-    isReadOnly: isReadOnly,
     minuteIsDisabled: minuteIsDisabled,
     minutePlaceholder: minutePlaceholder,
     minuteValue: minuteValue,
+    mode: mode,
     onBlur: onBlur,
     onChange: onChange,
     onFocus: onFocus,
     onKeyPress: onKeyPress });
 
   var dropdownProps = {
-    children: [datePicker, timePicker],
+    children: datePicker,
     hasError: hasError,
-    padding: 'M',
+    padding: 'none',
     size: 'content'
   };
 
@@ -22363,6 +22415,10 @@ var _H7 = __webpack_require__(23);
 
 var _H8 = _interopRequireDefault(_H7);
 
+var _flounderDropdown = __webpack_require__(139);
+
+var _flounderDropdown2 = _interopRequireDefault(_flounderDropdown);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -22392,6 +22448,28 @@ var stringifyArr = function stringifyArr() {
 
 var rebuildOnProps = ['classes', 'data', 'headerLevel', 'icon', 'isReadOnly', 'multiple', 'multipleMessage', 'multipleTags', 'noMoreOptionsMessage', 'noMoreResultsMessage', 'onBlur', 'onChange', 'onClose', 'onFirstTouch', 'onFocus', 'onInputChange', 'onOpen', 'openOnHover', 'placeholder', 'search'];
 
+var addExtraClasses = function addExtraClasses(data) {
+    if (!Array.isArray(data)) {
+        return data;
+    }
+
+    return data.map(function (datum) {
+        if ((typeof datum === 'undefined' ? 'undefined' : _typeof(datum)) !== 'object') {
+            return datum;
+        }
+
+        if (datum.description) {
+            var descClass = _flounderDropdown2.default.optionWithDescription;
+
+            var extraClass = datum.extraClass ? datum.extraClass + '  ' + descClass : descClass;
+
+            return _extends({}, datum, { extraClass: extraClass });
+        }
+
+        return _extends({}, datum, { data: addExtraClasses(datum.data) });
+    });
+};
+
 var buildFlounder = function buildFlounder(node) {
     var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
@@ -22412,7 +22490,7 @@ var buildFlounder = function buildFlounder(node) {
 
         var flounderProps = {
             classes: mapCssToFlounder(props.cssMap),
-            data: mapIconClassesToFlounder(props.data, props.cssMap),
+            data: mapIconClassesToFlounder(addExtraClasses(props.data), props.cssMap),
             disableArrow: props.icon === 'none',
             multiple: props.multiple,
             multipleMessage: props.multipleMessage,
@@ -22465,15 +22543,26 @@ var setValue = function setValue(flounder, value) {
 var mapIconClassesToFlounder = function mapIconClassesToFlounder() {
     var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
     var cssMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    if (!Array.isArray(data)) {
+        return data;
+    }
+
     return data.map(function (datum) {
         if ((typeof datum === 'undefined' ? 'undefined' : _typeof(datum)) !== 'object') {
             return datum;
         }
 
+        var extraClass = datum.extraClass;
+        var iconClass = cssMap['optionIcon__' + datum.icon];
+
+        if (iconClass) {
+            extraClass = datum.extraClass ? datum.extraClass + '  ' + iconClass : datum.iconClass;
+        }
+
         return _extends({}, datum, {
-            // eslint-disable-next-line key-spacing
-            data: datum.data && mapIconClassesToFlounder(datum.data, cssMap),
-            extraClass: cssMap['optionIcon__' + datum.icon]
+            data: mapIconClassesToFlounder(datum.data, cssMap),
+            extraClass: extraClass
         });
     });
 };
@@ -22503,7 +22592,7 @@ var mapCssToFlounder = function mapCssToFlounder() {
             NO_RESULTS: cssMap.noResults,
             OPEN: cssMap.open,
             OPTION: cssMap.option,
-            // OPTION_TAG              : cssMap.optionTag,
+            // OPTION_TAG               : cssMap.optionTag,
             OPTIONS_WRAPPER: cssMap.optionsWrapper,
             PLACEHOLDER: cssMap.placeholder,
             // PLUG                    : cssMap.plug,
@@ -22797,7 +22886,7 @@ FlounderDropdown.defaultProps = {
     forceHover: false,
     placeholder: 'Please choose an option',
     icon: 'arrow',
-    cssMap: __webpack_require__(139)
+    cssMap: _flounderDropdown2.default
 };
 exports.default = FlounderDropdown;
 
@@ -26014,10 +26103,17 @@ var Tabs = function (_NessieComponent) {
             var _this2 = this;
 
             var tabs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+
+            var tabsArray = tabs;
+
+            if (!Array.isArray(tabs)) {
+                tabsArray = [tabs];
+            }
+
             var activeTabIndex = this.props.activeTabIndex;
 
 
-            return tabs.map(function (child, index) {
+            return tabsArray.map(function (child, index) {
                 var _child$props = child.props,
                     isDisabled = _child$props.isDisabled,
                     label = _child$props.label;
@@ -26056,7 +26152,7 @@ var Tabs = function (_NessieComponent) {
 
             var header = this.renderHeader(children);
 
-            var content = children[activeTabIndex];
+            var content = Array.isArray(children) ? children[activeTabIndex] : children;
 
             return _react2.default.createElement(
                 'div',
@@ -27800,7 +27896,7 @@ module.exports = {"default":"datePicker__default","calendarHeader":"datePicker__
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"default":"datePickerHeader__default","date":"datePickerHeader__date","prev":"datePickerHeader__prev","next":"datePickerHeader__next"};
+module.exports = {"default":"datePickerHeader__default","date":"datePickerHeader__date","year":"datePickerHeader__year","buttonsWrapper":"datePickerHeader__buttonsWrapper","prev":"datePickerHeader__prev","next":"datePickerHeader__next"};
 
 /***/ }),
 /* 131 */
@@ -27863,7 +27959,7 @@ module.exports = {"default":"fieldset__default"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"headerMode":"flounderDropdown__headerMode","optionsWrapper":"flounderDropdown__optionsWrapper","header":"flounderDropdown__header","default":"flounderDropdown__default","mainWrapper":"flounderDropdown__mainWrapper","open":"flounderDropdown__open","main":"flounderDropdown__main","fakeHovered":"flounderDropdown__fakeHovered","disabled":"flounderDropdown__disabled","arrow":"flounderDropdown__arrow","error":"flounderDropdown__error","arrowInner":"flounderDropdown__arrowInner","selectedDisplayed":"flounderDropdown__selectedDisplayed","option":"flounderDropdown__option","noResults":"flounderDropdown__noResults","section":"flounderDropdown__section","headerLevel__1":"flounderDropdown__headerLevel__1","headerLevel__2":"flounderDropdown__headerLevel__2","headerLevel__3":"flounderDropdown__headerLevel__3","headerLevel__4":"flounderDropdown__headerLevel__4","multipleSelectTag":"flounderDropdown__multipleSelectTag","search":"flounderDropdown__search","toggleIcon__magnifier":"flounderDropdown__toggleIcon__magnifier","toggleIcon__none":"flounderDropdown__toggleIcon__none","multiTagList":"flounderDropdown__multiTagList","list":"flounderDropdown__list","selected":"flounderDropdown__selected","description":"flounderDropdown__description","multipleTag":"flounderDropdown__multipleTag","hidden":"flounderDropdown__hidden","hiddenIos":"flounderDropdown__hiddenIos","selectedHidden":"flounderDropdown__selectedHidden","searchHidden":"flounderDropdown__searchHidden","placeholder":"flounderDropdown__placeholder","multipleTagClose":"flounderDropdown__multipleTagClose","loading":"flounderDropdown__loading","loadingFailed":"flounderDropdown__loadingFailed","optionIcon__approved":"flounderDropdown__optionIcon__approved","optionIcon__declined":"flounderDropdown__optionIcon__declined","optionIcon__alert":"flounderDropdown__optionIcon__alert","optionIcon__ended":"flounderDropdown__optionIcon__ended","optionIcon__pending":"flounderDropdown__optionIcon__pending","optionIcon__error":"flounderDropdown__optionIcon__error","optionIcon__include":"flounderDropdown__optionIcon__include","optionIcon__exclude":"flounderDropdown__optionIcon__exclude","optionIcon__includeExclude":"flounderDropdown__optionIcon__includeExclude","optionIcon__blueDot":"flounderDropdown__optionIcon__blueDot"};
+module.exports = {"description":"flounderDropdown__description","header":"flounderDropdown__header","optionsWrapper":"flounderDropdown__optionsWrapper","multipleSelectTag":"flounderDropdown__multipleSelectTag","default":"flounderDropdown__default","headerMode":"flounderDropdown__headerMode","mainWrapper":"flounderDropdown__mainWrapper","open":"flounderDropdown__open","main":"flounderDropdown__main","fakeHovered":"flounderDropdown__fakeHovered","error":"flounderDropdown__error","disabled":"flounderDropdown__disabled","arrow":"flounderDropdown__arrow","arrowInner":"flounderDropdown__arrowInner","selectedDisplayed":"flounderDropdown__selectedDisplayed","headerLevel__1":"flounderDropdown__headerLevel__1","headerLevel__2":"flounderDropdown__headerLevel__2","headerLevel__3":"flounderDropdown__headerLevel__3","headerLevel__4":"flounderDropdown__headerLevel__4","search":"flounderDropdown__search","toggleIcon__magnifier":"flounderDropdown__toggleIcon__magnifier","toggleIcon__none":"flounderDropdown__toggleIcon__none","multiTagList":"flounderDropdown__multiTagList","list":"flounderDropdown__list","option":"flounderDropdown__option","selected":"flounderDropdown__selected","multipleTag":"flounderDropdown__multipleTag","hidden":"flounderDropdown__hidden","hiddenIos":"flounderDropdown__hiddenIos","selectedHidden":"flounderDropdown__selectedHidden","searchHidden":"flounderDropdown__searchHidden","placeholder":"flounderDropdown__placeholder","noResults":"flounderDropdown__noResults","multipleTagClose":"flounderDropdown__multipleTagClose","loading":"flounderDropdown__loading","loadingFailed":"flounderDropdown__loadingFailed","section":"flounderDropdown__section","optionWithDescription":"flounderDropdown__optionWithDescription","optionIcon__approved":"flounderDropdown__optionIcon__approved","optionIcon__declined":"flounderDropdown__optionIcon__declined","optionIcon__alert":"flounderDropdown__optionIcon__alert","optionIcon__ended":"flounderDropdown__optionIcon__ended","optionIcon__pending":"flounderDropdown__optionIcon__pending","optionIcon__error":"flounderDropdown__optionIcon__error","optionIcon__include":"flounderDropdown__optionIcon__include","optionIcon__exclude":"flounderDropdown__optionIcon__exclude","optionIcon__includeExclude":"flounderDropdown__optionIcon__includeExclude","optionIcon__blueDot":"flounderDropdown__optionIcon__blueDot"};
 
 /***/ }),
 /* 140 */
@@ -27933,7 +28029,7 @@ module.exports = {"default":"inputField__default","fakeHovered":"inputField__fak
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"default":"label__default"};
+module.exports = {"default":"label__default","label":"label__label"};
 
 /***/ }),
 /* 150 */
@@ -35672,63 +35768,129 @@ var _datePickerHeader = __webpack_require__(130);
 
 var _datePickerHeader2 = _interopRequireDefault(_datePickerHeader);
 
+var _TimeInput = __webpack_require__(232);
+
+var _TimeInput2 = _interopRequireDefault(_TimeInput);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var DatePickerHeader = function DatePickerHeader(_ref) {
     var className = _ref.className,
         cssMap = _ref.cssMap,
-        label = _ref.label,
+        hourIsDisabled = _ref.hourIsDisabled,
+        hourPlaceholder = _ref.hourPlaceholder,
+        hourValue = _ref.hourValue,
         isDisabled = _ref.isDisabled,
         isReadOnly = _ref.isReadOnly,
+        minuteIsDisabled = _ref.minuteIsDisabled,
+        minutePlaceholder = _ref.minutePlaceholder,
+        minuteValue = _ref.minuteValue,
+        mode = _ref.mode,
+        month = _ref.month,
+        onBlur = _ref.onBlur,
+        onChange = _ref.onChange,
+        onFocus = _ref.onFocus,
+        onKeyPress = _ref.onKeyPress,
         nextIsDisabled = _ref.nextIsDisabled,
         onClickNext = _ref.onClickNext,
         onClickPrev = _ref.onClickPrev,
-        prevIsDisabled = _ref.prevIsDisabled;
+        prevIsDisabled = _ref.prevIsDisabled,
+        year = _ref.year;
     return _react2.default.createElement(
         'div',
         { className: (0, _utils.buildClassName)(className, cssMap) },
-        _react2.default.createElement(_index.IconButton, {
-            className: cssMap.prev,
-            iconType: 'left',
-            isDisabled: isDisabled || prevIsDisabled,
-            isReadOnly: isReadOnly,
-            onClick: onClickPrev }),
+        _react2.default.createElement(
+            'div',
+            { className: cssMap.buttonsWrapper },
+            _react2.default.createElement(_index.IconButton, {
+                className: cssMap.prev,
+                iconType: 'left',
+                isDisabled: isDisabled || prevIsDisabled,
+                isReadOnly: isReadOnly,
+                onClick: onClickPrev,
+                iconTheme: 'button' }),
+            _react2.default.createElement(_index.IconButton, {
+                className: cssMap.next,
+                iconType: 'right',
+                isDisabled: isDisabled || nextIsDisabled,
+                isReadOnly: isReadOnly,
+                onClick: onClickNext,
+                iconTheme: 'button' })
+        ),
         _react2.default.createElement(
             _index.Text,
             { className: cssMap.date },
-            label
+            month,
+            _react2.default.createElement(
+                'span',
+                { className: cssMap.year },
+                ' ',
+                year,
+                ' '
+            )
         ),
-        _react2.default.createElement(_index.IconButton, {
-            className: cssMap.next,
-            iconType: 'right',
-            isDisabled: isDisabled || nextIsDisabled,
+        mode === 'default' && _react2.default.createElement(_TimeInput2.default, {
+            hourIsDisabled: hourIsDisabled,
+            hourPlaceholder: hourPlaceholder,
+            hourValue: hourValue,
+            isDisabled: isDisabled,
             isReadOnly: isReadOnly,
-            onClick: onClickNext })
+            minuteIsDisabled: minuteIsDisabled,
+            minutePlaceholder: minutePlaceholder,
+            minuteValue: minuteValue,
+            onBlur: onBlur,
+            onChange: onChange,
+            onFocus: onFocus,
+            onKeyPress: onKeyPress })
     );
 };
 
 DatePickerHeader.propTypes = {
     className: _propTypes2.default.string,
     cssMap: _propTypes2.default.objectOf(_propTypes2.default.string),
-    label: _propTypes2.default.string,
+    hourIsDisabled: _propTypes2.default.bool,
+    hourPlaceholder: _propTypes2.default.string,
+    hourValue: _propTypes2.default.string,
     isDisabled: _propTypes2.default.bool,
     isReadOnly: _propTypes2.default.bool,
+    minuteIsDisabled: _propTypes2.default.bool,
+    minutePlaceholder: _propTypes2.default.string,
+    minuteValue: _propTypes2.default.string,
+    mode: _propTypes2.default.oneOf(['default', 'date', 'month']),
+    month: _propTypes2.default.string,
     nextIsDisabled: _propTypes2.default.bool,
+    onBlur: undefined,
+    onChange: undefined,
     onClickNext: _propTypes2.default.bool,
     onClickPrev: _propTypes2.default.bool,
-    prevIsDisabled: _propTypes2.default.bool
+    onFocus: undefined,
+    onKeyPress: undefined,
+    prevIsDisabled: _propTypes2.default.bool,
+    year: _propTypes2.default.string
 };
 
 DatePickerHeader.defaultProps = {
     className: undefined,
     cssMap: _datePickerHeader2.default,
-    label: undefined,
+    hourIsDisabled: false,
+    hourPlaceholder: undefined,
+    hourValue: undefined,
     isDisabled: undefined,
     isReadOnly: undefined,
+    minuteIsDisabled: false,
+    minutePlaceholder: undefined,
+    minuteValue: undefined,
+    mode: 'default',
+    month: undefined,
     nextIsDisabled: undefined,
+    onBlur: _propTypes2.default.func,
+    onChange: _propTypes2.default.func,
     onClickNext: undefined,
     onClickPrev: undefined,
-    prevIsDisabled: undefined
+    onFocus: _propTypes2.default.func,
+    onKeyPress: _propTypes2.default.func,
+    prevIsDisabled: undefined,
+    year: undefined
 };
 
 exports.default = DatePickerHeader;
@@ -35941,7 +36103,7 @@ TimeInput.defaultProps = {
     className: undefined,
     cssMap: _timeInput2.default,
     forceHover: false,
-    hourPlaceholder: undefined,
+    hourPlaceholder: 'HH',
     hourIsDisabled: false,
     hourValue: undefined,
     id: (0, _utils.generateId)('TimeInput'),
@@ -35952,7 +36114,7 @@ TimeInput.defaultProps = {
     onFocus: undefined,
     onKeyPress: undefined,
     minuteIsDisabled: false,
-    minutePlaceholder: undefined,
+    minutePlaceholder: 'MM',
     minuteValue: undefined
 };
 
@@ -36193,7 +36355,7 @@ exports.default = { createScrollHandler: createScrollHandler };
 /* 237 */
 /***/ (function(module, exports) {
 
-module.exports = "\n<svg width=\"0\" height=\"0\" display=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<symbol id=\"icon__account\" viewBox=\"0 0 24 24\">\n    <path d=\"M12 0C5.4 0 0 5.4 0 12c0 2.6.9 5.1 2.3 7 2.2 3 5.7 5 9.7 5 4 0 7.5-2 9.7-5 1.4-2 2.3-4.4 2.3-7 0-6.6-5.4-12-12-12zm8.2 17.7c-2.2-1.6-5-2.6-8.2-2.6s-6 1-8.2 2.6C2.7 16.1 2 14.1 2 11.9c0-5.5 4.5-10 10-10s10 4.5 10 10c0 2.2-.7 4.2-1.8 5.8z\"/>\n    <circle cx=\"12\" cy=\"9.5\" r=\"4\"/>\n\n</symbol>\n<symbol id=\"icon__add\" viewBox=\"0 0 16 16\">\n    <path d=\"M13 7H9V3c0-.6-.4-1-1-1s-1 .4-1 1v4H3c-.6 0-1 .4-1 1s.4 1 1 1h4v4c0 .6.4 1 1 1s1-.4 1-1V9h4c.6 0 1-.4 1-1s-.4-1-1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__alert-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#FFB464;} .st1{fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"#FFF\" cx=\"12\" cy=\"19\" r=\"1\"/>\n\n</symbol>\n<symbol id=\"icon__alert-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#FFB464;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"19\" r=\"1\"/>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n\n</symbol>\n<symbol id=\"icon__approved-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#23A59B;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M18.4 7.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__approved-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#23A59B;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M18.4 7.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__calendar\" viewBox=\"0 0 16 16\">\n    <path d=\"M14 3h-1V2c0-.6-.4-1-1-1s-1 .4-1 1v1H5V2c0-.6-.4-1-1-1s-1 .4-1 1v1H2c-.6 0-1 .4-1 1v10c0 .3.1.5.3.7s.4.3.7.3h12c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zm-1 4v6H3V7h10z\"/>\n\n</symbol>\n<symbol id=\"icon__close\" viewBox=\"0 0 16 16\">\n    <path d=\"M9.4 8l3.5-3.5c.4-.4.4-1 0-1.4s-1-.4-1.4 0L8 6.6 4.5 3.1c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4L6.6 8l-3.5 3.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0L8 9.4l3.5 3.5c.4.4 1 .4 1.4 0s.4-1 0-1.4L9.4 8z\"/>\n\n</symbol>\n<symbol id=\"icon__declined-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#F55F69;} .st1{fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M19 12c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1s.4 1 1 1h12c.6 0 1-.4 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__declined-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#F55F69;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M19 12c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1s.4 1 1 1h12c.6 0 1-.4 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__delete\" viewBox=\"0 0 16 16\">\n    <path d=\"M9 13h2l1-6c0-.6.4-1 1-1s1 .4 1 1l-1 7c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1L2 7c0-.6.4-1 1-1s1 .4 1 1l1 6h4zm4-10h-2.5c0-1.1-.9-2-2-2h-1c-1.1 0-2 .9-2 2H3c-.6 0-1 .4-1 1s.4 1 1 1h10c.6 0 1-.4 1-1s-.4-1-1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__down\" viewBox=\"0 0 16 16\">\n    <path d=\"M11.5 5.2L8 8.7 4.5 5.2c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l4.2 4.2c.2.2.4.3.7.3s.5-.1.7-.3l4.2-4.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0z\"/>\n\n</symbol>\n<symbol id=\"icon__download\" viewBox=\"0 0 16 16\">\n    <path d=\"M3 14c0 .6.4 1 1 1h8c.6 0 1-.4 1-1s-.4-1-1-1H4c-.6 0-1 .4-1 1z\"/>\n    <path d=\"M3.1 6.5l4.2 4.2c.1.1.2.2.3.2.2.1.5.1.8 0 .1 0 .2-.1.3-.2l4.2-4.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0L9 7.6V2c0-.6-.4-1-1-1s-1 .4-1 1v5.6L4.5 5.1c-.4-.4-1-.4-1.4 0-.4.3-.4 1 0 1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__duplicate\" viewBox=\"0 0 16 16\">\n    <path d=\"M8 3h5v5c0 .6.4 1 1 1s1-.4 1-1V2c0-.3-.1-.5-.3-.7S14.3 1 14 1H8c-.6 0-1 .4-1 1s.4 1 1 1z\"/>\n    <path d=\"M10 5H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h8c.3 0 .5-.1.7-.3s.3-.4.3-.7V6c0-.6-.4-1-1-1zM3 7h6v6H3V7z\"/>\n\n</symbol>\n<symbol id=\"icon__edit\" viewBox=\"0 0 16 16\">\n    <path d=\"M12 10c-.6 0-1 .4-1 1v2H3V5h2c.6 0 1-.4 1-1s-.4-1-1-1H2c-.6 0-1 .4-1 1v10c0 .3.1.5.3.7s.4.3.7.3h10c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1zm2.7-8.7c-.4-.4-1-.4-1.4 0l-.7.7L14 3.4l.7-.7c.4-.4.4-1 0-1.4z\"/>\n    <path d=\"M5.5 9.1s-.1.1-.1.2v1c0 .2.1.3.3.3h1c.1 0 .2 0 .2-.1l6.4-6.4-1.4-1.4-6.4 6.4z\"/>\n\n</symbol>\n<symbol id=\"icon__ended-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#414B55;} .st1{fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M18.1 8.5c-.3-.5-.8-.7-1.4-.4l-10.4 6c-.5.3-.7.8-.4 1.4s.8.7 1.4.4l10.4-6c.5-.3.7-.9.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__ended-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#414B55;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M18.1 8.5c-.3-.5-.8-.7-1.4-.4l-10.4 6c-.5.3-.7.8-.4 1.4.3.6.8.7 1.4.4l10.4-6c.5-.3.7-.9.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__error-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#F55F69;} .st1{fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"#FFF\" cx=\"12\" cy=\"19\" r=\"1\"/>\n\n</symbol>\n<symbol id=\"icon__error-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#F55F69;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"19\" r=\"1\"/>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n\n</symbol>\n<symbol id=\"icon__hide\" viewBox=\"0 0 16 16\">\n    <path d=\"M8.573 10.317l1.745-1.746c-.213.863-.884 1.534-1.745 1.747zm6.25-7.445l-11.95 11.95c-.466.47-1.22.473-1.69.006 0-.002-.004-.003-.006-.006-.47-.465-.472-1.22-.007-1.69l.007-.006 1.72-1.72c-1.013-.887-1.88-1.927-2.57-3.085L.125 8l.203-.323C2.418 4.318 5 2.62 8 2.62c1.043-.02 2.077.186 3.036.6l2.09-2.045c.47-.468 1.23-.468 1.696 0 .472.468.472 1.227 0 1.697zM9.542 4.76C9.057 4.533 8.532 4.415 8 4.41c-1.98 0-3.585 1.606-3.585 3.585.003.534.12 1.06.347 1.542l.932-.933c-.058-.2-.085-.403-.083-.61 0-1.32 1.07-2.39 2.39-2.39.208 0 .413.027.61.083l.932-.93zm6.117 2.915c-.556-.905-1.21-1.747-1.948-2.51l-2.186 2.2c.018.21.018.422 0 .632 0 1.98-1.606 3.587-3.585 3.587-.21.018-.422.018-.634 0l-1.47 1.47c.7.217 1.43.326 2.164.322 3 0 5.58-1.696 7.672-5.055L15.875 8l-.215-.323z\"/>\n\n</symbol>\n<symbol id=\"icon__info\" viewBox=\"0 0 16 16\">\n    <path d=\"M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm1 12c0 .6-.4 1-1 1s-1-.4-1-1V7c0-.6.4-1 1-1s1 .4 1 1v5zM8 5c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z\"/>\n\n</symbol>\n<symbol id=\"icon__inspect\" viewBox=\"0 0 16 16\">\n    <path d=\"M3 13h1a1 1 0 0 1 0 2H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3H3zm12.5-3A5.5 5.5 0 1 1 10 4.5a5.5 5.5 0 0 1 5.5 5.5zm-1.88-2.78a1 1 0 0 0-1.41.16l-3.14 3.93-1.24-1.86a1 1 0 1 0-1.66 1.11l2 3A1 1 0 0 0 9 14a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0-.16-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__left\" viewBox=\"0 0 16 16\">\n    <path d=\"M10.8 11.5L7.3 8l3.5-3.5c.4-.4.4-1 0-1.4s-1-.4-1.4 0L5.2 7.3c-.2.2-.3.4-.3.7 0 .3.1.5.3.7l4.2 4.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__link\" viewBox=\"0 0 16 16\">\n    <path d=\"M11 9H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm4 0V7a3.89 3.89 0 0 0-4-4h-1a1 1 0 0 0 0 2h1a1.88 1.88 0 0 1 2 2v2a1.88 1.88 0 0 1-2 2h-1a1 1 0 0 0 0 2h1a3.89 3.89 0 0 0 4-4zm-8 3a1 1 0 0 0-1-1H5a1.88 1.88 0 0 1-2-2V7a1.88 1.88 0 0 1 2-2h1a1 1 0 0 0 0-2H5a3.89 3.89 0 0 0-4 4v2a3.89 3.89 0 0 0 4 4h1a1 1 0 0 0 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__pending-fill\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#FF9164;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}\n    </style>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M16.8 13.6L13 11.4V5c0-.6-.4-1-1-1s-1 .4-1 1v7.3c0 .1.1.1.1.2s.1.1.1.2.1.1.2.1l.1.1 4.3 2.5c.5.3 1.1.1 1.4-.4.2-.5.1-1.1-.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__pending-stroke\" viewBox=\"0 0 24 24\">\n    <style>\n        .st0{fill:#FF9164;}\n    </style>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M16.8 13.6L13 11.4V5c0-.6-.4-1-1-1s-1 .4-1 1v7.3c0 .1.1.1.1.2s.1.1.1.2.1.1.2.1l.1.1 4.3 2.5c.5.3 1.1.1 1.4-.4.2-.5.1-1.1-.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__preview\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.71 13.29l-1.4-1.4a4.5 4.5 0 1 0-1.41 1.41l1.4 1.4a1 1 0 0 0 1.41-1.41zM9.5 12A2.5 2.5 0 1 1 12 9.5 2.5 2.5 0 0 1 9.5 12zM3 13h2a1 1 0 0 1 0 2H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V3H3z\"/>\n\n</symbol>\n<symbol id=\"icon__reset\" viewBox=\"0 0 16 16\">\n    <path d=\"M9 3.09V2a1 1 0 0 0-1.71-.71l-2 2a1 1 0 0 0 0 1.41l2 2A1 1 0 0 0 9 6v-.86A4 4 0 1 1 4 9a1 1 0 0 0-2 0 6 6 0 1 0 7-5.91z\"/>\n\n</symbol>\n<symbol id=\"icon__right\" viewBox=\"0 0 16 16\">\n    <path d=\"M5.2 4.5L8.7 8l-3.5 3.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0l4.2-4.2c.2-.2.3-.4.3-.7 0-.3-.1-.5-.3-.7L6.6 3.1c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__search\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.7 13.3l-2.8-2.8c1.7-2.3 1.5-5.6-.6-7.7C9 .5 5.2.5 2.8 2.8.5 5.1.5 8.9 2.8 11.3c2.1 2.1 5.4 2.3 7.7.6l2.8 2.8c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4zM4.2 9.8c-1.6-1.6-1.6-4.1 0-5.7s4.1-1.6 5.7 0 1.6 4.1 0 5.7-4.2 1.6-5.7 0z\"/>\n\n</symbol>\n<symbol id=\"icon__show\" viewBox=\"0 0 16 16\">\n    <path d=\"M15.672 7.678c-2.082-3.36-4.665-5.06-7.666-5.06S2.42 4.32.328 7.68L.125 8l.203.323c2.093 3.36 4.677 5.058 7.678 5.058s5.584-1.695 7.666-5.057L15.875 8l-.203-.322zm-7.666 3.91C6.026 11.588 4.42 9.982 4.42 8c0-1.98 1.605-3.587 3.586-3.587 1.982 0 3.587 1.606 3.587 3.587 0 1.98-1.605 3.588-3.587 3.588zM10.398 8c0 1.32-1.07 2.39-2.393 2.39-1.32 0-2.392-1.07-2.392-2.39s1.07-2.392 2.392-2.392c1.322 0 2.393 1.072 2.393 2.392z\"/>\n\n</symbol>\n<symbol id=\"icon__up\" viewBox=\"0 0 16 16\">\n    <path d=\"M4.5 10.8L8 7.3l3.5 3.5c.4.4 1 .4 1.4 0s.4-1 0-1.4L8.7 5.2c-.2-.2-.4-.3-.7-.3s-.5.1-.7.3L3.1 9.4c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0z\"/>\n\n</symbol>\n<symbol id=\"icon__upload\" viewBox=\"0 0 16 16\">\n    <path d=\"M13 2c0-.6-.4-1-1-1H4c-.6 0-1 .5-1 1s.4 1 1 1h8c.6 0 1-.4 1-1z\"/>\n    <path d=\"M12.9 9.5L8.7 5.3c-.1-.1-.2-.2-.3-.2-.3-.1-.5-.1-.8 0-.1 0-.2.1-.3.2L3.1 9.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0L7 8.4V14c0 .6.4 1 1 1s1-.4 1-1V8.4l2.5 2.5c.4.4 1 .4 1.4 0 .4-.3.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__validation\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.4 3.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol></svg>"
+module.exports = "\n<svg width=\"0\" height=\"0\" display=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<symbol id=\"icon__account\" viewBox=\"0 0 24 24\">\n    <path d=\"M12 0C5.4 0 0 5.4 0 12c0 2.6.9 5.1 2.3 7 2.2 3 5.7 5 9.7 5 4 0 7.5-2 9.7-5 1.4-2 2.3-4.4 2.3-7 0-6.6-5.4-12-12-12zm8.2 17.7c-2.2-1.6-5-2.6-8.2-2.6s-6 1-8.2 2.6C2.7 16.1 2 14.1 2 11.9c0-5.5 4.5-10 10-10s10 4.5 10 10c0 2.2-.7 4.2-1.8 5.8z\"/>\n    <circle cx=\"12\" cy=\"9.5\" r=\"4\"/>\n\n</symbol>\n<symbol id=\"icon__add\" viewBox=\"0 0 16 16\">\n    <path d=\"M13 7H9V3c0-.6-.4-1-1-1s-1 .4-1 1v4H3c-.6 0-1 .4-1 1s.4 1 1 1h4v4c0 .6.4 1 1 1s1-.4 1-1V9h4c.6 0 1-.4 1-1s-.4-1-1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__alert-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"#FFF\" cx=\"12\" cy=\"19\" r=\"1\"/>\n\n</symbol>\n<symbol id=\"icon__alert-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"19\" r=\"1\"/>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n\n</symbol>\n<symbol id=\"icon__approved-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M18.4 7.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__approved-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M18.4 7.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__calendar\" viewBox=\"0 0 16 16\">\n    <path d=\"M14 3h-1V2c0-.6-.4-1-1-1s-1 .4-1 1v1H5V2c0-.6-.4-1-1-1s-1 .4-1 1v1H2c-.6 0-1 .4-1 1v10c0 .3.1.5.3.7s.4.3.7.3h12c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zm-1 4v6H3V7h10z\"/>\n\n</symbol>\n<symbol id=\"icon__close\" viewBox=\"0 0 16 16\">\n    <path d=\"M9.4 8l3.5-3.5c.4-.4.4-1 0-1.4s-1-.4-1.4 0L8 6.6 4.5 3.1c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4L6.6 8l-3.5 3.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0L8 9.4l3.5 3.5c.4.4 1 .4 1.4 0s.4-1 0-1.4L9.4 8z\"/>\n\n</symbol>\n<symbol id=\"icon__declined-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M19 12c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1s.4 1 1 1h12c.6 0 1-.4 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__declined-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M19 12c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1s.4 1 1 1h12c.6 0 1-.4 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__delete\" viewBox=\"0 0 16 16\">\n    <path d=\"M9 13h2l1-6c0-.6.4-1 1-1s1 .4 1 1l-1 7c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1L2 7c0-.6.4-1 1-1s1 .4 1 1l1 6h4zm4-10h-2.5c0-1.1-.9-2-2-2h-1c-1.1 0-2 .9-2 2H3c-.6 0-1 .4-1 1s.4 1 1 1h10c.6 0 1-.4 1-1s-.4-1-1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__down\" viewBox=\"0 0 16 16\">\n    <path d=\"M11.5 5.2L8 8.7 4.5 5.2c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l4.2 4.2c.2.2.4.3.7.3s.5-.1.7-.3l4.2-4.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0z\"/>\n\n</symbol>\n<symbol id=\"icon__download\" viewBox=\"0 0 16 16\">\n    <path d=\"M3 14c0 .6.4 1 1 1h8c.6 0 1-.4 1-1s-.4-1-1-1H4c-.6 0-1 .4-1 1z\"/>\n    <path d=\"M3.1 6.5l4.2 4.2c.1.1.2.2.3.2.2.1.5.1.8 0 .1 0 .2-.1.3-.2l4.2-4.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0L9 7.6V2c0-.6-.4-1-1-1s-1 .4-1 1v5.6L4.5 5.1c-.4-.4-1-.4-1.4 0-.4.3-.4 1 0 1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__duplicate\" viewBox=\"0 0 16 16\">\n    <path d=\"M8 3h5v5c0 .6.4 1 1 1s1-.4 1-1V2c0-.3-.1-.5-.3-.7S14.3 1 14 1H8c-.6 0-1 .4-1 1s.4 1 1 1z\"/>\n    <path d=\"M10 5H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h8c.3 0 .5-.1.7-.3s.3-.4.3-.7V6c0-.6-.4-1-1-1zM3 7h6v6H3V7z\"/>\n\n</symbol>\n<symbol id=\"icon__edit\" viewBox=\"0 0 16 16\">\n    <path d=\"M12 10c-.6 0-1 .4-1 1v2H3V5h2c.6 0 1-.4 1-1s-.4-1-1-1H2c-.6 0-1 .4-1 1v10c0 .3.1.5.3.7s.4.3.7.3h10c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1zm2.7-8.7c-.4-.4-1-.4-1.4 0l-.7.7L14 3.4l.7-.7c.4-.4.4-1 0-1.4z\"/>\n    <path d=\"M5.5 9.1s-.1.1-.1.2v1c0 .2.1.3.3.3h1c.1 0 .2 0 .2-.1l6.4-6.4-1.4-1.4-6.4 6.4z\"/>\n\n</symbol>\n<symbol id=\"icon__ended-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M18.1 8.5c-.3-.5-.8-.7-1.4-.4l-10.4 6c-.5.3-.7.8-.4 1.4s.8.7 1.4.4l10.4-6c.5-.3.7-.9.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__ended-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M18.1 8.5c-.3-.5-.8-.7-1.4-.4l-10.4 6c-.5.3-.7.8-.4 1.4.3.6.8.7 1.4.4l10.4-6c.5-.3.7-.9.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__error-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"#FFF\" cx=\"12\" cy=\"19\" r=\"1\"/>\n\n</symbol>\n<symbol id=\"icon__error-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 16c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1s-1 .4-1 1v10c0 .6.4 1 1 1z\"/>\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"19\" r=\"1\"/>\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n\n</symbol>\n<symbol id=\"icon__hide\" viewBox=\"0 0 16 16\">\n    <path d=\"M8.573 10.317l1.745-1.746a2.387 2.387 0 0 1-1.745 1.746zm6.249-7.445L2.873 14.822a1.191 1.191 0 0 1-1.689.006l-.007-.006a1.193 1.193 0 0 1 0-1.696l1.72-1.721a12.801 12.801 0 0 1-2.57-3.084l-.202-.323.203-.323C2.419 4.318 5 2.621 8 2.621a7.319 7.319 0 0 1 3.036.598l2.09-2.044a1.2 1.2 0 0 1 1.696 1.697zm-5.28 1.887A3.718 3.718 0 0 0 8 4.412a3.586 3.586 0 0 0-3.238 5.127l.932-.932a2.098 2.098 0 0 1-.083-.61 2.39 2.39 0 0 1 2.39-2.39 2.2 2.2 0 0 1 .61.083l.931-.931zm6.118 2.916a14.57 14.57 0 0 0-1.948-2.51l-2.186 2.199c.018.21.018.423 0 .633a3.587 3.587 0 0 1-3.585 3.587 3.74 3.74 0 0 1-.635 0l-1.47 1.47c.7.217 1.43.326 2.164.322 3.001 0 5.58-1.696 7.672-5.055l.203-.323-.215-.323z\"/>\n\n</symbol>\n<symbol id=\"icon__info\" viewBox=\"0 0 16 16\">\n    <path d=\"M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm1 12c0 .6-.4 1-1 1s-1-.4-1-1V7c0-.6.4-1 1-1s1 .4 1 1v5zM8 5c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z\"/>\n\n</symbol>\n<symbol id=\"icon__inspect\" viewBox=\"0 0 16 16\">\n    <path d=\"M3 13h1a1 1 0 0 1 0 2H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3H3zm12.5-3A5.5 5.5 0 1 1 10 4.5a5.5 5.5 0 0 1 5.5 5.5zm-1.88-2.78a1 1 0 0 0-1.41.16l-3.14 3.93-1.24-1.86a1 1 0 1 0-1.66 1.11l2 3A1 1 0 0 0 9 14a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0-.16-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__left\" viewBox=\"0 0 16 16\">\n    <path d=\"M10.8 11.5L7.3 8l3.5-3.5c.4-.4.4-1 0-1.4s-1-.4-1.4 0L5.2 7.3c-.2.2-.3.4-.3.7 0 .3.1.5.3.7l4.2 4.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__link\" viewBox=\"0 0 16 16\">\n    <path d=\"M11 9H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm4 0V7a3.89 3.89 0 0 0-4-4h-1a1 1 0 0 0 0 2h1a1.88 1.88 0 0 1 2 2v2a1.88 1.88 0 0 1-2 2h-1a1 1 0 0 0 0 2h1a3.89 3.89 0 0 0 4-4zm-8 3a1 1 0 0 0-1-1H5a1.88 1.88 0 0 1-2-2V7a1.88 1.88 0 0 1 2-2h1a1 1 0 0 0 0-2H5a3.89 3.89 0 0 0-4 4v2a3.89 3.89 0 0 0 4 4h1a1 1 0 0 0 1-1z\"/>\n\n</symbol>\n<symbol id=\"icon__pending-fill\" viewBox=\"0 0 24 24\">\n    <circle fill=\"currentColor\" cx=\"12\" cy=\"12\" r=\"12\"/>\n    <path fill=\"#FFF\" d=\"M16.8 13.6L13 11.4V5c0-.6-.4-1-1-1s-1 .4-1 1v7.3c0 .1.1.1.1.2s.1.1.1.2.1.1.2.1l.1.1 4.3 2.5c.5.3 1.1.1 1.4-.4.2-.5.1-1.1-.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__pending-stroke\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z\"/>\n    <path fill=\"currentColor\" d=\"M16.8 13.6L13 11.4V5c0-.6-.4-1-1-1s-1 .4-1 1v7.3c0 .1.1.1.1.2s.1.1.1.2.1.1.2.1l.1.1 4.3 2.5c.5.3 1.1.1 1.4-.4.2-.5.1-1.1-.4-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__preview\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.71 13.29l-1.4-1.4a4.5 4.5 0 1 0-1.41 1.41l1.4 1.4a1 1 0 0 0 1.41-1.41zM9.5 12A2.5 2.5 0 1 1 12 9.5 2.5 2.5 0 0 1 9.5 12zM3 13h2a1 1 0 0 1 0 2H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V3H3z\"/>\n\n</symbol>\n<symbol id=\"icon__reset\" viewBox=\"0 0 16 16\">\n    <path d=\"M9 3.09V2a1 1 0 0 0-1.71-.71l-2 2a1 1 0 0 0 0 1.41l2 2A1 1 0 0 0 9 6v-.86A4 4 0 1 1 4 9a1 1 0 0 0-2 0 6 6 0 1 0 7-5.91z\"/>\n\n</symbol>\n<symbol id=\"icon__right\" viewBox=\"0 0 16 16\">\n    <path d=\"M5.2 4.5L8.7 8l-3.5 3.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0l4.2-4.2c.2-.2.3-.4.3-.7 0-.3-.1-.5-.3-.7L6.6 3.1c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__search\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.7 13.3l-2.8-2.8c1.7-2.3 1.5-5.6-.6-7.7C9 .5 5.2.5 2.8 2.8.5 5.1.5 8.9 2.8 11.3c2.1 2.1 5.4 2.3 7.7.6l2.8 2.8c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4zM4.2 9.8c-1.6-1.6-1.6-4.1 0-5.7s4.1-1.6 5.7 0 1.6 4.1 0 5.7-4.2 1.6-5.7 0z\"/>\n\n</symbol>\n<symbol id=\"icon__show\" viewBox=\"0 0 16 16\">\n    <path d=\"M15.672 7.678c-2.082-3.36-4.665-5.059-7.666-5.059S2.421 4.317.328 7.678L.125 8l.203.323c2.093 3.361 4.677 5.058 7.678 5.058s5.584-1.696 7.666-5.058L15.875 8l-.203-.322zm-7.666 3.91a3.587 3.587 0 1 1 0-7.175 3.587 3.587 0 0 1 0 7.175zM10.398 8a2.392 2.392 0 1 1-4.784-.002A2.392 2.392 0 0 1 10.398 8z\"/>\n\n</symbol>\n<symbol id=\"icon__up\" viewBox=\"0 0 16 16\">\n    <path d=\"M4.5 10.8L8 7.3l3.5 3.5c.4.4 1 .4 1.4 0s.4-1 0-1.4L8.7 5.2c-.2-.2-.4-.3-.7-.3s-.5.1-.7.3L3.1 9.4c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0z\"/>\n\n</symbol>\n<symbol id=\"icon__upload\" viewBox=\"0 0 16 16\">\n    <path d=\"M13 2c0-.6-.4-1-1-1H4c-.6 0-1 .5-1 1s.4 1 1 1h8c.6 0 1-.4 1-1z\"/>\n    <path d=\"M12.9 9.5L8.7 5.3c-.1-.1-.2-.2-.3-.2-.3-.1-.5-.1-.8 0-.1 0-.2.1-.3.2L3.1 9.5c-.4.4-.4 1 0 1.4s1 .4 1.4 0L7 8.4V14c0 .6.4 1 1 1s1-.4 1-1V8.4l2.5 2.5c.4.4 1 .4 1.4 0 .4-.3.4-1 0-1.4z\"/>\n\n</symbol>\n<symbol id=\"icon__validation\" viewBox=\"0 0 16 16\">\n    <path d=\"M14.4 3.4c-.4-.4-1-.4-1.4 0l-7.1 7.1-2.8-2.8c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3.3 0 .5-.1.7-.3l7.8-7.8c.4-.4.4-1 0-1.4z\"/>\n\n</symbol></svg>"
 
 /***/ }),
 /* 238 */
