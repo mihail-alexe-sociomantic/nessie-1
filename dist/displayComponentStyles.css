@@ -2663,11 +2663,6 @@ textarea.inputField__resizable__2CfEu
     text-transform:     uppercase;
 }
 
-.button__default__3AXUD:focus
-    {
-        outline:        none;
-    }
-
 .button__content__3EOsA
 {
     /* Firefox doesn’t properly support flex directly
@@ -2685,10 +2680,8 @@ textarea.inputField__resizable__2CfEu
     -webkit-align-items:        center;
         -ms-flex-align:        center;
             align-items:        center;
-
-    min-width:          9rem;
-    height:             3.2rem; /************ replace with min-, or remove? */
-
+    height:             4rem; /************ replace with min-, or remove? */
+    padding:            0 1.6rem;
     text-align:         center;
 }
 
@@ -2698,10 +2691,6 @@ textarea.inputField__resizable__2CfEu
     font-size:          1.2rem;
     line-height:        1.6rem;
     letter-spacing:     0.04rem;
-
-    margin-top:         0.1rem;
-    padding-left:       1.6rem;
-    padding-right:      1.6rem;
 
     overflow:           hidden;
     text-overflow:      ellipsis;
@@ -2719,24 +2708,12 @@ textarea.inputField__resizable__2CfEu
 
 .button__iconPosition__right__2CpF1 .button__iconContainer__1PvVc
     {
-        padding-right:      0.8rem;
-        padding-left:       0.4rem;
-    }
-
-.button__iconPosition__right__2CpF1 .button__iconContainer__1PvVc + .button__label__1yHdY
-    {
-        padding-right: 0rem;
+        margin-left:    0.8rem;
     }
 
 .button__iconPosition__left__6KRgY .button__iconContainer__1PvVc
     {
-        padding-right:      0.4rem;
-        padding-left:       0.8rem;
-    }
-
-.button__iconPosition__left__6KRgY .button__iconContainer__1PvVc + .button__label__1yHdY
-    {
-        padding-left: 0rem;
+        margin-right:   0.8rem;
     }
 
 .button__role__default__3aNhL
@@ -2765,13 +2742,13 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__secondary__U6kQD .button__icon__29c7A
     {
-        fill:       #8296ae;
-        color:      #8296ae;
+        fill:   #8296ae;
+        color:  #8296ae;
     }
 
 .button__role__secondary__U6kQD .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:          rgba(130, 150, 174, 0.25);
+            border-color:   rgba(130, 150, 174, 0.25);
         }
 
 .button__role__secondary__U6kQD .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -2857,7 +2834,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__subtle__2n8p3 .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:           rgba(25, 162, 226, 0.25);
+            border-color:   rgba(25, 162, 226, 0.25);
         }
 
 .button__role__subtle__2n8p3 .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -2867,29 +2844,29 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__control__SJEnv
 {
-    color:                  #4b627d;
+    color:  #4b627d;
 }
 
 .button__role__control__SJEnv .button__icon__29c7A
     {
-        fill:               #4b627d;
-        color:              #4b627d;
+        fill:   #4b627d;
+        color:  #4b627d;
     }
 
 .button__role__control__SJEnv.button__fakeHovered__38NgF, .button__role__control__SJEnv:hover
     {
-        color:                  #19a2e2;
+        color:  #19a2e2;
     }
 
 .button__role__control__SJEnv.button__fakeHovered__38NgF .button__icon__29c7A, .button__role__control__SJEnv:hover .button__icon__29c7A
         {
-            fill:               #19a2e2;
-            color:              #19a2e2;
+            fill:   #19a2e2;
+            color:  #19a2e2;
         }
 
 .button__role__control__SJEnv .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:           rgba(75, 98, 125, 0.25);
+            border-color:   rgba(75, 98, 125, 0.25);
         }
 
 .button__role__control__SJEnv .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -2910,8 +2887,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__default__3aNhL
     {
-        background:     #bae3f6;
-        color:          #52b9e9;
+        background: #bae3f6;
+        color:      #52b9e9;
     }
 
 .button__disabled__3tHK1.button__role__default__3aNhL .button__icon__29c7A
@@ -2922,7 +2899,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__secondary__U6kQD
     {
-        color:          #afbccb;
+        color:  #afbccb;
     }
 
 .button__disabled__3tHK1.button__role__secondary__U6kQD .button__icon__29c7A
@@ -2933,8 +2910,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__promoted__846qT
     {
-        background:     #bbeae7;
-        color:          #5fcec7;
+        background: #bbeae7;
+        color:      #5fcec7;
     }
 
 .button__disabled__3tHK1.button__role__promoted__846qT .button__icon__29c7A
@@ -2945,8 +2922,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__critical__1SSab
     {
-        background:     #ffcccf;
-        color:          #ff8790;
+        background: #ffcccf;
+        color:      #ff8790;
     }
 
 .button__disabled__3tHK1.button__role__critical__1SSab .button__icon__29c7A
@@ -2957,8 +2934,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__warning__23oc0
     {
-        background:     #ffdfcd;
-        color:          #ffb083;
+        background: #ffdfcd;
+        color:      #ffb083;
     }
 
 .button__disabled__3tHK1.button__role__warning__23oc0 .button__icon__29c7A
@@ -2969,7 +2946,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__subtle__2n8p3
     {
-        color:          #75c7ed;
+        color:  #75c7ed;
     }
 
 .button__disabled__3tHK1.button__role__subtle__2n8p3 .button__content__3EOsA
@@ -3004,16 +2981,16 @@ textarea.inputField__resizable__2CfEu
         -ms-flex-align:        center;
             align-items:        center;
 
-    position:   absolute;
+    position:           absolute;
 
-    top:        0;
-    bottom:     0;
+    top:                0;
+    bottom:             0;
 
-    left:       0;
-    right:      0;
+    left:               0;
+    right:              0;
 
-    width:      100%;
-    height:     100%;
+    width:              100%;
+    height:             100%;
 }
 
 .button__loadingOverlay__3dOBM .button__spinner__bHxRc
@@ -15332,11 +15309,6 @@ only used in type__carousel for now
     text-transform:     uppercase;
 }
 
-.tabButton__default__2fot-:focus
-    {
-        outline:        none;
-    }
-
 .tabButton__content__2nWC-
 {
     /* Firefox doesn’t properly support flex directly
@@ -15354,10 +15326,8 @@ only used in type__carousel for now
     -webkit-align-items:        center;
         -ms-flex-align:        center;
             align-items:        center;
-
-    min-width:          9rem;
-    height:             3.2rem; /************ replace with min-, or remove? */
-
+    height:             4rem; /************ replace with min-, or remove? */
+    padding:            0 1.6rem;
     text-align:         center;
 }
 
@@ -15367,10 +15337,6 @@ only used in type__carousel for now
     font-size:          1.2rem;
     line-height:        1.6rem;
     letter-spacing:     0.04rem;
-
-    margin-top:         0.1rem;
-    padding-left:       1.6rem;
-    padding-right:      1.6rem;
 
     overflow:           hidden;
     text-overflow:      ellipsis;
@@ -15388,24 +15354,12 @@ only used in type__carousel for now
 
 .tabButton__iconPosition__right__3TjUh .tabButton__iconContainer__2TS7w
     {
-        padding-right:      0.8rem;
-        padding-left:       0.4rem;
-    }
-
-.tabButton__iconPosition__right__3TjUh .tabButton__iconContainer__2TS7w + .tabButton__label__s-MZG
-    {
-        padding-right: 0rem;
+        margin-left:    0.8rem;
     }
 
 .tabButton__iconPosition__left__2GBjt .tabButton__iconContainer__2TS7w
     {
-        padding-right:      0.4rem;
-        padding-left:       0.8rem;
-    }
-
-.tabButton__iconPosition__left__2GBjt .tabButton__iconContainer__2TS7w + .tabButton__label__s-MZG
-    {
-        padding-left: 0rem;
+        margin-right:   0.8rem;
     }
 
 .tabButton__role__default__2fpg8
@@ -15434,13 +15388,13 @@ only used in type__carousel for now
 
 .tabButton__role__secondary__qOFLb .tabButton__icon__1FrZd
     {
-        fill:       #8296ae;
-        color:      #8296ae;
+        fill:   #8296ae;
+        color:  #8296ae;
     }
 
 .tabButton__role__secondary__qOFLb .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:          rgba(130, 150, 174, 0.25);
+            border-color:   rgba(130, 150, 174, 0.25);
         }
 
 .tabButton__role__secondary__qOFLb .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15526,7 +15480,7 @@ only used in type__carousel for now
 
 .tabButton__role__subtle__1sbdu .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:           rgba(25, 162, 226, 0.25);
+            border-color:   rgba(25, 162, 226, 0.25);
         }
 
 .tabButton__role__subtle__1sbdu .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15536,29 +15490,29 @@ only used in type__carousel for now
 
 .tabButton__role__control__T5uU2
 {
-    color:                  #4b627d;
+    color:  #4b627d;
 }
 
 .tabButton__role__control__T5uU2 .tabButton__icon__1FrZd
     {
-        fill:               #4b627d;
-        color:              #4b627d;
+        fill:   #4b627d;
+        color:  #4b627d;
     }
 
 .tabButton__role__control__T5uU2.tabButton__fakeHovered__1ple-, .tabButton__role__control__T5uU2:hover
     {
-        color:                  #19a2e2;
+        color:  #19a2e2;
     }
 
 .tabButton__role__control__T5uU2.tabButton__fakeHovered__1ple- .tabButton__icon__1FrZd, .tabButton__role__control__T5uU2:hover .tabButton__icon__1FrZd
         {
-            fill:               #19a2e2;
-            color:              #19a2e2;
+            fill:   #19a2e2;
+            color:  #19a2e2;
         }
 
 .tabButton__role__control__T5uU2 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:           rgba(75, 98, 125, 0.25);
+            border-color:   rgba(75, 98, 125, 0.25);
         }
 
 .tabButton__role__control__T5uU2 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15579,8 +15533,8 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__default__2fpg8
     {
-        background:     #bae3f6;
-        color:          #52b9e9;
+        background: #bae3f6;
+        color:      #52b9e9;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__default__2fpg8 .tabButton__icon__1FrZd
@@ -15591,7 +15545,7 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__secondary__qOFLb
     {
-        color:          #afbccb;
+        color:  #afbccb;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__secondary__qOFLb .tabButton__icon__1FrZd
@@ -15602,8 +15556,8 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__promoted__2euaE
     {
-        background:     #bbeae7;
-        color:          #5fcec7;
+        background: #bbeae7;
+        color:      #5fcec7;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__promoted__2euaE .tabButton__icon__1FrZd
@@ -15614,8 +15568,8 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__critical__1Nfi0
     {
-        background:     #ffcccf;
-        color:          #ff8790;
+        background: #ffcccf;
+        color:      #ff8790;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__critical__1Nfi0 .tabButton__icon__1FrZd
@@ -15626,8 +15580,8 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__warning__tcJkS
     {
-        background:     #ffdfcd;
-        color:          #ffb083;
+        background: #ffdfcd;
+        color:      #ffb083;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__warning__tcJkS .tabButton__icon__1FrZd
@@ -15638,7 +15592,7 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__subtle__1sbdu
     {
-        color:          #75c7ed;
+        color:  #75c7ed;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__subtle__1sbdu .tabButton__content__2nWC-
@@ -15673,16 +15627,16 @@ only used in type__carousel for now
         -ms-flex-align:        center;
             align-items:        center;
 
-    position:   absolute;
+    position:           absolute;
 
-    top:        0;
-    bottom:     0;
+    top:                0;
+    bottom:             0;
 
-    left:       0;
-    right:      0;
+    left:               0;
+    right:              0;
 
-    width:      100%;
-    height:     100%;
+    width:              100%;
+    height:             100%;
 }
 
 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
