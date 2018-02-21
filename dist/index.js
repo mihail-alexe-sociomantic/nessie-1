@@ -461,7 +461,7 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
-var _Icon = __webpack_require__(11);
+var _Icon = __webpack_require__(10);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -730,7 +730,7 @@ var _H11 = __webpack_require__(23);
 
 var _H12 = _interopRequireDefault(_H11);
 
-var _Icon2 = __webpack_require__(11);
+var _Icon2 = __webpack_require__(10);
 
 var _Icon3 = _interopRequireDefault(_Icon2);
 
@@ -1170,6 +1170,132 @@ exports.default = InputContainer;
 /***/ }),
 /* 9 */,
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(1);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _Css = __webpack_require__(2);
+
+var _Css2 = _interopRequireDefault(_Css);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Icon = function Icon(_ref) {
+    var children = _ref.children,
+        _ref$className = _ref.className,
+        className = _ref$className === undefined ? '' : _ref$className,
+        cssMap = _ref.cssMap,
+        forceHover = _ref.forceHover,
+        theme = _ref.theme,
+        isDisabled = _ref.isDisabled,
+        label = _ref.label,
+        onMouseOut = _ref.onMouseOut,
+        onMouseOver = _ref.onMouseOver,
+        size = _ref.size,
+        type = _ref.type,
+        variant = _ref.variant;
+
+    var xLink = void 0;
+    var needsVariant = false;
+
+    var statusIconArray = ['alert', 'approved', 'declined', 'ended', 'error', 'pending'];
+
+    if (statusIconArray.indexOf(type) >= 0) {
+        needsVariant = true;
+        xLink = '#icon__' + type + '-' + variant;
+    } else {
+        xLink = '#icon__' + type;
+    }
+
+    return _react2.default.createElement(
+        _Css2.default,
+        {
+            cssMap: cssMap,
+            cssProps: { size: size,
+                type: type,
+                theme: theme,
+                variant: needsVariant && variant,
+                disabled: isDisabled,
+                fakeHovered: !isDisabled && forceHover
+            } },
+        _react2.default.createElement(
+            'svg',
+            {
+                className: className,
+                'aria-label': children || label,
+                onMouseOver: onMouseOver,
+                onMouseOut: onMouseOut },
+            _react2.default.createElement('use', { xlinkHref: xLink })
+        )
+    );
+};
+
+Icon.propTypes = {
+    /**
+     *  Icon size
+     */
+    size: _propTypes2.default.oneOf(['S', 'M', 'L', 'XL', 'XXL']),
+    /**
+     *  Icon theme
+     */
+    theme: _propTypes2.default.oneOf(['light', 'dark', 'control', 'button', 'navigation']),
+    /**
+     *  Icon to show
+     */
+    type: _propTypes2.default.oneOf(['account', 'add', 'calendar', 'close', 'delete', 'down', 'download', 'duplicate', 'edit', 'info', 'inspect', 'left', 'link', 'preview', 'reset', 'right', 'search', 'up', 'upload', 'validation', 'alert', 'approved', 'declined', 'ended', 'error', 'pending', 'show', 'hide']),
+    /**
+    *  Icon variant to show
+    */
+    variant: _propTypes2.default.oneOf(['fill', 'stroke']),
+    /**
+     * Icon label
+     */
+    label: _propTypes2.default.string,
+    /**
+     * Display as hover when required from another component
+     */
+    forceHover: _propTypes2.default.bool,
+    /**
+     *  Display as disabled
+     */
+    isDisabled: _propTypes2.default.bool,
+    /**
+     *  onMouseOver callback function: ( e ) = { ... }
+     */
+    onMouseOver: _propTypes2.default.func,
+    /**
+     *  onMouseOut callback function: ( e ) = { ... }
+     */
+    onMouseOut: _propTypes2.default.func
+
+};
+
+Icon.defaultProps = {
+    size: 'S',
+    theme: 'light',
+    forceHover: false,
+    isDisabled: false,
+    variant: 'fill',
+    cssMap: __webpack_require__(144)
+};
+
+exports.default = Icon;
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13108,132 +13234,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(1);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _Css = __webpack_require__(2);
-
-var _Css2 = _interopRequireDefault(_Css);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Icon = function Icon(_ref) {
-    var children = _ref.children,
-        _ref$className = _ref.className,
-        className = _ref$className === undefined ? '' : _ref$className,
-        cssMap = _ref.cssMap,
-        forceHover = _ref.forceHover,
-        theme = _ref.theme,
-        isDisabled = _ref.isDisabled,
-        label = _ref.label,
-        onMouseOut = _ref.onMouseOut,
-        onMouseOver = _ref.onMouseOver,
-        size = _ref.size,
-        type = _ref.type,
-        variant = _ref.variant;
-
-    var xLink = void 0;
-    var needsVariant = false;
-
-    var statusIconArray = ['alert', 'approved', 'declined', 'ended', 'error', 'pending'];
-
-    if (statusIconArray.indexOf(type) >= 0) {
-        needsVariant = true;
-        xLink = '#icon__' + type + '-' + variant;
-    } else {
-        xLink = '#icon__' + type;
-    }
-
-    return _react2.default.createElement(
-        _Css2.default,
-        {
-            cssMap: cssMap,
-            cssProps: { size: size,
-                type: type,
-                theme: theme,
-                variant: needsVariant && variant,
-                disabled: isDisabled,
-                fakeHovered: !isDisabled && forceHover
-            } },
-        _react2.default.createElement(
-            'svg',
-            {
-                className: className,
-                'aria-label': children || label,
-                onMouseOver: onMouseOver,
-                onMouseOut: onMouseOut },
-            _react2.default.createElement('use', { xlinkHref: xLink })
-        )
-    );
-};
-
-Icon.propTypes = {
-    /**
-     *  Icon size
-     */
-    size: _propTypes2.default.oneOf(['S', 'M', 'L', 'XL', 'XXL']),
-    /**
-     *  Icon theme
-     */
-    theme: _propTypes2.default.oneOf(['light', 'dark', 'control', 'button', 'navigation']),
-    /**
-     *  Icon to show
-     */
-    type: _propTypes2.default.oneOf(['account', 'add', 'calendar', 'close', 'delete', 'down', 'download', 'duplicate', 'edit', 'info', 'inspect', 'left', 'link', 'preview', 'reset', 'right', 'search', 'up', 'upload', 'validation', 'alert', 'approved', 'declined', 'ended', 'error', 'pending', 'show', 'hide']),
-    /**
-    *  Icon variant to show
-    */
-    variant: _propTypes2.default.oneOf(['fill', 'stroke']),
-    /**
-     * Icon label
-     */
-    label: _propTypes2.default.string,
-    /**
-     * Display as hover when required from another component
-     */
-    forceHover: _propTypes2.default.bool,
-    /**
-     *  Display as disabled
-     */
-    isDisabled: _propTypes2.default.bool,
-    /**
-     *  onMouseOver callback function: ( e ) = { ... }
-     */
-    onMouseOver: _propTypes2.default.func,
-    /**
-     *  onMouseOut callback function: ( e ) = { ... }
-     */
-    onMouseOut: _propTypes2.default.func
-
-};
-
-Icon.defaultProps = {
-    size: 'S',
-    theme: 'light',
-    forceHover: false,
-    isDisabled: false,
-    variant: 'fill',
-    cssMap: __webpack_require__(144)
-};
-
-exports.default = Icon;
-
-/***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13794,7 +13794,7 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
-var _Icon = __webpack_require__(11);
+var _Icon = __webpack_require__(10);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -15949,7 +15949,7 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
-var _Icon = __webpack_require__(11);
+var _Icon = __webpack_require__(10);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -17534,7 +17534,7 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
-var _Icon = __webpack_require__(11);
+var _Icon = __webpack_require__(10);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -18368,8 +18368,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 (function (mod) {
   if (( false ? "undefined" : _typeof(exports)) == "object" && ( false ? "undefined" : _typeof(module)) == "object") // CommonJS
-    mod(__webpack_require__(10));else if (true) // AMD
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
+    mod(__webpack_require__(11));else if (true) // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(11)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else // Plain browser env
@@ -19212,8 +19212,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 (function (mod) {
   if (( false ? "undefined" : _typeof(exports)) == "object" && ( false ? "undefined" : _typeof(module)) == "object") // CommonJS
-    mod(__webpack_require__(10));else if (true) // AMD
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
+    mod(__webpack_require__(11));else if (true) // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(11)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else // Plain browser env
@@ -19881,7 +19881,7 @@ var ListBoxOption = function ListBoxOption(_ref) {
             onMouseOver: (0, _utils.eventHandler)(onMouseOver, id) }),
         iconType && iconType !== 'none' && _react2.default.createElement(_index.Icon, {
             className: cssMap.icon,
-            size: iconSize || description ? 'M' : 'S',
+            size: iconSize || (description ? 'M' : 'S'),
             type: iconType,
             variant: 'stroke' }),
         _react2.default.createElement(
@@ -20623,7 +20623,7 @@ var CodeEditor = function (_Component) {
                 readOnly: isDisabled && 'nocursor' || isReadOnly
             });
 
-            var codeMirrorInstance = __webpack_require__(10);
+            var codeMirrorInstance = __webpack_require__(11);
 
             var codeMirror = codeMirrorInstance.fromTextArea(this.textarea, combinedOptions);
 
@@ -23431,10 +23431,8 @@ exports.default = NavBar;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-
-var _NavItem$propTypes;
 
 var _react = __webpack_require__(0);
 
@@ -23448,6 +23446,10 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
+var _Icon = __webpack_require__(10);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
 var _NavDropdown = __webpack_require__(37);
 
 var _NavDropdown2 = _interopRequireDefault(_NavDropdown);
@@ -23458,115 +23460,137 @@ var _navItem2 = _interopRequireDefault(_navItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var NavItem = function NavItem(_ref) {
-  var children = _ref.children,
-      label = _ref.label,
-      className = _ref.className,
-      cssMap = _ref.cssMap,
-      dropdownAlign = _ref.dropdownAlign,
-      forceHover = _ref.forceHover,
-      href = _ref.href,
-      iconType = _ref.iconType,
-      isCurrentPage = _ref.isCurrentPage,
-      isCurrent = _ref.isCurrent,
-      isOpen = _ref.isOpen,
-      isDisabled = _ref.isDisabled,
-      onClick = _ref.onClick,
-      onMouseOut = _ref.onMouseOut,
-      onMouseOver = _ref.onMouseOver,
-      role = _ref.role;
+    var children = _ref.children,
+        label = _ref.label,
+        className = _ref.className,
+        cssMap = _ref.cssMap,
+        dropdownAlign = _ref.dropdownAlign,
+        forceHover = _ref.forceHover,
+        href = _ref.href,
+        iconType = _ref.iconType,
+        isCurrentPage = _ref.isCurrentPage,
+        isCurrent = _ref.isCurrent,
+        isOpen = _ref.isOpen,
+        isDisabled = _ref.isDisabled,
+        onClick = _ref.onClick,
+        onMouseOut = _ref.onMouseOut,
+        onMouseOver = _ref.onMouseOver,
+        role = _ref.role;
 
-  if (typeof isCurrentPage !== 'undefined') {
-    console.warn('NavItem: isCurrentPage is deprecated and will be removed in the next major release. Please use isCurrent instead.');
-  }
+    if (typeof isCurrentPage !== 'undefined') {
+        console.warn('NavItem: isCurrentPage is deprecated and will be \
+removed in the next major release. Please use isCurrent instead.');
+    }
 
-  return _react2.default.createElement(
-    _Css2.default,
-    {
-      cssMap: cssMap,
-      cssProps: {
-        role: role,
-        disabled: isDisabled,
-        current: isCurrent || isCurrentPage,
-        dropdownAlign: dropdownAlign,
-        open: isOpen,
-        fakeHovered: forceHover,
-        icon: iconType
-      } },
-    _react2.default.createElement(
-      'li',
-      {
-        className: className,
-        onMouseOver: onMouseOver,
-        onMouseOut: onMouseOut },
-      _react2.default.createElement(
-        'a',
+    return _react2.default.createElement(
+        _Css2.default,
         {
-          className: cssMap.link,
-          href: href,
-          onClick: onClick },
+            cssMap: cssMap,
+            cssProps: {
+                role: role,
+                disabled: isDisabled,
+                current: isCurrent || isCurrentPage,
+                dropdownAlign: dropdownAlign,
+                open: isOpen,
+                fakeHovered: forceHover,
+                hasIcon: iconType !== 'none'
+            } },
         _react2.default.createElement(
-          'span',
-          null,
-          label
-        ),
-        iconType && iconType !== 'none' && _react2.default.createElement('div', { className: cssMap.icon })
-      ),
-      children && _react2.default.createElement(
-        _NavDropdown2.default,
-        { className: cssMap.dropdown },
-        children
-      )
-    )
-  );
+            'li',
+            {
+                className: className,
+                onMouseOver: onMouseOver,
+                onMouseOut: onMouseOut },
+            _react2.default.createElement(
+                'a',
+                {
+                    className: cssMap.link,
+                    href: href,
+                    onClick: onClick },
+                iconType && iconType !== 'none' && _react2.default.createElement(_Icon2.default, {
+                    className: cssMap.icon,
+                    type: iconType,
+                    size: 'M' }),
+                _react2.default.createElement(
+                    'span',
+                    null,
+                    label
+                )
+            ),
+            children && _react2.default.createElement(
+                _NavDropdown2.default,
+                { className: cssMap.dropdown },
+                children
+            )
+        )
+    );
 };
 
-NavItem.propTypes = (_NavItem$propTypes = {
-  /**
-   *  Dropdown menu items
-   */
-  children: _propTypes2.default.node,
-  /*
-  * Dropdown menu alignment
-   */
-  dropdownAlign: _propTypes2.default.oneOf(['left', 'right']),
-  /**
-   * Display as hover when required from another component
-   */
-  forceHover: _propTypes2.default.bool,
-  /**
-   *  navItem text
-   */
-  label: _propTypes2.default.node,
-  /**
-   *  HTML href attribute
-   */
-  href: _propTypes2.default.string,
-  /**
-   *  Icon to show
-   */
-  iconType: _propTypes2.default.oneOf(['account', 'none']),
-  /*
-  *  Item represents the current page and/or section
-   */
-  isCurrent: _propTypes2.default.bool,
-  /*
-  *  Display as disabled/read-only
-   */
-  isDisabled: _propTypes2.default.bool
-}, _defineProperty(_NavItem$propTypes, 'isCurrent', _propTypes2.default.bool), _defineProperty(_NavItem$propTypes, 'isOpen', _propTypes2.default.bool), _defineProperty(_NavItem$propTypes, 'onClick', _propTypes2.default.func), _defineProperty(_NavItem$propTypes, 'onMouseOut', _propTypes2.default.func), _defineProperty(_NavItem$propTypes, 'onMouseOver', _propTypes2.default.func), _defineProperty(_NavItem$propTypes, 'role', _propTypes2.default.oneOf(['default', 'primary', 'sub'])), _NavItem$propTypes);
+NavItem.propTypes = {
+    /**
+     *  Dropdown menu items
+     */
+    children: _propTypes2.default.node,
+    /*
+    * Dropdown menu alignment
+     */
+    dropdownAlign: _propTypes2.default.oneOf(['left', 'right']),
+    /**
+     * Display as hover when required from another component
+     */
+    forceHover: _propTypes2.default.bool,
+    /**
+     *  navItem text
+     */
+    label: _propTypes2.default.node,
+    /**
+     *  HTML href attribute
+     */
+    href: _propTypes2.default.string,
+    /**
+     *  Icon to show
+     */
+    iconType: _propTypes2.default.oneOf(['none', 'account', 'add', 'calendar', 'close', 'delete', 'down', 'download', 'duplicate', 'edit', 'info', 'inspect', 'left', 'link', 'preview', 'reset', 'right', 'search', 'up', 'upload', 'validation', 'alert', 'approved', 'declined', 'ended', 'error', 'pending', 'show', 'hide']),
+    /*
+    *  Display as disabled/read-only
+     */
+    isDisabled: _propTypes2.default.bool,
+    /*
+     * Display as current page/section
+     */
+    isCurrent: _propTypes2.default.bool,
+    /*
+    * Dropdown menu is open
+     */
+    isOpen: _propTypes2.default.bool,
+    /**
+     *  onClick callback function
+     */
+    onClick: _propTypes2.default.func,
+    /**
+     *  onMouseOut callback function
+     */
+    onMouseOut: _propTypes2.default.func,
+    /**
+     *  onMouseOver callback function
+     */
+    onMouseOver: _propTypes2.default.func,
+    /**
+     *  Navigation role
+     */
+    role: _propTypes2.default.oneOf(['default', 'primary', 'sub'])
+};
 
 NavItem.defaultProps = {
-  cssMap: _navItem2.default,
-  dropdownAlign: 'left',
-  href: '#',
-  iconType: 'none',
-  isCurrent: false,
-  isDisabled: false,
-  isOpen: false,
-  role: 'default'
+    cssMap: _navItem2.default,
+    dropdownAlign: 'left',
+    href: '#',
+    iconType: 'none',
+    isCurrent: false,
+    isDisabled: false,
+    isOpen: false,
+    role: 'default'
 };
 
 exports.default = NavItem;
@@ -23637,7 +23661,7 @@ var _Css = __webpack_require__(2);
 
 var _Css2 = _interopRequireDefault(_Css);
 
-var _Icon = __webpack_require__(11);
+var _Icon = __webpack_require__(10);
 
 var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -27900,7 +27924,7 @@ module.exports = {"default":"listBox__default"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"default":"listBoxOption__default","optionText":"listBoxOption__optionText","description":"listBoxOption__description","icon":"listBoxOption__icon","textContainer":"listBoxOption__textContainer","disabled":"listBoxOption__disabled","selected":"listBoxOption__selected","active":"listBoxOption__active","withDescription":"listBoxOption__withDescription"};
+module.exports = {"default":"listBoxOption__default","icon":"listBoxOption__icon","textContainer":"listBoxOption__textContainer","optionText":"listBoxOption__optionText","active":"listBoxOption__active","description":"listBoxOption__description","withDescription":"listBoxOption__withDescription","selected":"listBoxOption__selected","disabled":"listBoxOption__disabled"};
 
 /***/ }),
 /* 151 */
@@ -27949,7 +27973,7 @@ module.exports = {"default":"navDropdown__default"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"default":"navItem__default","role__default":"navItem__role__default","link":"navItem__link","role__primary":"navItem__role__primary","role__sub":"navItem__role__sub","current":"navItem__current","disabled":"navItem__disabled","icon":"navItem__icon","fakeHovered":"navItem__fakeHovered","open":"navItem__open","dropdown":"navItem__dropdown","dropdownAlign__right":"navItem__dropdownAlign__right","icon__account":"navItem__icon__account"};
+module.exports = {"link":"navItem__link","default":"navItem__default","current":"navItem__current","disabled":"navItem__disabled","icon":"navItem__icon","role__default":"navItem__role__default","role__primary":"navItem__role__primary","fakeHovered":"navItem__fakeHovered","open":"navItem__open","role__sub":"navItem__role__sub","dropdown":"navItem__dropdown","dropdownAlign__right":"navItem__dropdownAlign__right","hasIcon":"navItem__hasIcon"};
 
 /***/ }),
 /* 158 */
@@ -28346,8 +28370,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 (function (mod) {
   if (( false ? "undefined" : _typeof(exports)) == "object" && ( false ? "undefined" : _typeof(module)) == "object") // CommonJS
-    mod(__webpack_require__(10), __webpack_require__(49), __webpack_require__(48));else if (true) // AMD
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10), __webpack_require__(49), __webpack_require__(48)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
+    mod(__webpack_require__(11), __webpack_require__(49), __webpack_require__(48));else if (true) // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(11), __webpack_require__(49), __webpack_require__(48)], __WEBPACK_AMD_DEFINE_FACTORY__ = (mod),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else // Plain browser env

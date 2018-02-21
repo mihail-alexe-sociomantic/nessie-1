@@ -8465,29 +8465,12 @@ span.CodeMirror-selectedtext { background: none; }
     -webkit-align-items:    center;
         -ms-flex-align:    center;
             align-items:    center;
+
     margin:         0;
+    padding:        0.8rem 1.6rem;
 
-    padding-left:           1.6rem;
-    padding-right:          1.6rem;
-    padding-top:            0.8rem;
-    padding-bottom:         0.8rem;
-
-    cursor:     pointer;
+    cursor:         pointer;
 }
-
-.listBoxOption__default__DkyAr:hover
-    {
-        background-color:       #19a2e2;
-    }
-
-.listBoxOption__default__DkyAr:hover .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr:hover .listBoxOption__description__Io51w
-        {
-            color:              #ffffff;
-        }
-
-.listBoxOption__default__DkyAr:hover .listBoxOption__icon__2UOgm{
-            fill:               #ffffff;
-        }
 
 .listBoxOption__default__DkyAr .listBoxOption__icon__2UOgm
     {
@@ -8500,52 +8483,60 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOption__default__DkyAr .listBoxOption__textContainer__20bGh
     {
-        -webkit-box-flex:           1;
-        -webkit-flex:           1 0 0%;
-            -ms-flex:           1 0 0%;
-                flex:           1 0 0%;
-        min-width:      0;
+        -webkit-box-flex:       1;
+        -webkit-flex:       1 0 0%;
+            -ms-flex:       1 0 0%;
+                flex:       1 0 0%;
+        min-width:  0;
     }
 
 .listBoxOption__default__DkyAr .listBoxOption__optionText__2VizO
     {
-        color:              #597494;
+        margin: 0;
+        color:  #597494;
     }
 
-.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe
+.listBoxOption__default__DkyAr:hover, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi
     {
-        pointer-events:     none;
-        cursor:             auto;
+        background: #19a2e2;
     }
 
-.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe .listBoxOption__optionText__2VizO
+.listBoxOption__default__DkyAr:hover .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr:hover .listBoxOption__description__Io51w, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__description__Io51w
         {
-            color:          #98a8bc;
+            color:  #ffffff;
         }
 
-.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe .listBoxOption__description__Io51w
+.listBoxOption__default__DkyAr:hover .listBoxOption__icon__2UOgm, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__icon__2UOgm
         {
-            color:          #afbccb;
+            fill:   #ffffff;
         }
-
-.listBoxOption__selected__2rpmu
-{
-    background-color:   rgba(25, 162, 226, 0.1);
-}
-
-.listBoxOption__active__3Kugi
-{
-    background:         rgba(25, 162, 226, 0.35);
-    color:              var(--GS-1);
-}
 
 .listBoxOption__withDescription__3zv91 .listBoxOption__optionText__2VizO
     {
         font-size:      1.8rem;
         line-height:    2.4rem;
         color:          #19a2e2;
+    }
 
-        margin:         0;
+.listBoxOption__selected__2rpmu
+{
+    background: rgba(25, 162, 226, 0.1);
+}
+
+.listBoxOption__disabled__2-4Xe
+{
+    pointer-events: none;
+    cursor:         auto;
+}
+
+.listBoxOption__disabled__2-4Xe .listBoxOption__optionText__2VizO
+    {
+        color:  #98a8bc;
+    }
+
+.listBoxOption__disabled__2-4Xe .listBoxOption__description__Io51w
+    {
+        color:  #afbccb;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -11885,7 +11876,6 @@ only used in type__carousel for now
             -ms-flex:           0 0 auto;
                 flex:           0 0 auto;
         margin-bottom:  0;
-        margin-right:   6rem;
     }
 
 .navList__layout__horizontal__pzOqR > *:last-child
@@ -11986,14 +11976,9 @@ only used in type__carousel for now
         -ms-flex-pack:    center;
             justify-content:    center;
 
-    height:             6rem;
-
     margin:             0;
-
-    border-top:         0.1rem solid color( var(--GS-2) tint( 80% ) );
-    border-bottom:      0.1rem solid color( var(--GS-2) tint( 80% ) );
-
-    background:         #ffffff;
+    -webkit-box-shadow:         0 0 0.7rem 0 #cfd7e0;
+            box-shadow:         0 0 0.7rem 0 #cfd7e0;
 }
 
 .navBar__list__1pxW5
@@ -12048,11 +12033,14 @@ only used in type__carousel for now
     max-width:          none;
     max-height:         50vh;
 
-    border:             0.1rem solid #19a2e2;
+    background:         #19a2e2;
+    -webkit-box-shadow:         0 0.2rem 1rem 0 #cfd7e0;
+            box-shadow:         0 0.2rem 1rem 0 #cfd7e0;
 
-    padding:            1rem 0;
-
-    background:         #ffffff;
+    padding-top:        0.8rem;
+    padding-right:      1.6rem;
+    padding-bottom:     0.8rem;
+    padding-left:       1.6rem;
 
     overflow-y:         auto;
 
@@ -12090,17 +12078,10 @@ only used in type__carousel for now
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
-.navItem__default__kwc7o
+.navItem__link__1Uu3K
 {
-    font-family: Nessie-Regular, sans-serif;
+    font-family: Nessie-SemiBold, sans-serif;
     font-weight: normal;
-    font-style: normal;
-}
-
-.navItem__role__default__97T5T > .navItem__link__1Uu3K, .navItem__role__primary__1rbCf > .navItem__link__1Uu3K, .navItem__role__sub__xE3Hy.navItem__current__41LLP > .navItem__link__1Uu3K
-{
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
     font-style: normal;
 }
 
@@ -12140,31 +12121,13 @@ only used in type__carousel for now
     list-style:     none;
     width:          auto;
     margin-bottom:  0;
-    font-size:      1.4rem;
+    background:     #ffffff;
 }
 
-.navItem__default__kwc7o .navItem__link__1Uu3K /* needs to go inside .default to override foundations.css */
+.navItem__default__kwc7o:hover, .navItem__default__kwc7o.navItem__current__41LLP
     {
-        display:            block;
-        white-space:        nowrap;
-        text-decoration:    none !important;
-        cursor:             text;
+        background-color:  #f3fafd;
     }
-
-.navItem__default__kwc7o .navItem__link__1Uu3K, .navItem__default__kwc7o .navItem__link__1Uu3K:hover, .navItem__default__kwc7o .navItem__link__1Uu3K:focus, .navItem__default__kwc7o .navItem__link__1Uu3K:active
-        {
-            color:  var(--GS-2);
-        }
-
-.navItem__default__kwc7o .navItem__link__1Uu3K[href]
-        {
-            cursor: pointer;
-        }
-
-.navItem__default__kwc7o .navItem__link__1Uu3K:focus
-        {
-            outline:    none;
-        }
 
 .navItem__disabled__1yNtP
 {
@@ -12178,11 +12141,6 @@ only used in type__carousel for now
         cursor: default !important;
     }
 
-.navItem__disabled__1yNtP > .navItem__link__1Uu3K::after
-        {
-            background: color( var(--GS-2) a( 50% ) ) !important;
-        }
-
 .navItem__disabled__1yNtP > .navItem__link__1Uu3K > .navItem__icon__2yK-C
         {
             opacity:    0.5;
@@ -12190,7 +12148,7 @@ only used in type__carousel for now
 
 .navItem__role__default__97T5T > .navItem__link__1Uu3K, .navItem__role__primary__1rbCf > .navItem__link__1Uu3K
     {
-        padding:    0.7rem 0 0.5rem 0;
+        padding:    0.8rem;
     }
 
 .navItem__role__default__97T5T > .navItem__link__1Uu3K[href]:hover, .navItem__role__default__97T5T > .navItem__link__1Uu3K[href]:focus, .navItem__role__default__97T5T > .navItem__link__1Uu3K[href]:active, .navItem__role__default__97T5T.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K, .navItem__role__default__97T5T.navItem__open__2zeF7 > .navItem__link__1Uu3K, .navItem__role__default__97T5T.navItem__current__41LLP > .navItem__link__1Uu3K, .navItem__role__primary__1rbCf > .navItem__link__1Uu3K[href]:hover, .navItem__role__primary__1rbCf > .navItem__link__1Uu3K[href]:focus, .navItem__role__primary__1rbCf > .navItem__link__1Uu3K[href]:active, .navItem__role__primary__1rbCf.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K, .navItem__role__primary__1rbCf.navItem__open__2zeF7 > .navItem__link__1Uu3K, .navItem__role__primary__1rbCf.navItem__current__41LLP > .navItem__link__1Uu3K
@@ -12198,18 +12156,9 @@ only used in type__carousel for now
         color:  #19a2e2;
     }
 
-.navItem__role__default__97T5T.navItem__current__41LLP > .navItem__link__1Uu3K::after, .navItem__role__primary__1rbCf.navItem__current__41LLP > .navItem__link__1Uu3K::after
+.navItem__role__default__97T5T.navItem__fakeHovered__3g1hy, .navItem__role__default__97T5T.navItem__open__2zeF7, .navItem__role__primary__1rbCf.navItem__fakeHovered__3g1hy, .navItem__role__primary__1rbCf.navItem__open__2zeF7
     {
-        content:    '';
-        display:    block;
-
-        position:   absolute;
-        bottom:     0;
-
-        width:      100%;
-        height:     0.2rem;
-
-        background: #19a2e2;
+        background-color:  #f3fafd;
     }
 
 .navItem__role__primary__1rbCf > .navItem__link__1Uu3K
@@ -12217,22 +12166,34 @@ only used in type__carousel for now
         text-transform: uppercase;
     }
 
+.navItem__role__sub__xE3Hy
+{
+    border-radius:         0.6rem;
+}
+
 .navItem__role__sub__xE3Hy > .navItem__link__1Uu3K
     {
-        padding:        1.2rem 2rem 1rem 1.5rem;
-        border-left:    0.5rem solid transparent;
-        color:          var(--GS-2);
+        padding-top:       0;
+        padding-right:     1.6rem;
+        padding-bottom:    0;
+        padding-left:      1.6rem;
+
+        background-color:  #19a2e2;
+
+        border-radius:     0.2rem;
+
+        line-height:       4.8rem;
+        color:             #ffffff;
     }
 
-.navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:hover, .navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:focus, .navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:active, .navItem__role__sub__xE3Hy.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K, .navItem__role__sub__xE3Hy.navItem__open__2zeF7 > .navItem__link__1Uu3K
-    {
-        color:          var(--GS-2);
-        border-color:   #19a2e2;
-    }
+.navItem__role__sub__xE3Hy > .navItem__link__1Uu3K:visited
+        {
+            color:         #ffffff;
+        }
 
-.navItem__role__sub__xE3Hy.navItem__current__41LLP > .navItem__link__1Uu3K
+.navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:hover, .navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:focus, .navItem__role__sub__xE3Hy > .navItem__link__1Uu3K[href]:active, .navItem__role__sub__xE3Hy.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K, .navItem__role__sub__xE3Hy.navItem__open__2zeF7 > .navItem__link__1Uu3K, .navItem__role__sub__xE3Hy.navItem__current__41LLP > .navItem__link__1Uu3K
     {
-        border-color:   transparent;
+        background-color:   #52b9e9;
     }
 
 .navItem__open__2zeF7 .navItem__dropdown__2PHEm
@@ -12245,6 +12206,33 @@ only used in type__carousel for now
         right:  0;
     }
 
+.navItem__link__1Uu3K
+{
+    display:            block;
+    white-space:        nowrap;
+    text-decoration:    none !important;
+    cursor:             text;
+
+    font-size:      1.4rem;
+    line-height:    1.6rem;
+    color:          #8296ae;
+}
+
+.navItem__link__1Uu3K[href]
+    {
+        cursor:     pointer;
+    }
+
+.navItem__link__1Uu3K:focus
+    {
+        outline:    none;
+    }
+
+.navItem__link__1Uu3K:visited
+    {
+        color:      #8296ae;
+    }
+
 .navItem__dropdown__2PHEm
 {
     position:   absolute;
@@ -12252,38 +12240,29 @@ only used in type__carousel for now
     margin-top: -0.2rem;
 }
 
-.navItem__icon__account__2MyH8 > .navItem__link__1Uu3K
+.navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K
     {
-        padding:    1.4rem 0 1.2rem;
+        padding-top:    1.3rem;
+        padding-right:  2.4rem;
+        padding-bottom: 1.5rem;
+        padding-left:   2.4rem;
     }
 
-.navItem__icon__account__2MyH8 > .navItem__link__1Uu3K::after
-        {
-            display:    none !important;
-        }
-
-.navItem__icon__account__2MyH8 > .navItem__link__1Uu3K > .navItem__icon__2yK-C
+.navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K > .navItem__icon__2yK-C
     {
-        display:    inline-block;
+        margin:        auto;
+        margin-bottom: 0.4rem;
     }
 
-.navItem__icon__account__2MyH8 > .navItem__link__1Uu3K[href]:hover > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8 > .navItem__link__1Uu3K[href]:active > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8 > .navItem__link__1Uu3K[href]:focus > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8.navItem__open__2zeF7 > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8.navItem__current__41LLP > .navItem__link__1Uu3K > .navItem__icon__2yK-C
+.navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K[href]:hover > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K[href]:active > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K[href]:focus > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2.navItem__open__2zeF7 > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2.navItem__fakeHovered__3g1hy > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2.navItem__current__41LLP > .navItem__link__1Uu3K > .navItem__icon__2yK-C
     {
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiMyNzlCQzg7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxnPg0KCQkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiwwQzUuNCwwLDAsNS40LDAsMTJjMCwyLjYsMC45LDUuMSwyLjMsN2MyLjIsMyw1LjcsNSw5LjcsNWM0LDAsNy41LTIsOS43LTVjMS40LTIsMi4zLTQuNCwyLjMtNw0KCQkJCQlDMjQsNS40LDE4LjYsMCwxMiwweiBNMjAuMiwxNy43Yy0yLjItMS42LTUtMi42LTguMi0yLjZzLTYsMS04LjIsMi42QzIuNywxNi4xLDIsMTQuMSwyLDExLjljMC01LjUsNC41LTEwLDEwLTEwDQoJCQkJCWM1LjUsMCwxMCw0LjUsMTAsMTBDMjIsMTQuMSwyMS4zLDE2LjEsMjAuMiwxNy43eiIvPg0KCQkJPC9nPg0KCQk8L2c+DQoJPC9nPg0KCTxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjEyIiBjeT0iOS41IiByPSI0Ii8+DQo8L2c+DQo8L3N2Zz4NCg==);
+        fill: #19a2e2;
     }
 
-.navItem__icon__account__2MyH8 > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__icon__account__2MyH8.navItem__disabled__1yNtP > .navItem__link__1Uu3K > .navItem__icon__2yK-C
+.navItem__hasIcon__18Ks2 > .navItem__link__1Uu3K > .navItem__icon__2yK-C, .navItem__hasIcon__18Ks2.navItem__disabled__1yNtP > .navItem__link__1Uu3K > .navItem__icon__2yK-C
     {
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM0MjRCNTU7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxnPg0KCQkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMiwwQzUuNCwwLDAsNS40LDAsMTJjMCwyLjYsMC45LDUuMSwyLjMsN2MyLjIsMyw1LjcsNSw5LjcsNWM0LDAsNy41LTIsOS43LTVjMS40LTIsMi4zLTQuNCwyLjMtNw0KCQkJCQlDMjQsNS40LDE4LjYsMCwxMiwweiBNMjAuMiwxNy43Yy0yLjItMS42LTUtMi42LTguMi0yLjZzLTYsMS04LjIsMi42QzIuNywxNi4xLDIsMTQuMSwyLDExLjljMC01LjUsNC41LTEwLDEwLTEwDQoJCQkJCWM1LjUsMCwxMCw0LjUsMTAsMTBDMjIsMTQuMSwyMS4zLDE2LjEsMjAuMiwxNy43eiIvPg0KCQkJPC9nPg0KCQk8L2c+DQoJPC9nPg0KCTxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjEyIiBjeT0iOS41IiByPSI0Ii8+DQo8L2c+DQo8L3N2Zz4NCg==);
+        fill: #8296ae;
     }
-
-.navItem__icon__2yK-C
-{
-    display:    none;
-    width:      2.4rem;
-    height:     2.4rem;
-    margin:     -0.7rem 0 -0.7rem 1.5rem;
-}
 /*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
@@ -14088,8 +14067,8 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__stepLabel__1t8SF
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-family: Nessie-Regular, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -14157,26 +14136,26 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__track__1YpS7
     {
-        position:       relative;
+        position:           relative;
 
-        border:         0.1rem solid color( var(--GS-2) a( 50% ) );
-        border-radius:  1rem;
+        border:             0.1rem solid #dfe4ea;
+        border-radius:      0.2rem;
 
-        background:     #ffffff;
+        background:         #ffffff;
 
-        -webkit-user-select:    none;
+        -webkit-user-select:        none;
 
-           -moz-user-select:    none;
+           -moz-user-select:        none;
 
-            -ms-user-select:    none;
+            -ms-user-select:        none;
 
-                user-select:    none;
+                user-select:        none;
     }
 
 .slider__default__20oIL .slider__trackFill__3sE-C
     {
-        border-radius:  0.8rem;
-        background:     rgba(25, 162, 226, 0.35);
+        border-radius:      0rem;
+        background:         #19a2e2;
     }
 
 .slider__default__20oIL .slider__handle__1ztac
@@ -14185,7 +14164,8 @@ only used in type__carousel for now
         height:             1.6rem;
 
         border-radius:      50%;
-        background-color:   #19a2e2;
+        border:             0.1rem solid #dfe4ea;
+        background-color:   #ffffff;
 
         cursor:             -webkit-grab;
 
@@ -14194,8 +14174,13 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__handle__1ztac:active
         {
-            cursor: -webkit-grabbing;
-            cursor: grabbing;
+            cursor:         -webkit-grabbing;
+            cursor:         grabbing;
+            -webkit-box-shadow:     0 0 0.7rem 0 #d7dde5;
+                    box-shadow:     0 0 0.7rem 0 #d7dde5;
+
+            width:          1.92rem;
+            height:         1.92rem;
         }
 
 .slider__default__20oIL .slider__handleLabel__2uauA
@@ -14214,24 +14199,33 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__tick__1De3L
     {
-        color:          color( var(--GS-2) a( 50% ) );
-        position:       absolute;
-        -webkit-transform:      translateX( -50% );
-                transform:      translateX( -50% );
-        line-height:    1rem;
-        font-size:      0.9rem;
+        position:           absolute;
+        -webkit-transform:          translateX(-50%) translateY(-50%);
+                transform:          translateX(-50%) translateY(-50%);
+        z-index:            2;
+
+        font-size:          0;
+
+        background-color:   #ffffff;
+
+        width:              0.4rem;
+        height:             0.4rem;
     }
 
 /* Step labels */
 
 .slider__default__20oIL .slider__stepLabelsContainer__2EG-O
     {
-        position:   relative;
+        position:       relative;
     }
 
 .slider__default__20oIL .slider__stepLabel__1t8SF
     {
-        position:   absolute;
+        font-size:      1.4rem;
+        line-height:    2.4rem;
+        color:          #597494;
+
+        position:       absolute;
     }
 
 .slider__orientation__horizontal__WBsKX .slider__trackContainer__3nwI6
@@ -14253,22 +14247,24 @@ only used in type__carousel for now
 
 .slider__orientation__horizontal__WBsKX .slider__track__1YpS7
     {
-        height:         1rem;
+        height:         0.2rem;
 
-        margin-top:     1.1rem;
-        margin-bottom:  1.1rem;
+        margin-top:     1.5rem;
+        margin-bottom:  1.5rem;
     }
 
 .slider__orientation__horizontal__WBsKX .slider__handle__1ztac
     {
-        top:        50%;
-        -webkit-transform:  translateX( -50% ) translateY( -50% );
-                transform:  translateX( -50% ) translateY( -50% );
+        top:            50%;
+        -webkit-transform:      translateX( -50% ) translateY( -50% );
+                transform:      translateX( -50% ) translateY( -50% );
     }
 
 .slider__orientation__horizontal__WBsKX .slider__trackFill__3sE-C
     {
-        height: 100%;
+        height:         0.2rem;
+        -webkit-transform:      translateY(-50%);
+                transform:      translateY(-50%);
     }
 
 .slider__orientation__horizontal__WBsKX .slider__stepLabelsContainer__2EG-O
@@ -14281,9 +14277,7 @@ only used in type__carousel for now
 
 .slider__orientation__horizontal__WBsKX .slider__stepLabelsContainer__2EG-O
     {
-        /* We need to replace label with Label component to avoid these magic numbers */
-        margin-top:     -0.3rem;
-        margin-bottom:  0.6rem;
+        margin-bottom:      0.6rem;
     }
 
 .slider__orientation__horizontal__WBsKX .slider__stepLabelsContainer__2EG-O:last-child
@@ -14323,7 +14317,7 @@ only used in type__carousel for now
 
 .slider__orientation__vertical__MG37D .slider__track__1YpS7, .slider__orientation__vertical__MG37D .slider__stepLabelsContainer__2EG-O
     {
-        height: calc(100% - 1.6rem);
+        height:         calc(100% - 1.6rem);
 
         margin-top:     0.8rem;
         margin-bottom:  0.8rem;
@@ -14331,24 +14325,26 @@ only used in type__carousel for now
 
 .slider__orientation__vertical__MG37D .slider__track__1YpS7
     {
-        width:  1rem;
+        width:          0.2rem;
     }
 
 .slider__orientation__vertical__MG37D .slider__trackFill__3sE-C
     {
-        width:  100%
+        width:          0.2rem;
+        -webkit-transform:      translateX(-50%);
+                transform:      translateX(-50%);
     }
 
 .slider__orientation__vertical__MG37D .slider__handle__1ztac
     {
-        left:       50%;
-        -webkit-transform:  translateX( -50% ) translateY( 50% );
-                transform:  translateX( -50% ) translateY( 50% );
+        left:           50%;
+        -webkit-transform:      translateX( -50% ) translateY( 50% );
+                transform:      translateX( -50% ) translateY( 50% );
     }
 
 .slider__orientation__vertical__MG37D .slider__stepLabelsContainer__2EG-O
     {
-        margin-right:   1rem;
+        margin-right:       1rem;
     }
 
 .slider__orientation__vertical__MG37D .slider__stepLabelsContainer__2EG-O:last-child
@@ -14365,11 +14361,9 @@ only used in type__carousel for now
 
 .slider__orientation__vertical__MG37D .slider__tick__1De3L
     {
-        /* We should change the ticks to use the Text component to avoid this
-           1px nudge */
-        left:       calc(50% - 1px);
-        -webkit-transform:  translateX( -50% ) translateY( 50% ) rotate( 90deg );
-                transform:  translateX( -50% ) translateY( 50% ) rotate( 90deg );
+        left:       50%;
+        -webkit-transform:  translateX( -50% ) translateY( 50% );
+                transform:  translateX( -50% ) translateY( 50% );
     }
 
 .slider__hasHandleLabels__2SY48 .slider__handleLabel__2uauA
@@ -14432,34 +14426,38 @@ only used in type__carousel for now
 
 .slider__error__2jyFq .slider__handleLabel__2uauA
     {
-        color:  #ff5460;
-    }
-
-.slider__disabled__19QJe .slider__track__1YpS7
-    {
-        border-color:   var(--GS-10);
-        background:     var(--GS-10);
+        color:      #ff5460;
     }
 
 .slider__disabled__19QJe .slider__trackFill__3sE-C
     {
-        background: color( var(--GS-4) a( 35% ) );
+        background:     color( var(--GS-4) a( 35% ) );
     }
 
 .slider__disabled__19QJe .slider__handle__1ztac
     {
-        background: var(--GS-5);
-        cursor:     default;
+        background:     #ffffff;
+        cursor:         default;
     }
+
+.slider__disabled__19QJe .slider__handle__1ztac:active
+        {
+            cursor:         default;
+            -webkit-box-shadow:     none;
+                    box-shadow:     none;
+
+            width:          1.6rem;
+            height:         1.6rem;
+        }
 
 .slider__disabled__19QJe .slider__handleLabel__2uauA
     {
-        color:  color( var(--GS-2) a( 50% ) );
+        color:          color( var(--GS-2) a( 50% ) );
     }
 
 .slider__disabled__19QJe .slider__ticksContainer__xPkAF
     {
-        display:    none;
+        display:        none;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
