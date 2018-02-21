@@ -805,6 +805,20 @@ legend.label__default + *
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .icon__default
 {
     display:                block;
@@ -8427,20 +8441,53 @@ span.CodeMirror-selectedtext { background: none; }
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .listBoxOption__default
 {
-    display:    -webkit-box;
-    display:    -webkit-flex;
-    display:    -ms-flexbox;
-    display:    flex;
-    margin:     0;
-    padding:    1rem;
+    display:        -webkit-box;
+    display:        -webkit-flex;
+    display:        -ms-flexbox;
+    display:        flex;
+    -webkit-box-align:    center;
+    -webkit-align-items:    center;
+        -ms-flex-align:    center;
+            align-items:    center;
+    margin:         0;
 
-    margin:     0;
-    padding:    1rem;
+    padding-left:           1.6rem;
+    padding-right:          1.6rem;
+    padding-top:            0.8rem;
+    padding-bottom:         0.8rem;
 
     cursor:     pointer;
 }
+
+.listBoxOption__default:hover
+    {
+        background-color:       #19a2e2;
+    }
+
+.listBoxOption__default:hover .listBoxOption__optionText, .listBoxOption__default:hover .listBoxOption__description
+        {
+            color:              #ffffff;
+        }
+
+.listBoxOption__default:hover .listBoxOption__icon{
+            fill:               #ffffff;
+        }
 
 .listBoxOption__default .listBoxOption__icon
     {
@@ -8448,32 +8495,84 @@ span.CodeMirror-selectedtext { background: none; }
         -webkit-flex:           0 0 auto;
             -ms-flex:           0 0 auto;
                 flex:           0 0 auto;
-        margin-right:   1rem;
+        margin-right:   1.6rem;
     }
 
-.listBoxOption__default .listBoxOption__text
+.listBoxOption__default .listBoxOption__textContainer
     {
-        -webkit-box-flex:       1;
-        -webkit-flex:       1 0 0%;
-            -ms-flex:       1 0 0%;
-                flex:       1 0 0%;
-        min-width:  0;
+        -webkit-box-flex:           1;
+        -webkit-flex:           1 0 0%;
+            -ms-flex:           1 0 0%;
+                flex:           1 0 0%;
+        min-width:      0;
     }
+
+.listBoxOption__default .listBoxOption__optionText
+    {
+        color:              #597494;
+    }
+
+.listBoxOption__default.listBoxOption__disabled
+    {
+        pointer-events:     none;
+        cursor:             auto;
+    }
+
+.listBoxOption__default.listBoxOption__disabled .listBoxOption__optionText
+        {
+            color:          #98a8bc;
+        }
+
+.listBoxOption__default.listBoxOption__disabled .listBoxOption__description
+        {
+            color:          #afbccb;
+        }
 
 .listBoxOption__selected
 {
-    background: rgba(25, 162, 226, 0.1);
+    background-color:   rgba(25, 162, 226, 0.1);
 }
 
-.listBoxOption__active, .listBoxOption__default:hover
+.listBoxOption__active
 {
-    background: rgba(25, 162, 226, 0.35);
-    color:      var(--GS-1);
+    background:         rgba(25, 162, 226, 0.35);
+    color:              var(--GS-1);
 }
 
-.listBoxOption__disabled
+.listBoxOption__withDescription .listBoxOption__optionText
+    {
+        font-size:      1.8rem;
+        line-height:    2.4rem;
+        color:          #19a2e2;
+
+        margin:         0;
+    }
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
 {
-    cursor: default;
+    /* primary colors */
+
+
+
+     /* greyscale colors */
+
+
+     /* bluescale colors */
+
+     /* redscale colors */
+
+     /* orangescale colors */
+
+     /* yellowscale colors */
+
+     /* limescale colors */
+
+     /* greenscale colors */
+
+     /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -8482,9 +8581,9 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOptionGroup__default .listBoxOptionGroup__headerText
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
-    font-style: normal;
+    font-family: Nessie-RegularIt, sans-serif;
+    font-weight: normal;
+    font-style: italic;
 }
 
 :root
@@ -8492,17 +8591,35 @@ span.CodeMirror-selectedtext { background: none; }
     /*  TYPOGRAPHY SIZES */
 }
 
+:root
+{
+    /*  SPACING */
+}
+
 .listBoxOptionGroup__default
 {
     display:    block;
     margin:     0;
-    padding:    0;
 }
 
 .listBoxOptionGroup__default .listBoxOptionGroup__header
     {
-        padding:    1rem;
-        cursor:     default;
+        margin:             0;
+        padding-left:       1.6rem;
+        padding-right:      1.6rem;
+        padding-top:        0.8rem;
+        padding-bottom:     0.8rem;
+
+        cursor:             default;
+
+    }
+
+.listBoxOptionGroup__default .listBoxOptionGroup__headerText
+    {
+
+        font-size:      1.4rem;
+        line-height:    2.4rem;
+        color:          #42566e;
     }
 
 .listBoxOptionGroup__default .listBoxOptionGroup__options
@@ -9534,6 +9651,11 @@ textarea.inputField__resizable
 :root
 {
     /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .dragNDrop__default
@@ -11467,6 +11589,11 @@ textarea.inputField__resizable
     /*  TYPOGRAPHY SIZES */
 }
 
+:root
+{
+    /*  SPACING */
+}
+
 .visualTesting .modalContainer
 {
     min-width:      1px;
@@ -11899,6 +12026,20 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .navDropdown__default /* extends NavList css */
@@ -12619,18 +12760,53 @@ only used in type__carousel for now
 
         border-top-color:   #19a2e2 !important;
     }
-/*@import "../proto/base.css";*/
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
+{
+    /* primary colors */
+
+
+
+     /* greyscale colors */
+
+
+     /* bluescale colors */
+
+     /* redscale colors */
+
+     /* orangescale colors */
+
+     /* yellowscale colors */
+
+     /* limescale colors */
+
+     /* greenscale colors */
+
+     /* navyscale colors */
+}
+
 /*------------------------------------//
 //    $FONT DEFINITIONS
 //------------------------------------*/
+
 :root
 {
     /*  TYPOGRAPHY SIZES */
 }
+
+:root
+{
+    /*  SPACING */
+}
+
 .pageContentHeader__default
 {
     padding:    0 3rem;
 }
+
 .pageContentHeader__header /* rules from base.css */
 {
     display:        block;
@@ -12644,22 +12820,27 @@ only used in type__carousel for now
     font-size:      1.4rem;
     line-height:    1.8rem;
 }
+
 .pageContentHeader__header
 {
     margin-bottom:  3rem;
 }
+
 .pageContentHeader__header:last-child
     {
         margin-bottom:  2rem;
     }
+
 .pageContentHeader__controls
 {
     min-height: 5.2rem;
 }
+
 .pageContentHeader__title
 {
     margin-bottom:  2rem;
 }
+
 .pageContentHeader__subtitle
 {
 
@@ -13162,7 +13343,8 @@ only used in type__carousel for now
         height:                 0.8rem;
         background-color:       #19a2e2;
         border-radius:          50%;
-    }/*----------------------------------------------------------------------------//
+    }
+/*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
 
@@ -15066,24 +15248,7 @@ only used in type__carousel for now
 .tab__default
 {
     /*  placeholder */
-}
-/*------------------------------------//
-//    $FONT DEFINITIONS
-//------------------------------------*/
-
-.tabButton__label
-{
-    font-family: Nessie-SemiBold, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root
-{
-    /*  TYPOGRAPHY SIZES */
-}
-
-/*----------------------------------------------------------------------------//
+}/*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
 
@@ -15109,6 +15274,22 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.tabButton__label
+{
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
 }
 
 :root
@@ -15516,6 +15697,8 @@ only used in type__carousel for now
             border-top-color:   #ffffff;
         }
 
+/* imports base.css */
+
 .tabButton__default
 {
     margin:             0 0 -0.1rem 0;
@@ -15597,6 +15780,20 @@ only used in type__carousel for now
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .tableRow__default
 {
 
@@ -15610,23 +15807,6 @@ only used in type__carousel for now
     background:  #ffffff;
     z-index:     2;
 }
-
-/*------------------------------------//
-//    $FONT DEFINITIONS
-//------------------------------------*/
-
-.tableCell__header, .tableCell__rowHeader
-{
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
-
-:root
-{
-    /*  TYPOGRAPHY SIZES */
-}
-
 /*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
@@ -15653,6 +15833,27 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.tableCell__header, .tableCell__rowHeader
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .tableCell__default

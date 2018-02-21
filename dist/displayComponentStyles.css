@@ -805,6 +805,20 @@ legend.label__default__1KHiG + *
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .icon__default__2QQBA
 {
     display:                block;
@@ -8427,20 +8441,53 @@ span.CodeMirror-selectedtext { background: none; }
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .listBoxOption__default__DkyAr
 {
-    display:    -webkit-box;
-    display:    -webkit-flex;
-    display:    -ms-flexbox;
-    display:    flex;
-    margin:     0;
-    padding:    1rem;
+    display:        -webkit-box;
+    display:        -webkit-flex;
+    display:        -ms-flexbox;
+    display:        flex;
+    -webkit-box-align:    center;
+    -webkit-align-items:    center;
+        -ms-flex-align:    center;
+            align-items:    center;
+    margin:         0;
 
-    margin:     0;
-    padding:    1rem;
+    padding-left:           1.6rem;
+    padding-right:          1.6rem;
+    padding-top:            0.8rem;
+    padding-bottom:         0.8rem;
 
     cursor:     pointer;
 }
+
+.listBoxOption__default__DkyAr:hover
+    {
+        background-color:       #19a2e2;
+    }
+
+.listBoxOption__default__DkyAr:hover .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr:hover .listBoxOption__description__Io51w
+        {
+            color:              #ffffff;
+        }
+
+.listBoxOption__default__DkyAr:hover .listBoxOption__icon__2UOgm{
+            fill:               #ffffff;
+        }
 
 .listBoxOption__default__DkyAr .listBoxOption__icon__2UOgm
     {
@@ -8448,32 +8495,84 @@ span.CodeMirror-selectedtext { background: none; }
         -webkit-flex:           0 0 auto;
             -ms-flex:           0 0 auto;
                 flex:           0 0 auto;
-        margin-right:   1rem;
+        margin-right:   1.6rem;
     }
 
-.listBoxOption__default__DkyAr .listBoxOption__text__1BfTM
+.listBoxOption__default__DkyAr .listBoxOption__textContainer__20bGh
     {
-        -webkit-box-flex:       1;
-        -webkit-flex:       1 0 0%;
-            -ms-flex:       1 0 0%;
-                flex:       1 0 0%;
-        min-width:  0;
+        -webkit-box-flex:           1;
+        -webkit-flex:           1 0 0%;
+            -ms-flex:           1 0 0%;
+                flex:           1 0 0%;
+        min-width:      0;
     }
+
+.listBoxOption__default__DkyAr .listBoxOption__optionText__2VizO
+    {
+        color:              #597494;
+    }
+
+.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe
+    {
+        pointer-events:     none;
+        cursor:             auto;
+    }
+
+.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe .listBoxOption__optionText__2VizO
+        {
+            color:          #98a8bc;
+        }
+
+.listBoxOption__default__DkyAr.listBoxOption__disabled__2-4Xe .listBoxOption__description__Io51w
+        {
+            color:          #afbccb;
+        }
 
 .listBoxOption__selected__2rpmu
 {
-    background: rgba(25, 162, 226, 0.1);
+    background-color:   rgba(25, 162, 226, 0.1);
 }
 
-.listBoxOption__active__3Kugi, .listBoxOption__default__DkyAr:hover
+.listBoxOption__active__3Kugi
 {
-    background: rgba(25, 162, 226, 0.35);
-    color:      var(--GS-1);
+    background:         rgba(25, 162, 226, 0.35);
+    color:              var(--GS-1);
 }
 
-.listBoxOption__disabled__2-4Xe
+.listBoxOption__withDescription__3zv91 .listBoxOption__optionText__2VizO
+    {
+        font-size:      1.8rem;
+        line-height:    2.4rem;
+        color:          #19a2e2;
+
+        margin:         0;
+    }
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
 {
-    cursor: default;
+    /* primary colors */
+
+
+
+     /* greyscale colors */
+
+
+     /* bluescale colors */
+
+     /* redscale colors */
+
+     /* orangescale colors */
+
+     /* yellowscale colors */
+
+     /* limescale colors */
+
+     /* greenscale colors */
+
+     /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -8482,9 +8581,9 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOptionGroup__default__3m1i2 .listBoxOptionGroup__headerText__114K7
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
-    font-style: normal;
+    font-family: Nessie-RegularIt, sans-serif;
+    font-weight: normal;
+    font-style: italic;
 }
 
 :root
@@ -8492,17 +8591,35 @@ span.CodeMirror-selectedtext { background: none; }
     /*  TYPOGRAPHY SIZES */
 }
 
+:root
+{
+    /*  SPACING */
+}
+
 .listBoxOptionGroup__default__3m1i2
 {
     display:    block;
     margin:     0;
-    padding:    0;
 }
 
 .listBoxOptionGroup__default__3m1i2 .listBoxOptionGroup__header__1HgZf
     {
-        padding:    1rem;
-        cursor:     default;
+        margin:             0;
+        padding-left:       1.6rem;
+        padding-right:      1.6rem;
+        padding-top:        0.8rem;
+        padding-bottom:     0.8rem;
+
+        cursor:             default;
+
+    }
+
+.listBoxOptionGroup__default__3m1i2 .listBoxOptionGroup__headerText__114K7
+    {
+
+        font-size:      1.4rem;
+        line-height:    2.4rem;
+        color:          #42566e;
     }
 
 .listBoxOptionGroup__default__3m1i2 .listBoxOptionGroup__options__1ETqV
@@ -9534,6 +9651,11 @@ textarea.inputField__resizable__2CfEu
 :root
 {
     /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .dragNDrop__default__3ASR4
@@ -11467,6 +11589,11 @@ textarea.inputField__resizable__2CfEu
     /*  TYPOGRAPHY SIZES */
 }
 
+:root
+{
+    /*  SPACING */
+}
+
 .visualTesting .modalContainer
 {
     min-width:      1px;
@@ -11899,6 +12026,20 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .navDropdown__default__2crMa /* extends NavList css */
@@ -12619,18 +12760,53 @@ only used in type__carousel for now
 
         border-top-color:   #19a2e2 !important;
     }
-/*@import "../proto/base.css";*/
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
+{
+    /* primary colors */
+
+
+
+     /* greyscale colors */
+
+
+     /* bluescale colors */
+
+     /* redscale colors */
+
+     /* orangescale colors */
+
+     /* yellowscale colors */
+
+     /* limescale colors */
+
+     /* greenscale colors */
+
+     /* navyscale colors */
+}
+
 /*------------------------------------//
 //    $FONT DEFINITIONS
 //------------------------------------*/
+
 :root
 {
     /*  TYPOGRAPHY SIZES */
 }
+
+:root
+{
+    /*  SPACING */
+}
+
 .pageContentHeader__default__3_CVb
 {
     padding:    0 3rem;
 }
+
 .pageContentHeader__header__3Gi1w /* rules from base.css */
 {
     display:        block;
@@ -12644,22 +12820,27 @@ only used in type__carousel for now
     font-size:      1.4rem;
     line-height:    1.8rem;
 }
+
 .pageContentHeader__header__3Gi1w
 {
     margin-bottom:  3rem;
 }
+
 .pageContentHeader__header__3Gi1w:last-child
     {
         margin-bottom:  2rem;
     }
+
 .pageContentHeader__controls__2BwJm
 {
     min-height: 5.2rem;
 }
+
 .pageContentHeader__title__1o6a8
 {
     margin-bottom:  2rem;
 }
+
 .pageContentHeader__subtitle__3Y_VP
 {
 
@@ -13162,7 +13343,8 @@ only used in type__carousel for now
         height:                 0.8rem;
         background-color:       #19a2e2;
         border-radius:          50%;
-    }/*----------------------------------------------------------------------------//
+    }
+/*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
 
@@ -15066,24 +15248,7 @@ only used in type__carousel for now
 .tab__default__3X9OU
 {
     /*  placeholder */
-}
-/*------------------------------------//
-//    $FONT DEFINITIONS
-//------------------------------------*/
-
-.tabButton__label__s-MZG
-{
-    font-family: Nessie-SemiBold, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root
-{
-    /*  TYPOGRAPHY SIZES */
-}
-
-/*----------------------------------------------------------------------------//
+}/*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
 
@@ -15109,6 +15274,22 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.tabButton__label__s-MZG
+{
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
 }
 
 :root
@@ -15516,6 +15697,8 @@ only used in type__carousel for now
             border-top-color:   #ffffff;
         }
 
+/* imports base.css */
+
 .tabButton__default__2fot-
 {
     margin:             0 0 -0.1rem 0;
@@ -15597,6 +15780,20 @@ only used in type__carousel for now
      /* navyscale colors */
 }
 
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
 .tableRow__default__15hF0
 {
 
@@ -15610,23 +15807,6 @@ only used in type__carousel for now
     background:  #ffffff;
     z-index:     2;
 }
-
-/*------------------------------------//
-//    $FONT DEFINITIONS
-//------------------------------------*/
-
-.tableCell__header__2c3IP, .tableCell__rowHeader__sGb0f
-{
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
-
-:root
-{
-    /*  TYPOGRAPHY SIZES */
-}
-
 /*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
@@ -15653,6 +15833,27 @@ only used in type__carousel for now
      /* greenscale colors */
 
      /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.tableCell__header__2c3IP, .tableCell__rowHeader__sGb0f
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
 }
 
 .tableCell__default__2dIPU
