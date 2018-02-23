@@ -461,6 +461,7 @@ template {
 .inputContainer__default__tWiVT
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -605,6 +606,7 @@ template {
 .text__default__1j9VQ
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -723,6 +725,7 @@ template {
 .label__default__1KHiG
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -1068,6 +1071,7 @@ legend.label__default__1KHiG + *
 .iconButton__default__XPmOq
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -1649,6 +1653,7 @@ legend.label__default__1KHiG + *
 .textInputWithIcon__default__2JGx9
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -1793,6 +1798,7 @@ legend.label__default__1KHiG + *
 .inputField__default__BgAmO
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -2012,6 +2018,7 @@ textarea.inputField__resizable__2CfEu
 .dropdown__default__13IF5
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -2487,6 +2494,7 @@ textarea.inputField__resizable__2CfEu
 .spinner__default__3HVrD
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -2668,6 +2676,7 @@ textarea.inputField__resizable__2CfEu
 .button__default__3AXUD
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -3086,6 +3095,7 @@ textarea.inputField__resizable__2CfEu
 .radio__default__1hjqa
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -3308,6 +3318,7 @@ textarea.inputField__resizable__2CfEu
 .buttonRadio__default__1QUOH
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -3385,6 +3396,7 @@ textarea.inputField__resizable__2CfEu
 .fieldset__default__1Eptt
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -3517,6 +3529,7 @@ textarea.inputField__resizable__2CfEu
 .checkbox__default__pbnFv
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -3736,6 +3749,7 @@ textarea.inputField__resizable__2CfEu
 .codeEditor__default__3XMrR
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -8666,6 +8680,7 @@ span.CodeMirror-selectedtext { background: none; }
 .datePicker__default__12lfM
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -8776,6 +8791,7 @@ span.CodeMirror-selectedtext { background: none; }
 .datePickerItem__default__NsQ-o
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -9204,6 +9220,7 @@ span.CodeMirror-selectedtext { background: none; }
 .inputField__default__BgAmO
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -9386,6 +9403,7 @@ textarea.inputField__resizable__2CfEu
 .dimensionsInput__default__161gR
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -9562,6 +9580,7 @@ textarea.inputField__resizable__2CfEu
 .divider__default__3CKl9
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -9781,6 +9800,7 @@ textarea.inputField__resizable__2CfEu
 .form__default__16h5S
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -9904,6 +9924,7 @@ textarea.inputField__resizable__2CfEu
 .h1__default__OCMje
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -10018,6 +10039,7 @@ textarea.inputField__resizable__2CfEu
 .h2__default__3XBD-
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -10130,6 +10152,7 @@ textarea.inputField__resizable__2CfEu
 .h3__default__22-Rs
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -10242,6 +10265,7 @@ textarea.inputField__resizable__2CfEu
 .h4__default__3y7ay
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -10370,6 +10394,7 @@ textarea.inputField__resizable__2CfEu
 .flounderDropdown__default__2X8Az
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -11211,6 +11236,7 @@ textarea.inputField__resizable__2CfEu
 .messageBox__default__3hsFC
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -11306,6 +11332,7 @@ textarea.inputField__resizable__2CfEu
 .module__default__3sx3E
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -11323,6 +11350,12 @@ textarea.inputField__resizable__2CfEu
         margin-bottom:  0;
     }
 
+
+{
+    --controlsHeight:   2.4rem;
+    --errorBorder:      0.5rem;
+}
+
 .module__default__3sx3E
 {
     /* this needs to be a flex column for vertical alignment
@@ -11337,46 +11370,168 @@ textarea.inputField__resizable__2CfEu
         -ms-flex-direction: column;
             flex-direction: column;
 
-    margin-bottom:  3rem;
+    margin-bottom:  2.4rem;
 
     background:     #ffffff;
 
-    -webkit-box-shadow:     0 0.1rem 0.4rem 0 var(--GS-8);
+    -webkit-box-shadow:     0 0.4rem 1rem 0 rgba(89, 116, 148, 0.1);
 
-            box-shadow:     0 0.1rem 0.4rem 0 var(--GS-8);
-
+            box-shadow:     0 0.4rem 1rem 0 rgba(89, 116, 148, 0.1);
 }
 
 .module__default__3sx3E .module__default__3sx3E + .module__default__3sx3E
     {
-        margin-top: -3rem;
+        margin-top: 2.4rem;
+    }
+
+.module__default__3sx3E .module__header__1nV4U, .module__default__3sx3E .module__content__1TqqO
+    {
+        position:   relative;
+        margin:     0;
+
+        padding:    1.6rem 2.4rem;
+    }
+
+.module__default__3sx3E .module__header__1nV4U
+    {
+        -webkit-transition:         background-color 200ms ease-in-out;
+        transition:         background-color 200ms ease-in-out;
+
+        position:           relative;
+
+        display:            -webkit-box;
+
+        display:            -webkit-flex;
+
+        display:            -ms-flexbox;
+
+        display:            flex;
+        -webkit-box-orient:     horizontal;
+        -webkit-box-direction:     normal;
+        -webkit-flex-direction:     row;
+            -ms-flex-direction:     row;
+                flex-direction:     row;
+        -webkit-box-pack:    start;
+        -webkit-justify-content:    flex-start;
+            -ms-flex-pack:    start;
+                justify-content:    flex-start;
+        -webkit-box-align:        center;
+        -webkit-align-items:        center;
+            -ms-flex-align:        center;
+                align-items:        center;
+    }
+
+.module__default__3sx3E .module__content__1TqqO
+    {
+        padding-bottom: 4rem;
+    }
+
+.module__default__3sx3E .module__title__3Lkwz
+    {
+        -webkit-box-flex:       0;
+        -webkit-flex:       0 0 100%;
+            -ms-flex:       0 0 100%;
+                flex:       0 0 100%;
+        max-width:  100%;
+    }
+
+.module__default__3sx3E .module__controls__EmmEF
+    {
+        display:            -webkit-box;
+        display:            -webkit-flex;
+        display:            -ms-flexbox;
+        display:            flex;
+        position:           absolute;
+
+        height:             var(--controlsHeight);
+        top:                calc(50% - NaN);
+
+        right:              2.4rem;
+
+        -webkit-box-orient:     horizontal;
+
+        -webkit-box-direction:     normal;
+
+        -webkit-flex-direction:     row;
+
+            -ms-flex-direction:     row;
+
+                flex-direction:     row;
+        -webkit-box-align:        center;
+        -webkit-align-items:        center;
+            -ms-flex-align:        center;
+                align-items:        center;
+        -webkit-box-pack:    end;
+        -webkit-justify-content:    flex-end;
+            -ms-flex-pack:    end;
+                justify-content:    flex-end;
+    }
+
+.module__default__3sx3E .module__controls__EmmEF > *
+        {
+            -webkit-box-flex:           0;
+            -webkit-flex:           0 0 auto;
+                -ms-flex:           0 0 auto;
+                    flex:           0 0 auto;
+
+            margin-right:   1.6rem;
+            margin-bottom:  0;
+        }
+
+.module__default__3sx3E .module__controls__EmmEF > *:last-child
+            {
+                margin-right:   0;
+            }
+
+.module__default__3sx3E .module__loadingOverlay__2ez-G
+    {
+        display:            -webkit-box;
+        display:            -webkit-flex;
+        display:            -ms-flexbox;
+        display:            flex;
+        -webkit-box-orient:     horizontal;
+        -webkit-box-direction:     normal;
+        -webkit-flex-direction:     row;
+            -ms-flex-direction:     row;
+                flex-direction:     row;
+        -webkit-box-pack:    center;
+        -webkit-justify-content:    center;
+            -ms-flex-pack:    center;
+                justify-content:    center;
+        -webkit-box-align:        center;
+        -webkit-align-items:        center;
+            -ms-flex-align:        center;
+                align-items:        center;
+
+        position:           absolute;
+        z-index:            1;
+
+        top:                0;
+        bottom:             0;
+        left:               0;
+        right:              0;
+
+        width:              100%;
+        height:             100%;
+
+        background:         rgba(255, 255, 255, 0.5);
     }
 
 .module__level__3__Y8s9q > .module__header__1nV4U, .module__level__3__Y8s9q > .module__content__1TqqO, .module__level__4__389dh > .module__header__1nV4U, .module__level__4__389dh > .module__content__1TqqO
      {
-         padding-top:    2rem;
-         padding-bottom: 2rem;
+         padding-top:    2.4rem;
+         padding-bottom: 2.4rem;
      }
 
 .module__collapsible___1Dw1 > .module__header__1nV4U
     {
-        cursor:     pointer;
+        cursor: pointer;
     }
 
-.module__default__3sx3E .module__collapsible___1Dw1 > .module__header__1nV4U
+.module__collapsible___1Dw1 > .module__header__1nV4U:hover, .module__collapsible___1Dw1.module__collapsed__2E7U6
     {
-        background: var(--GS-10);
+        background: #f6f7f9;
     }
-
-.module__default__3sx3E .module__collapsible___1Dw1.module__collapsed__2E7U6 > .module__header__1nV4U
-        {
-            background: transparent;
-        }
-
-.module__default__3sx3E .module__collapsible___1Dw1.module__collapsed__2E7U6 > .module__header__1nV4U:hover
-            {
-                background: var(--GS-10);
-            }
 
 .module__collapsed__2E7U6 > .module__content__1TqqO
     {
@@ -11385,144 +11540,13 @@ textarea.inputField__resizable__2CfEu
 
 .module__moduleError__1JHku
 {
-    border-left: 0.5rem solid var(--AC-RED);
+    border-left: var(--errorBorder) solid #ff5460;
 }
 
 .module__moduleError__1JHku > .module__header__1nV4U, .module__moduleError__1JHku > .module__content__1TqqO
     {
-        padding-left: 2.5rem
+        padding-left: calc(2.4rem - var(--errorBorder));
     }
-
-.module__header__1nV4U
-{
-    -webkit-transition:         background-color 200ms ease-in-out;
-    transition:         background-color 200ms ease-in-out;
-
-    position:           relative;
-
-    display:            -webkit-box;
-
-    display:            -webkit-flex;
-
-    display:            -ms-flexbox;
-
-    display:            flex;
-    -webkit-box-orient:     horizontal;
-    -webkit-box-direction:     normal;
-    -webkit-flex-direction:     row;
-        -ms-flex-direction:     row;
-            flex-direction:     row;
-    -webkit-box-pack:    start;
-    -webkit-justify-content:    flex-start;
-        -ms-flex-pack:    start;
-            justify-content:    flex-start;
-    -webkit-box-align:        center;
-    -webkit-align-items:        center;
-        -ms-flex-align:        center;
-            align-items:        center;
-
-    padding:            3rem;
-}
-
-.module__title__3Lkwz
-{
-    -webkit-box-flex:       0;
-    -webkit-flex:       0 0 100%;
-        -ms-flex:       0 0 100%;
-            flex:       0 0 100%;
-    max-width:  100%;
-}
-
-.module__controls__EmmEF
-{
-    display:            -webkit-box;
-    display:            -webkit-flex;
-    display:            -ms-flexbox;
-    display:            flex;
-    position:           absolute;
-
-    height:             2.2rem;
-    top:                calc(50% - 1.1rem);
-
-    right:              3rem;
-
-    -webkit-box-orient:     horizontal;
-
-    -webkit-box-direction:     normal;
-
-    -webkit-flex-direction:     row;
-
-        -ms-flex-direction:     row;
-
-            flex-direction:     row;
-    -webkit-box-align:        center;
-    -webkit-align-items:        center;
-        -ms-flex-align:        center;
-            align-items:        center;
-    -webkit-box-pack:    end;
-    -webkit-justify-content:    flex-end;
-        -ms-flex-pack:    end;
-            justify-content:    flex-end;
-}
-
-.module__controls__EmmEF > *
-    {
-        -webkit-box-flex:           0;
-        -webkit-flex:           0 0 auto;
-            -ms-flex:           0 0 auto;
-                flex:           0 0 auto;
-
-        margin-right:   3rem;
-        margin-bottom:  0;
-    }
-
-.module__controls__EmmEF > *:last-child
-        {
-            margin-right:   0;
-        }
-
-.module__content__1TqqO
-{
-    position:   relative;
-
-    margin:     0;
-    padding:    3rem;
-}
-
-.module__loadingOverlay__2ez-G
-{
-    display:            -webkit-box;
-    display:            -webkit-flex;
-    display:            -ms-flexbox;
-    display:            flex;
-    -webkit-box-orient:     horizontal;
-    -webkit-box-direction:     normal;
-    -webkit-flex-direction:     row;
-        -ms-flex-direction:     row;
-            flex-direction:     row;
-    -webkit-box-pack:    center;
-    -webkit-justify-content:    center;
-        -ms-flex-pack:    center;
-            justify-content:    center;
-    -webkit-box-align:        center;
-    -webkit-align-items:        center;
-        -ms-flex-align:        center;
-            align-items:        center;
-
-    position:   absolute;
-    z-index:    1;
-
-    top:        0;
-    bottom:     0;
-
-    left:       0;
-    right:      0;
-
-    width:      100%;
-    height:     100%;
-
-    background-color:   rgba(255, 255, 255, 0.5);
-}
 /*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
@@ -11810,6 +11834,7 @@ only used in type__carousel for now
 .navList__default__2JZBI
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -11931,6 +11956,7 @@ only used in type__carousel for now
 .navBar__default__1EAbA
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12085,6 +12111,7 @@ only used in type__carousel for now
 .navItem__default__kwc7o
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12295,6 +12322,7 @@ only used in type__carousel for now
 .nessieLogo__default__29T4w
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12368,6 +12396,7 @@ only used in type__carousel for now
 .notificationBar__default__lNNgQ
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12491,6 +12520,7 @@ only used in type__carousel for now
 .page__default__1F0MF
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12639,6 +12669,7 @@ only used in type__carousel for now
 .pageContent__default__2xCEE
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12861,6 +12892,7 @@ only used in type__carousel for now
 .pageHeader__default__3zPHF
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -12939,6 +12971,7 @@ only used in type__carousel for now
 .pageFooter__default__2jvKK
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13033,6 +13066,7 @@ only used in type__carousel for now
 .paginator__default__2tWDo
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13198,6 +13232,7 @@ only used in type__carousel for now
 .passwordInput__default__1KJw4
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13263,6 +13298,7 @@ only used in type__carousel for now
 .progressBar__default__11kkQ
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13355,6 +13391,7 @@ only used in type__carousel for now
 .spinner__default__3HVrD
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13536,6 +13573,7 @@ only used in type__carousel for now
 .progressIndicator__default__4m5YP
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13690,6 +13728,7 @@ only used in type__carousel for now
 .row__default__2TI-k
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -13948,6 +13987,7 @@ only used in type__carousel for now
 .section__default__1RKjM
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -14072,6 +14112,7 @@ only used in type__carousel for now
 .slider__default__20oIL
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -14498,6 +14539,7 @@ only used in type__carousel for now
 .sliderGroup__default__2Y9lA
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -14664,6 +14706,7 @@ only used in type__carousel for now
 .scrollBox__default__GWy-0
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -14789,6 +14832,7 @@ only used in type__carousel for now
 .sorter__default__3a0HN
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -14938,6 +14982,7 @@ only used in type__carousel for now
 .statusIndicator__default__21UTk
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -15040,6 +15085,7 @@ only used in type__carousel for now
 .switch__default__29KN6
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -15285,6 +15331,7 @@ only used in type__carousel for now
 .tabButton__default__2fot-
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -15945,6 +15992,7 @@ only used in type__carousel for now
 .table__default__fpQba
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16025,6 +16073,7 @@ only used in type__carousel for now
 .tabs__default__3DOQh
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16120,6 +16169,7 @@ only used in type__carousel for now
 .tag__default__308m5
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16258,6 +16308,7 @@ only used in type__carousel for now
 .tagInput__default__3DPRk
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16455,6 +16506,7 @@ only used in type__carousel for now
 .textArea__default__Dfi2-
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16521,6 +16573,7 @@ only used in type__carousel for now
 .textInput__default__9o_HN
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16587,6 +16640,7 @@ only used in type__carousel for now
 .textInputWithDropdown__default__9ZDoM
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16724,6 +16778,7 @@ only used in type__carousel for now
 .uploader__default__3Iq-q
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
@@ -16955,6 +17010,7 @@ only used in type__carousel for now
 .valuedTextInput__default__3aCux
 {
     position:       relative;
+    margin:         0;
     margin-bottom:  1.6rem;
 
     -webkit-box-sizing:     border-box;
