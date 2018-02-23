@@ -426,22 +426,22 @@ template {
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -481,53 +481,53 @@ template {
 
 .inputContainer__default__tWiVT
 {
-    display:        -webkit-box;
-    display:        -webkit-flex;
-    display:        -ms-flexbox;
-    display:        flex;
-    font:           inherit;
-    line-height:    inherit;
+    display:            -webkit-box;
+    display:            -webkit-flex;
+    display:            -ms-flexbox;
+    display:            flex;
+    font:               inherit;
+    line-height:        inherit;
 }
 
 .inputContainer__default__tWiVT .inputContainer__container__3ELoU
     {
-        -webkit-box-flex:       1;
-        -webkit-flex:       1 1 auto;
-            -ms-flex:       1 1 auto;
-                flex:       1 1 auto;
-        min-width:  0;
+        -webkit-box-flex:           1;
+        -webkit-flex:           1 1 auto;
+            -ms-flex:           1 1 auto;
+                flex:           1 1 auto;
+        min-width:      0;
     }
 
 .inputContainer__default__tWiVT .inputContainer__label__lbIF5
     {
-        -webkit-box-flex:   0;
-        -webkit-flex:   0 0 auto;
-            -ms-flex:   0 0 auto;
-                flex:   0 0 auto;
+        -webkit-box-flex:           0;
+        -webkit-flex:           0 0 auto;
+            -ms-flex:           0 0 auto;
+                flex:           0 0 auto;
     }
 
 .inputContainer__labelPosition__top__3-m31
 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-orient:     vertical;
+    -webkit-box-direction:     normal;
+    -webkit-flex-direction:     column;
+        -ms-flex-direction:     column;
+            flex-direction:     column;
 }
 
 .inputContainer__labelPosition__top__3-m31 .inputContainer__label__lbIF5
     {
-        -webkit-align-self: flex-start;
-            -ms-flex-item-align: start;
-                align-self: flex-start;
+        -webkit-align-self:     flex-start;
+            -ms-flex-item-align:     start;
+                align-self:     flex-start;
     }
 
 .inputContainer__labelPosition__left__3Uh2I, .inputContainer__labelPosition__right__1aC0W
 {
-    -webkit-box-align:    center;
-    -webkit-align-items:    center;
-        -ms-flex-align:    center;
-            align-items:    center;
+    -webkit-box-align:        center;
+    -webkit-align-items:        center;
+        -ms-flex-align:        center;
+            align-items:        center;
 }
 
 .inputContainer__labelPosition__left__3Uh2I .inputContainer__label__lbIF5, .inputContainer__labelPosition__right__1aC0W .inputContainer__label__lbIF5
@@ -538,7 +538,7 @@ template {
 
 .inputContainer__labelPosition__left__3Uh2I > .inputContainer__container__3ELoU
     {
-        margin-left:   1rem;
+        margin-left:    1rem;
     }
 
 .inputContainer__labelPosition__right__1aC0W
@@ -786,22 +786,22 @@ legend.label__default__1KHiG + *
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -1462,22 +1462,22 @@ legend.label__default__1KHiG + *
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -1618,22 +1618,22 @@ legend.label__default__1KHiG + *
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -1708,7 +1708,7 @@ legend.label__default__1KHiG + *
 
 .textInputWithIcon__position__left__3mFWV .textInputWithIcon__input__2v4yx
     {
-        padding-left:    3.6rem
+        padding-left:    3.6rem;
     }
 
 .textInputWithIcon__position__left__3mFWV .textInputWithIcon__icon__1Ohjv
@@ -1718,7 +1718,7 @@ legend.label__default__1KHiG + *
 
 .textInputWithIcon__position__right__2qgDu .textInputWithIcon__input__2v4yx
     {
-        padding-right:    3.6rem
+        padding-right:    3.6rem;
     }
 
 .textInputWithIcon__position__right__2qgDu .textInputWithIcon__icon__1Ohjv
@@ -2154,33 +2154,35 @@ textarea.inputField__resizable__2CfEu
 * SLIDE
 */
 
-@-webkit-keyframes animate__slideInDown__ZQT7G {
+@-webkit-keyframes animate__slideInDown__ZQT7G
+{
     from
     {
-        -webkit-transform: translate3d(0, -100%, 0);
-                transform: translate3d(0, -100%, 0);
+        -webkit-transform:  translate3d(0, -100%, 0);
+                transform:  translate3d(0, -100%, 0);
         visibility: visible;
     }
 
     to
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
-@keyframes animate__slideInDown__ZQT7G {
+@keyframes animate__slideInDown__ZQT7G
+{
     from
     {
-        -webkit-transform: translate3d(0, -100%, 0);
-                transform: translate3d(0, -100%, 0);
+        -webkit-transform:  translate3d(0, -100%, 0);
+                transform:  translate3d(0, -100%, 0);
         visibility: visible;
     }
 
     to
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2194,14 +2196,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(-100%, 0, 0);
-                transform: translate3d(-100%, 0, 0);
+        -webkit-transform:  translate3d(-100%, 0, 0);
+                transform:  translate3d(-100%, 0, 0);
         visibility: visible;
     }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+    to
+    {
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2209,14 +2212,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(-100%, 0, 0);
-                transform: translate3d(-100%, 0, 0);
+        -webkit-transform:  translate3d(-100%, 0, 0);
+                transform:  translate3d(-100%, 0, 0);
         visibility: visible;
     }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+    to
+    {
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2226,33 +2230,35 @@ textarea.inputField__resizable__2CfEu
             animation: animate__slideInLeft__dg3eF 1000ms;
 }
 
-@-webkit-keyframes animate__slideInRight__N1sY- {
+@-webkit-keyframes animate__slideInRight__N1sY-
+{
     from
     {
-        -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0);
+        -webkit-transform:  translate3d(100%, 0, 0);
+                transform:  translate3d(100%, 0, 0);
         visibility: visible;
     }
 
     to
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
-@keyframes animate__slideInRight__N1sY- {
+@keyframes animate__slideInRight__N1sY-
+{
     from
     {
-        -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0);
+        -webkit-transform:  translate3d(100%, 0, 0);
+                transform:  translate3d(100%, 0, 0);
         visibility: visible;
     }
 
     to
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2266,14 +2272,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
+        -webkit-transform:  translate3d(0, 100%, 0);
+                transform:  translate3d(0, 100%, 0);
         visibility: visible;
     }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+    to
+    {
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2281,14 +2288,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
+        -webkit-transform:  translate3d(0, 100%, 0);
+                transform:  translate3d(0, 100%, 0);
         visibility: visible;
     }
 
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+    to
+    {
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 }
 
@@ -2302,15 +2310,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
+        -webkit-transform:  translate3d(0, 100%, 0);
+                transform:  translate3d(0, 100%, 0);
     }
 }
 
@@ -2318,15 +2326,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
+        -webkit-transform:  translate3d(0, 100%, 0);
+                transform:  translate3d(0, 100%, 0);
     }
 }
 
@@ -2340,15 +2348,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(-100%, 0, 0);
-                transform: translate3d(-100%, 0, 0);
+        -webkit-transform:  translate3d(-100%, 0, 0);
+                transform:  translate3d(-100%, 0, 0);
     }
 }
 
@@ -2356,15 +2364,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(-100%, 0, 0);
-                transform: translate3d(-100%, 0, 0);
+        -webkit-transform:  translate3d(-100%, 0, 0);
+                transform:  translate3d(-100%, 0, 0);
     }
 }
 
@@ -2378,15 +2386,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0);
+        -webkit-transform:  translate3d(100%, 0, 0);
+                transform:  translate3d(100%, 0, 0);
     }
 }
 
@@ -2394,15 +2402,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0);
+        -webkit-transform:  translate3d(100%, 0, 0);
+                transform:  translate3d(100%, 0, 0);
     }
 }
 
@@ -2416,15 +2424,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(0, -100%, 0);
-                transform: translate3d(0, -100%, 0);
+        -webkit-transform:  translate3d(0, -100%, 0);
+                transform:  translate3d(0, -100%, 0);
     }
 }
 
@@ -2432,15 +2440,15 @@ textarea.inputField__resizable__2CfEu
 {
     from
     {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        -webkit-transform:  translate3d(0, 0, 0);
+                transform:  translate3d(0, 0, 0);
     }
 
     to
     {
         visibility: hidden;
-        -webkit-transform: translate3d(0, -100%, 0);
-                transform: translate3d(0, -100%, 0);
+        -webkit-transform:  translate3d(0, -100%, 0);
+                transform:  translate3d(0, -100%, 0);
     }
 }
 
@@ -2459,22 +2467,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -2514,115 +2522,119 @@ textarea.inputField__resizable__2CfEu
 
 .spinner__default__3HVrD, .spinner__size__big__1Gul4
 {
-  position:                     relative;
-  background-color:             transparent;
-  border-style:                 solid;
-  border-color:                 rgba(66, 86, 110, 0.35);
-  border-radius:                50%;
-  -webkit-box-sizing:                   content-box;
-          box-sizing:                   content-box;
-  display:                      inline-block;
+    position:           relative;
+    background-color:   transparent;
+    border-style:       solid;
+    border-color:       rgba(66, 86, 110, 0.35);
+    border-radius:      50%;
+    -webkit-box-sizing:         content-box;
+            box-sizing:         content-box;
+    display:            inline-block;
 }
 
 .spinner__default__3HVrD:after, .spinner__size__big__1Gul4:after
-  {
-    position:                   absolute;
-    content:                    "";
-    top:                        0px;
-    left:                       0px;
-    border-style:               solid;
-    border-color:               #42566e transparent transparent transparent;
-    border-radius:              50%;
-    -webkit-box-sizing:                 border-box;
-            box-sizing:                 border-box;
-  }
+    {
+        position:       absolute;
+        content:        "";
+        top:            0;
+        left:           0;
+        border-style:   solid;
+        border-color:   #42566e transparent transparent transparent;
+        border-radius:  50%;
+        -webkit-box-sizing:     border-box;
+                box-sizing:     border-box;
+    }
 
 .spinner__default__3HVrD
 {
-  width:                10px;
-  height:               10px;
-  min-height:           10px;
-  border-width:         3px;
+    width:                10px;
+    height:               10px;
+    min-height:           10px;
+    border-width:         3px;
 }
 
 .spinner__default__3HVrD:after
-  {
-    width:              10px;
-    height:             10px;
-    border-width:       1px;
-    -webkit-animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
-            animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
-  }
+    {
+        width:              10px;
+        height:             10px;
+        border-width:       1px;
+        -webkit-animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
+                animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
+    }
 
-@-webkit-keyframes spinner__defaultSpinnerRingRotate__9mkaL {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.48);
-            transform: rotateZ(0deg) scale(1.48);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.48);
-            transform: rotateZ(360deg) scale(1.48);
-  }
+@-webkit-keyframes spinner__defaultSpinnerRingRotate__9mkaL
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.48);
+                transform: rotateZ(0deg) scale(1.48);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.48);
+                transform: rotateZ(360deg) scale(1.48);
+    }
 }
 
-@keyframes spinner__defaultSpinnerRingRotate__9mkaL {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.48);
-            transform: rotateZ(0deg) scale(1.48);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.48);
-            transform: rotateZ(360deg) scale(1.48);
-  }
+@keyframes spinner__defaultSpinnerRingRotate__9mkaL
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.48);
+                transform: rotateZ(0deg) scale(1.48);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.48);
+                transform: rotateZ(360deg) scale(1.48);
+    }
 }
 
 /* big */
 
 .spinner__size__big__1Gul4
 {
-  width:                    30px;
-  height:                   30px;
-  min-height:               30px;
-  border-width:             5px;
+    width:                    30px;
+    height:                   30px;
+    min-height:               30px;
+    border-width:             5px;
 }
 
 .spinner__size__big__1Gul4:after
-  {
-    width:                  30px;
-    height:                 30px;
-    border-width:           3px;
-    -webkit-animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
-            animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
-  }
+    {
+        width:                  30px;
+        height:                 30px;
+        border-width:           3px;
+        -webkit-animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
+                animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
+    }
 
-@-webkit-keyframes spinner__bigSpinnerRingRotate__3IVr6 {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.3);
-            transform: rotateZ(0deg) scale(1.3);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.3);
-            transform: rotateZ(360deg) scale(1.3);
-  }
+@-webkit-keyframes spinner__bigSpinnerRingRotate__3IVr6
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.3);
+                transform: rotateZ(0deg) scale(1.3);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.3);
+                transform: rotateZ(360deg) scale(1.3);
+    }
 }
 
-@keyframes spinner__bigSpinnerRingRotate__3IVr6 {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.3);
-            transform: rotateZ(0deg) scale(1.3);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.3);
-            transform: rotateZ(360deg) scale(1.3);
-  }
+@keyframes spinner__bigSpinnerRingRotate__3IVr6
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.3);
+                transform: rotateZ(0deg) scale(1.3);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.3);
+                transform: rotateZ(360deg) scale(1.3);
+    }
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -2634,22 +2646,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -2766,48 +2778,48 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__default__3aNhL
 {
-    background: #19a2e2;
-    color:      #ffffff;
+    background:         #19a2e2;
+    color:              #ffffff;
 }
 
 .button__role__default__3aNhL.button__fakeHovered__38NgF, .button__role__default__3aNhL:hover
     {
-        background: #1589c0;
-        color:      #ffffff;
+        background:     #1589c0;
+        color:          #ffffff;
     }
 
 .button__role__secondary__U6kQD
 {
-    background: #eef1f4;
-    color:      #8296ae;
+    background:         #eef1f4;
+    color:              #8296ae;
 }
 
 .button__role__secondary__U6kQD.button__fakeHovered__38NgF, .button__role__secondary__U6kQD:hover
     {
-        background: #c7d0db;
-        color:      #8296ae;
+        background:     #c7d0db;
+        color:          #8296ae;
     }
 
 .button__role__secondary__U6kQD .button__icon__29c7A
     {
-        fill:   #8296ae;
-        color:  #8296ae;
+        fill:           #8296ae;
+        color:          #8296ae;
     }
 
 .button__role__secondary__U6kQD .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:   rgba(130, 150, 174, 0.25);
+            border-color:           rgba(130, 150, 174, 0.25);
         }
 
 .button__role__secondary__U6kQD .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
             {
-                border-top-color:  #8296ae;
+                border-top-color:   #8296ae;
             }
 
 .button__role__promoted__846qT
 {
-    background: #1bbab0;
-    color:      #ffffff;
+    background:     #1bbab0;
+    color:          #ffffff;
 }
 
 .button__role__promoted__846qT.button__fakeHovered__38NgF, .button__role__promoted__846qT:hover
@@ -2818,8 +2830,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__critical__1SSab
 {
-    background: #ff5460;
-    color:      #ffffff;
+    background:     #ff5460;
+    color:          #ffffff;
 }
 
 .button__role__critical__1SSab.button__fakeHovered__38NgF, .button__role__critical__1SSab:hover
@@ -2830,8 +2842,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__warning__23oc0
 {
-    background: #ff965a;
-    color:      #ffffff;
+    background:     #ff965a;
+    color:          #ffffff;
 }
 
 .button__role__warning__23oc0.button__fakeHovered__38NgF, .button__role__warning__23oc0:hover
@@ -2860,7 +2872,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__subtle__2n8p3.button__fakeHovered__38NgF, .button__role__subtle__2n8p3:hover
     {
-        color:      #ffffff;
+        color:          #ffffff;
     }
 
 .button__role__subtle__2n8p3.button__fakeHovered__38NgF .button__content__3EOsA, .button__role__subtle__2n8p3:hover .button__content__3EOsA
@@ -2870,19 +2882,19 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__subtle__2n8p3.button__fakeHovered__38NgF .button__icon__29c7A, .button__role__subtle__2n8p3:hover .button__icon__29c7A
         {
-            fill:   #ffffff;
-            color:  #ffffff;
+            fill:       #ffffff;
+            color:      #ffffff;
         }
 
 .button__role__subtle__2n8p3 .button__icon__29c7A
     {
-        fill:   #19a2e2;
-        color:  #19a2e2;
+        fill:           #19a2e2;
+        color:          #19a2e2;
     }
 
 .button__role__subtle__2n8p3 .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:   rgba(25, 162, 226, 0.25);
+            border-color:           rgba(25, 162, 226, 0.25);
         }
 
 .button__role__subtle__2n8p3 .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -2892,18 +2904,18 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__control__SJEnv
 {
-    color:  #4b627d;
+    color:          #4b627d;
 }
 
 .button__role__control__SJEnv .button__icon__29c7A
     {
-        fill:   #4b627d;
-        color:  #4b627d;
+        fill:       #4b627d;
+        color:      #4b627d;
     }
 
 .button__role__control__SJEnv.button__fakeHovered__38NgF, .button__role__control__SJEnv:hover
     {
-        color:  #19a2e2;
+        color:      #19a2e2;
     }
 
 .button__role__control__SJEnv.button__fakeHovered__38NgF .button__icon__29c7A, .button__role__control__SJEnv:hover .button__icon__29c7A
@@ -2914,7 +2926,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__role__control__SJEnv .button__loadingOverlay__3dOBM .button__spinner__bHxRc
         {
-            border-color:   rgba(75, 98, 125, 0.25);
+            border-color:           rgba(75, 98, 125, 0.25);
         }
 
 .button__role__control__SJEnv .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -2947,7 +2959,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__secondary__U6kQD
     {
-        color:  #afbccb;
+        color:      #afbccb;
     }
 
 .button__disabled__3tHK1.button__role__secondary__U6kQD .button__icon__29c7A
@@ -2994,7 +3006,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__subtle__2n8p3
     {
-        color:  #75c7ed;
+        color:              #75c7ed;
     }
 
 .button__disabled__3tHK1.button__role__subtle__2n8p3 .button__content__3EOsA
@@ -3005,8 +3017,8 @@ textarea.inputField__resizable__2CfEu
 
 .button__disabled__3tHK1.button__role__subtle__2n8p3 .button__icon__29c7A
         {
-            fill:   #75c7ed;
-            color:  #75c7ed;
+            fill:           #75c7ed;
+            color:          #75c7ed;
         }
 
 .button__loadingOverlay__3dOBM
@@ -3043,7 +3055,7 @@ textarea.inputField__resizable__2CfEu
 
 .button__loadingOverlay__3dOBM .button__spinner__bHxRc
     {
-        border-color:   rgba(255, 255, 255, 0.5);
+        border-color:           rgba(255, 255, 255, 0.5);
     }
 
 .button__loadingOverlay__3dOBM .button__spinner__bHxRc::after
@@ -3060,22 +3072,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -3123,12 +3135,12 @@ textarea.inputField__resizable__2CfEu
 
 .radio__default__1hjqa:last-child
     {
-        margin-bottom:      0;
+        margin-bottom:  0;
     }
 
 .radio__default__1hjqa:hover .radio__label__2LGsc
     {
-        cursor:             pointer;
+        cursor:         pointer;
     }
 
 .radio__fakeHovered__MhIod .radio__label__2LGsc::before, .radio__fakeHovered__MhIod .radio__input__fFWgs:focus + .radio__label__2LGsc::before
@@ -3238,26 +3250,25 @@ textarea.inputField__resizable__2CfEu
 
 .radio__label__2LGsc
 {
-/*     line-height: 1.8rem;
- */}
+}
 
 .radio__label__2LGsc::before
 {
-    border-radius:              50%;
+    border-radius:      50%;
 }
 
 .radio__input__fFWgs:checked + .radio__label__2LGsc::after
 {
-    display:                block;
+    display:            block;
 
-    background-color:       #19a2e2;
-    border-radius:          50%;
+    background-color:   #19a2e2;
+    border-radius:      50%;
 
-    width:                  1.2rem;
-    height:                 1.2rem;
+    width:              1.2rem;
+    height:             1.2rem;
 
-    top:                    0.6rem;
-    left:                   0.4rem;
+    top:                0.6rem;
+    left:               0.4rem;
 }
 
 .radio__fakeHovered__MhIod
@@ -3266,12 +3277,12 @@ textarea.inputField__resizable__2CfEu
 
 .radio__disabled__13Q_o .radio__input__fFWgs:checked + .radio__label__2LGsc::after, .radio__disabled__13Q_o:hover .radio__input__fFWgs:checked + .radio__label__2LGsc::after
     {
-        background-color:      #75c7ed;
+        background-color: #75c7ed;
     }
 
 .radio__error__2qbhZ .radio__input__fFWgs:checked + .radio__label__2LGsc::after, .radio__error__2qbhZ:hover .radio__input__fFWgs:checked + .radio__label__2LGsc::after
     {
-        background-color:       #ff5460;
+        background-color: #ff5460;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -3283,22 +3294,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -3338,18 +3349,18 @@ textarea.inputField__resizable__2CfEu
 
 .buttonRadio__default__1QUOH
 {
-	display:	inline-block;
-	width:		auto;
+    display:	inline-block;
+    width:		auto;
 }
 
 .buttonRadio__input__3A-hR
 {
-	display:	none;
+    display:	none;
 }
 
 .buttonRadio__label__2Wz15
 {
-	display:	block;
+    display:	block;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -3361,22 +3372,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -3416,8 +3427,8 @@ textarea.inputField__resizable__2CfEu
 
 .fieldset__default__1Eptt
 {
-	margin-left:	0;
-	margin-right:	0;
+    margin-left:	0;
+    margin-right:	0;
 
     border:		none;
     padding:	0;
@@ -3429,28 +3440,26 @@ textarea.inputField__resizable__2CfEu
 
 .checkableGroup__list__3uJOD
 {
-	display:			-webkit-box;
-	display:			-webkit-flex;
-	display:			-ms-flexbox;
-	display:			flex;
-	-webkit-box-orient:		horizontal;
-	-webkit-box-direction:		normal;
-	-webkit-flex-direction:		row;
-	    -ms-flex-direction:		row;
-	        flex-direction:		row;
-	-webkit-flex-wrap:			wrap;
-	    -ms-flex-wrap:			wrap;
-	        flex-wrap:			wrap;
-
-	flex-direction:		row;
-	-webkit-box-pack:	start;
-	-webkit-justify-content:	flex-start;
-	    -ms-flex-pack:	start;
-	        justify-content:	flex-start;
-	-webkit-box-align:		start;
-	-webkit-align-items:		flex-start;
-	    -ms-flex-align:		start;
-	        align-items:		flex-start;
+    display:			-webkit-box;
+    display:			-webkit-flex;
+    display:			-ms-flexbox;
+    display:			flex;
+    -webkit-box-orient:		horizontal;
+    -webkit-box-direction:		normal;
+    -webkit-flex-direction:		row;
+        -ms-flex-direction:		row;
+            flex-direction:		row;
+    -webkit-flex-wrap:			wrap;
+        -ms-flex-wrap:			wrap;
+            flex-wrap:			wrap;
+    -webkit-box-pack:	start;
+    -webkit-justify-content:	flex-start;
+        -ms-flex-pack:	start;
+            justify-content:	flex-start;
+    -webkit-box-align:		start;
+    -webkit-align-items:		flex-start;
+        -ms-flex-align:		start;
+            align-items:		flex-start;
 
     margin:             0;
     padding:            0;
@@ -3468,17 +3477,17 @@ textarea.inputField__resizable__2CfEu
 
 .checkableGroup__listItem__3UtoY:last-child
     {
-    	margin:	0;
+        margin:	0;
     }
 
 .checkableGroup__layout__vertical__Wk1It .checkableGroup__list__3uJOD
 	{
-		-webkit-box-orient:	vertical;
-		-webkit-box-direction:	normal;
-		-webkit-flex-direction:	column;
-		    -ms-flex-direction:	column;
-		        flex-direction:	column;
-	}
+        -webkit-box-orient:	vertical;
+        -webkit-box-direction:	normal;
+        -webkit-flex-direction:	column;
+            -ms-flex-direction:	column;
+                flex-direction:	column;
+    }
 
 .checkableGroup__layout__vertical__Wk1It .checkableGroup__listItem__3UtoY
     {
@@ -3714,22 +3723,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -4216,22 +4225,22 @@ span.CodeMirror-selectedtext { background: none; }
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -4332,19 +4341,19 @@ span.CodeMirror-selectedtext { background: none; }
 
 .column__alignY__space-around__2VQxR
 {
-    -webkit-justify-content:    space-around;
-        -ms-flex-pack:    distribute;
-            justify-content:    space-around;
+    -webkit-justify-content:        space-around;
+        -ms-flex-pack:        distribute;
+            justify-content:        space-around;
 }
 
 .column__alignY__space-around__2VQxR > *
     {
-        margin-bottom:  1.6rem;
+        margin-bottom:      1.6rem;
     }
 
 .column__alignY__space-around__2VQxR > *:last-child
         {
-            margin-bottom:  0
+            margin-bottom:  0;
         }
 
 .column__size__1-1__1T45c
@@ -8389,32 +8398,32 @@ span.CodeMirror-selectedtext { background: none; }
 
 .column__size__icon-S__33sE0
 {
-    width:                  1.6rem;
-    height:                 1.6rem;
+    width:      1.6rem;
+    height:     1.6rem;
 }
 
 .column__size__icon-M__2_Wth
 {
-    width:                  2.4rem;
-    height:                 2.4rem;
+    width:      2.4rem;
+    height:     2.4rem;
 }
 
 .column__size__icon-L__1gKtZ
 {
-    width:                  3.2rem;
-    height:                 3.2rem;
+    width:      3.2rem;
+    height:     3.2rem;
 }
 
 .column__size__icon-XL__2YpMZ
 {
-    width:                  4rem;
-    height:                 4rem;
+    width:      4rem;
+    height:     4rem;
 }
 
 .column__size__icon-XXL__3BdZ-
 {
-    width:                  4.8rem;
-    height:                 4.8rem;
+    width:      4.8rem;
+    height:     4.8rem;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -8426,22 +8435,22 @@ span.CodeMirror-selectedtext { background: none; }
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -8460,19 +8469,19 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOption__default__DkyAr
 {
-    display:        -webkit-box;
-    display:        -webkit-flex;
-    display:        -ms-flexbox;
-    display:        flex;
-    -webkit-box-align:    center;
-    -webkit-align-items:    center;
-        -ms-flex-align:    center;
-            align-items:    center;
+    display:            -webkit-box;
+    display:            -webkit-flex;
+    display:            -ms-flexbox;
+    display:            flex;
+    -webkit-box-align:        center;
+    -webkit-align-items:        center;
+        -ms-flex-align:        center;
+            align-items:        center;
 
-    margin:         0;
-    padding:        0.8rem 1.6rem;
+    margin:             0;
+    padding:            0.8rem 1.6rem;
 
-    cursor:         pointer;
+    cursor:             pointer;
 }
 
 .listBoxOption__default__DkyAr .listBoxOption__icon__2UOgm
@@ -8486,32 +8495,32 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOption__default__DkyAr .listBoxOption__textContainer__20bGh
     {
-        -webkit-box-flex:       1;
-        -webkit-flex:       1 0 0%;
-            -ms-flex:       1 0 0%;
-                flex:       1 0 0%;
-        min-width:  0;
+        -webkit-box-flex:           1;
+        -webkit-flex:           1 0 0%;
+            -ms-flex:           1 0 0%;
+                flex:           1 0 0%;
+        min-width:      0;
     }
 
 .listBoxOption__default__DkyAr .listBoxOption__optionText__2VizO
     {
-        margin: 0;
-        color:  #597494;
+        margin:         0;
+        color:          #597494;
     }
 
 .listBoxOption__default__DkyAr:hover, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi
     {
-        background: #19a2e2;
+        background:     #19a2e2;
     }
 
 .listBoxOption__default__DkyAr:hover .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr:hover .listBoxOption__description__Io51w, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__optionText__2VizO, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__description__Io51w
         {
-            color:  #ffffff;
+            color:      #ffffff;
         }
 
 .listBoxOption__default__DkyAr:hover .listBoxOption__icon__2UOgm, .listBoxOption__default__DkyAr.listBoxOption__active__3Kugi .listBoxOption__icon__2UOgm
         {
-            fill:   #ffffff;
+            fill:       #ffffff;
         }
 
 .listBoxOption__withDescription__3zv91 .listBoxOption__optionText__2VizO
@@ -8523,23 +8532,23 @@ span.CodeMirror-selectedtext { background: none; }
 
 .listBoxOption__selected__2rpmu
 {
-    background: rgba(25, 162, 226, 0.1);
+    background:         rgba(25, 162, 226, 0.1);
 }
 
 .listBoxOption__disabled__2-4Xe
 {
-    pointer-events: none;
-    cursor:         auto;
+    pointer-events:     none;
+    cursor:             auto;
 }
 
 .listBoxOption__disabled__2-4Xe .listBoxOption__optionText__2VizO
     {
-        color:  #98a8bc;
+        color:          #98a8bc;
     }
 
 .listBoxOption__disabled__2-4Xe .listBoxOption__description__Io51w
     {
-        color:  #afbccb;
+        color:          #afbccb;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -8638,22 +8647,22 @@ span.CodeMirror-selectedtext { background: none; }
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -8714,7 +8723,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePicker__default__12lfM .datePicker__calendarHeader__QSM7u th
         {
-             padding-bottom:    0.8rem;
+            padding-bottom:    0.8rem;
         }
 
 .datePicker__default__12lfM .datePicker__calendarHeader__QSM7u th:last-child
@@ -8737,9 +8746,9 @@ span.CodeMirror-selectedtext { background: none; }
         padding-bottom:     1.6rem;
         padding-left:       0.8rem;
 
-        border-left:        solid 1px var(----PC-GREY--L70);
-        border-bottom:      solid 1px var(----PC-GREY--L70);
-        border-right:       solid 1px var(----PC-GREY--L70);
+        border-left:        solid 0.1rem var(----PC-GREY--L70);
+        border-bottom:      solid 0.1rem var(----PC-GREY--L70);
+        border-right:       solid 0.1rem var(----PC-GREY--L70);
     }
 
 .datePicker__default__12lfM td
@@ -8756,22 +8765,22 @@ span.CodeMirror-selectedtext { background: none; }
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -8868,7 +8877,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePickerItem__default__NsQ-o.datePickerItem__fakeHovered__2dLSs .datePickerItem__text__1UBr5, .datePickerItem__default__NsQ-o:focus .datePickerItem__text__1UBr5, .datePickerItem__default__NsQ-o:hover .datePickerItem__text__1UBr5
         {
-            color:  var(--GS-2)
+            color:      var(--GS-2);
         }
 
 .datePickerItem__type__day__3jUV1
@@ -8895,7 +8904,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePickerItem__selected__1MAEA .datePickerItem__text__1UBr5
     {
-        color:  #ffffff;
+        color:      #ffffff;
     }
 
 .datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs, .datePickerItem__selected__1MAEA:focus, .datePickerItem__selected__1MAEA:hover
@@ -8906,7 +8915,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:focus .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:hover .datePickerItem__text__1UBr5
         {
-            color:  #ffffff;
+            color:      #ffffff;
         }
 
 .datePickerItem__disabled__1-zmu, .datePickerItem__disabled__1-zmu.datePickerItem__fakeHovered__2dLSs, .datePickerItem__disabled__1-zmu:focus, .datePickerItem__disabled__1-zmu:hover
@@ -9157,22 +9166,22 @@ span.CodeMirror-selectedtext { background: none; }
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -9368,22 +9377,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -9449,7 +9458,7 @@ textarea.inputField__resizable__2CfEu
 
 .dimensionsInput__disabled__2SmGu .dimensionsInput__inputDefault__OwqhX
     {
-        color:  color( var(--GS-2) a( 50%) );
+        color:              color( var(--GS-2) a( 50%) );
     }
 
 .dimensionsInput__container__E4guA
@@ -9479,10 +9488,10 @@ textarea.inputField__resizable__2CfEu
 
 .dimensionsInput__inputDefault__OwqhX
 {
-	display: 			-webkit-box;
-	display: 			-webkit-flex;
-	display: 			-ms-flexbox;
-	display: 			flex;
+    display: 			-webkit-box;
+    display: 			-webkit-flex;
+    display: 			-ms-flexbox;
+    display: 			flex;
     -webkit-box-flex:               1;
     -webkit-flex:               1 1 100%;
         -ms-flex:               1 1 100%;
@@ -9493,11 +9502,11 @@ textarea.inputField__resizable__2CfEu
 
     min-width:          5rem;
 
-	-webkit-flex-grow:			1;
+    -webkit-flex-grow:			1;
 
-	    -ms-flex-positive:			1;
+        -ms-flex-positive:			1;
 
-	        flex-grow:			1;
+            flex-grow:			1;
 
     border:             none;
     padding:            0;
@@ -9545,22 +9554,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -9600,7 +9609,7 @@ textarea.inputField__resizable__2CfEu
 
 .divider__default__3CKl9
 {
-	position: 		        relative;
+    position: 		        relative;
     margin-top:             1.6rem;
     margin-bottom:          2.4rem;
     height:                 0.1rem;
@@ -9618,22 +9627,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -9693,7 +9702,6 @@ textarea.inputField__resizable__2CfEu
 
     position:               absolute;
 
-    /* margin-top:                    $overlayShift; */
     margin-left:                   -0.8rem;
 
     height:                 calc(100% + 1rem);
@@ -9708,7 +9716,6 @@ textarea.inputField__resizable__2CfEu
     background:             rgba(255, 255, 255, 0.5);
 
     pointer-events:         none;
-    /* margin-left:           3rem; */
 
     top:                    50%;
     -webkit-transform:              translateY(-50%);
@@ -9882,22 +9889,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -9944,10 +9951,9 @@ textarea.inputField__resizable__2CfEu
 
 .h1__default__OCMje
 {
-	position: 		relative;
-
-	min-height:     3.2rem;
-
+    position: 		relative;
+    min-height:     3.2rem;
+    margin-bottom:  5.6rem;
     font-size:      2.4rem;
     line-height:    3.2rem;
     letter-spacing: 0.05rem;
@@ -9965,27 +9971,12 @@ textarea.inputField__resizable__2CfEu
 
 .h1__role__promoted__3FhvJ
 {
-	color:	#1bbab0;
+    color:	#1bbab0;
 }
 
 .h1__role__critical__VNEwj
 {
-	color:	#ff5460;
-}
-
-.h1__spacing__S__kZbBz
-{
-    margin-bottom: 1.6rem;
-}
-
-.h1__spacing__M__M84xD
-{
-    margin-bottom: 4rem;
-}
-
-.h1__spacing__L__cLmN6
-{
-    margin-bottom: 5.6rem;
+    color:	#ff5460;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -9997,22 +9988,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -10059,8 +10050,9 @@ textarea.inputField__resizable__2CfEu
 
 .h2__default__3XBD-
 {
-	position: 		relative;
-
+    position: 		relative;
+    min-height:     3.2rem;
+    margin-bottom:  3.2rem;
     font-size:      2rem;
     line-height:    3.2rem;
     letter-spacing: 0.05rem;
@@ -10078,27 +10070,12 @@ textarea.inputField__resizable__2CfEu
 
 .h2__role__promoted__2X6EX
 {
-	color:	#1bbab0;
+    color:	#1bbab0;
 }
 
 .h2__role__critical__2ZLck
 {
-	color:	#ff5460;
-}
-
-.h2__spacing__S__kNzc-
-{
-    margin-bottom: 1.6rem;
-}
-
-.h2__spacing__M__2nXn4
-{
-    margin-bottom: 4rem;
-}
-
-.h2__spacing__L__2iNGu
-{
-    margin-bottom: 5.6rem;
+    color:	#ff5460;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -10110,22 +10087,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -10172,8 +10149,9 @@ textarea.inputField__resizable__2CfEu
 
 .h3__default__22-Rs
 {
-	position: 		relative;
-
+    position: 		relative;
+    min-height:     3.2rem;
+    margin-bottom:  1.6rem;
     font-size:      1.6rem;
     line-height:    3.2rem;
     letter-spacing: 0.02rem;
@@ -10191,27 +10169,12 @@ textarea.inputField__resizable__2CfEu
 
 .h3__role__promoted__2hjh_
 {
-	color:	#1bbab0;
+    color:	#1bbab0;
 }
 
 .h3__role__critical__i3Di9
 {
-	color:	#ff5460;
-}
-
-.h3__spacing__S__dYa7l
-{
-    margin-bottom: 1.6rem;
-}
-
-.h3__spacing__M__3WegD
-{
-    margin-bottom: 4rem;
-}
-
-.h3__spacing__L__1XLUq
-{
-    margin-bottom: 5.6rem;
+    color:	#ff5460;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -10223,22 +10186,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -10285,13 +10248,12 @@ textarea.inputField__resizable__2CfEu
 
 .h4__default__3y7ay
 {
-	position: 		relative;
-
-	min-height:	    3.2rem;
-
-	font-size:      1.4rem;
-	line-height:    3.2rem;
-	letter-spacing: 0;
+    position: 		relative;
+    min-height:     3.2rem;
+    margin-bottom:  1.6rem;
+    font-size:      1.4rem;
+    line-height:    3.2rem;
+    letter-spacing: 0;
 }
 
 .h4__role__default__371Vg
@@ -10306,27 +10268,12 @@ textarea.inputField__resizable__2CfEu
 
 .h4__role__promoted__1qaJb
 {
-	color:	#1bbab0;
+    color:	#1bbab0;
 }
 
 .h4__role__critical__FQcpE
 {
-	color:	#ff5460;
-}
-
-.h4__spacing__S__3tOAk
-{
-    margin-bottom: 1.6rem;
-}
-
-.h4__spacing__M__1CQqG
-{
-    margin-bottom: 4rem;
-}
-
-.h4__spacing__L__GofkN
-{
-    margin-bottom: 6.4rem;
+    color:	#ff5460;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -10338,22 +10285,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -10580,7 +10527,7 @@ textarea.inputField__resizable__2CfEu
 
 .flounderDropdown__default__2X8Az .flounderDropdown__selectedHidden__3Eqqw, .flounderDropdown__default__2X8Az .flounderDropdown__searchHidden__1tj9b, .flounderDropdown__default__2X8Az .flounderDropdown__placeholder__ZyHmX
     {
-        display:    none;
+        display:            none;
     }
 
 .flounderDropdown__default__2X8Az .flounderDropdown__option__3uJ_T, .flounderDropdown__default__2X8Az .flounderDropdown__header__2gOzt
@@ -11103,8 +11050,8 @@ textarea.inputField__resizable__2CfEu
 .flounderDropdown__headerLevel__4__3ltDj .flounderDropdown__selectedDisplayed__2cJMJ
     {
         font-size:      1.4rem;
-    	line-height:    3.2rem;
-    	letter-spacing: 0;
+        line-height:    3.2rem;
+        letter-spacing: 0;
     }
 
 /* .arrow
@@ -11132,12 +11079,12 @@ textarea.inputField__resizable__2CfEu
 
 .flounderDropdown__error__3OBt9 .flounderDropdown__main__1pUya .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__error__3OBt9 .flounderDropdown__main__1pUya:focus .flounderDropdown__arrowInner__1vVzm
     {
-         background-image:  url(data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnX19kb3duIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgICA8cGF0aCBmaWxsPSIjZjU1ZjY5IiBkPSJNMTEuNSw1LjJMOCw4LjdMNC41LDUuMmMtMC40LTAuNC0xLTAuNC0xLjQsMHMtMC40LDEsMCwxLjRsNC4yLDQuMkM3LjUsMTEsNy43LDExLjEsOCwxMS4xczAuNS0wLjEsMC43LTAuMyBsNC4yLTQuMmMwLjQtMC40LDAuNC0xLDAtMS40UzExLjksNC44LDExLjUsNS4yeiIvPgo8L3N2Zz4K);
+        background-image:  url(data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnX19kb3duIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgICA8cGF0aCBmaWxsPSIjZjU1ZjY5IiBkPSJNMTEuNSw1LjJMOCw4LjdMNC41LDUuMmMtMC40LTAuNC0xLTAuNC0xLjQsMHMtMC40LDEsMCwxLjRsNC4yLDQuMkM3LjUsMTEsNy43LDExLjEsOCwxMS4xczAuNS0wLjEsMC43LTAuMyBsNC4yLTQuMmMwLjQtMC40LDAuNC0xLDAtMS40UzExLjksNC44LDExLjUsNS4yeiIvPgo8L3N2Zz4K);
     }
 
 .flounderDropdown__error__3OBt9 .flounderDropdown__mainWrapper__367Dq.flounderDropdown__open__1nJLJ .flounderDropdown__main__1pUya .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__error__3OBt9 .flounderDropdown__mainWrapper__367Dq.flounderDropdown__open__1nJLJ .flounderDropdown__main__1pUya:focus .flounderDropdown__arrowInner__1vVzm
     {
-         background-image:  url(data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnX191cCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogICAgPHBhdGggZmlsbD0iI2Y1NWY2OSIgZD0iTTQuNSwxMC44TDgsNy4zbDMuNSwzLjVjMC40LDAuNCwxLDAuNCwxLjQsMHMwLjQtMSwwLTEuNEw4LjcsNS4yQzguNSw1LDguMyw0LjksOCw0LjlTNy41LDUsNy4zLDUuMkwzLjEsOS40ICBjLTAuNCwwLjQtMC40LDEsMCwxLjRTNC4xLDExLjIsNC41LDEwLjh6Ii8+Cjwvc3ZnPgo=);
+        background-image:  url(data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnX191cCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogICAgPHBhdGggZmlsbD0iI2Y1NWY2OSIgZD0iTTQuNSwxMC44TDgsNy4zbDMuNSwzLjVjMC40LDAuNCwxLDAuNCwxLjQsMHMwLjQtMSwwLTEuNEw4LjcsNS4yQzguNSw1LDguMyw0LjksOCw0LjlTNy41LDUsNy4zLDUuMkwzLjEsOS40ICBjLTAuNCwwLjQtMC40LDEsMCwxLjRTNC4xLDExLjIsNC41LDEwLjh6Ii8+Cjwvc3ZnPgo=);
     }
 
 .flounderDropdown__toggleIcon__magnifier__1uOSx .flounderDropdown__main__1pUya:hover .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__toggleIcon__magnifier__1uOSx .flounderDropdown__main__1pUya:focus .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__toggleIcon__magnifier__1uOSx .flounderDropdown__mainWrapper__367Dq.flounderDropdown__open__1nJLJ .flounderDropdown__main__1pUya .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__toggleIcon__magnifier__1uOSx.flounderDropdown__fakeHovered__lNHDh .flounderDropdown__main__1pUya .flounderDropdown__arrowInner__1vVzm, .flounderDropdown__toggleIcon__magnifier__1uOSx.flounderDropdown__fakeHovered__lNHDh .flounderDropdown__mainWrapper__367Dq.flounderDropdown__open__1nJLJ .flounderDropdown__main__1pUya .flounderDropdown__arrowInner__1vVzm
@@ -11297,22 +11244,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -11349,12 +11296,6 @@ textarea.inputField__resizable__2CfEu
     {
         margin-bottom:  0;
     }
-
-
-{
-    --controlsHeight:   2.4rem;
-    --errorBorder:      0.5rem;
-}
 
 .module__default__3sx3E
 {
@@ -11443,8 +11384,8 @@ textarea.inputField__resizable__2CfEu
         display:            flex;
         position:           absolute;
 
-        height:             var(--controlsHeight);
-        top:                calc(50% - NaN);
+        height:             2.4rem;
+        top:                calc(50% - 1.2rem);
 
         right:              2.4rem;
 
@@ -11518,34 +11459,34 @@ textarea.inputField__resizable__2CfEu
     }
 
 .module__level__3__Y8s9q > .module__header__1nV4U, .module__level__3__Y8s9q > .module__content__1TqqO, .module__level__4__389dh > .module__header__1nV4U, .module__level__4__389dh > .module__content__1TqqO
-     {
-         padding-top:    2.4rem;
-         padding-bottom: 2.4rem;
-     }
+    {
+        padding-top:    2.4rem;
+        padding-bottom: 2.4rem;
+    }
 
 .module__collapsible___1Dw1 > .module__header__1nV4U
     {
         cursor: pointer;
     }
 
-.module__collapsible___1Dw1 > .module__header__1nV4U:hover, .module__collapsible___1Dw1.module__collapsed__2E7U6
+.module__collapsible___1Dw1:not(.module__collapsed__2E7U6) .module__header__1nV4U, .module__collapsible___1Dw1.module__collapsed__2E7U6 > .module__header__1nV4U:hover
     {
         background: #f6f7f9;
     }
 
 .module__collapsed__2E7U6 > .module__content__1TqqO
     {
-        display:    none;
+        display:        none;
     }
 
 .module__moduleError__1JHku
 {
-    border-left: var(--errorBorder) solid #ff5460;
+    border-left: 0.5rem solid #ff5460;
 }
 
 .module__moduleError__1JHku > .module__header__1nV4U, .module__moduleError__1JHku > .module__content__1TqqO
     {
-        padding-left: calc(2.4rem - var(--errorBorder));
+        padding-left: 1.9rem;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -11557,22 +11498,22 @@ textarea.inputField__resizable__2CfEu
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -11598,8 +11539,8 @@ textarea.inputField__resizable__2CfEu
 
 .visualTesting .modalContainer
 {
-    min-width:      1px;
-    min-height:     1px;
+    min-width:      0.1rem;
+    min-height:     0.1rem;
     top:            0;
     left:           0;
     position:       fixed;
@@ -11766,7 +11707,7 @@ only used in type__carousel for now
 .modalDialog__navigation__2WDAq button
     {
         position:   absolute;
-        top:        calc(50% - 20px);
+        top:        calc(50% - 2rem);
 
         width:      auto;
 
@@ -11921,22 +11862,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -11996,7 +11937,7 @@ only used in type__carousel for now
 
 .navBar__list__1pxW5
 {
-   width:   auto;
+    width:   auto;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -12287,22 +12228,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -12342,7 +12283,7 @@ only used in type__carousel for now
 
 .nessieLogo__default__29T4w
 {
-	width:	100%;
+    width:	100%;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -12485,22 +12426,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -12571,58 +12512,58 @@ only used in type__carousel for now
 
 .page__overflow__hidden__1xzGH
 {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .page__overflow__visible__Wn2Zq
 {
-  overflow: visible;
+    overflow: visible;
 }
 
 .page__overflow__scroll__qHPRk
 {
-  overflow: scroll;
+    overflow: scroll;
 }
 
 .page__overflow__scrollX__3gyWF
 {
-  overflow-x: scroll;
+    overflow-x: scroll;
 }
 
 .page__overflow__scrollY__6wZ3F
 {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 .overflow__hidden
     {
-      overflow:     hidden;
-      max-height:   100vh;
-      max-width:    100vw;
+        overflow:     hidden;
+        max-height:   100vh;
+        max-width:    100vw;
     }
 
 .overflow__visible
     {
-      overflow: visible;
+        overflow: visible;
     }
 
 .overflow__scroll
     {
-      overflow: scroll;
-      max-height:   100vh;
-      max-width:    100vw;
+        overflow: scroll;
+        max-height:   100vh;
+        max-width:    100vw;
     }
 
 .overflow__scrollX
     {
-      overflow-x: scroll;
-      max-width:    100vw;
+        overflow-x: scroll;
+        max-width:    100vw;
     }
 
 .overflow__scrollY
     {
-      overflow-y: scroll;
-      max-height:   100vh;
+        overflow-y: scroll;
+        max-height:   100vh;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -12767,22 +12708,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -12830,7 +12771,7 @@ only used in type__carousel for now
 
 .pageContentHeader__controls__2BwJm
 {
-    min-height: 5.2rem;
+    min-height:     5.2rem;
 }
 
 .pageContentHeader__title__1o6a8
@@ -12857,22 +12798,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -12924,7 +12865,7 @@ only used in type__carousel for now
 
 .pageHeader__content__1PJmk
 {
-    margin: 3rem 4rem;
+    margin:         3rem 4rem;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -12936,22 +12877,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -12991,28 +12932,28 @@ only used in type__carousel for now
 
 .pageFooter__default__2jvKK
 {
- 	-webkit-box-flex:		0;
- 	-webkit-flex:		0 0 auto;
- 	    -ms-flex:		0 0 auto;
- 	        flex:		0 0 auto;
- 	width:		100%;
+    -webkit-box-flex:		0;
+    -webkit-flex:		0 0 auto;
+        -ms-flex:		0 0 auto;
+            flex:		0 0 auto;
+    width:		100%;
 
-	margin:		0;
+    margin:		0;
 
-  	background:	var(--GS-1);
-  	color:		#ffffff;
+    background:	var(--GS-1);
+    color:		#ffffff;
 }
 
 .pageFooter__content__3nQRG
 {
-	-webkit-box-sizing:	border-box;
-	        box-sizing:	border-box;
-	width:		80%;
- 	min-width:	320px;
- 	max-width:	96rem;
- 	margin:		2rem auto;
+    -webkit-box-sizing:	border-box;
+            box-sizing:	border-box;
+    width:		80%;
+    min-width:	320px;
+    max-width:	96rem;
+    margin:		2rem auto;
 
- 	opacity:	0.3;
+    opacity:	0.3;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -13024,22 +12965,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -13133,7 +13074,7 @@ only used in type__carousel for now
 .paginator__pageButton__1W4o8:hover, .paginator__pageButton__1W4o8:focus, .paginator__pageButton__1W4o8:disabled
     {
         color:              #ffffff;
-        background-color:   #19a2e2
+        background-color:   #19a2e2;
     }
 
 .paginator__pageButton__1W4o8, .paginator__ellipsis__2AnFD
@@ -13356,22 +13297,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -13411,115 +13352,119 @@ only used in type__carousel for now
 
 .spinner__default__3HVrD, .spinner__size__big__1Gul4
 {
-  position:                     relative;
-  background-color:             transparent;
-  border-style:                 solid;
-  border-color:                 rgba(66, 86, 110, 0.35);
-  border-radius:                50%;
-  -webkit-box-sizing:                   content-box;
-          box-sizing:                   content-box;
-  display:                      inline-block;
+    position:           relative;
+    background-color:   transparent;
+    border-style:       solid;
+    border-color:       rgba(66, 86, 110, 0.35);
+    border-radius:      50%;
+    -webkit-box-sizing:         content-box;
+            box-sizing:         content-box;
+    display:            inline-block;
 }
 
 .spinner__default__3HVrD:after, .spinner__size__big__1Gul4:after
-  {
-    position:                   absolute;
-    content:                    "";
-    top:                        0px;
-    left:                       0px;
-    border-style:               solid;
-    border-color:               #42566e transparent transparent transparent;
-    border-radius:              50%;
-    -webkit-box-sizing:                 border-box;
-            box-sizing:                 border-box;
-  }
+    {
+        position:       absolute;
+        content:        "";
+        top:            0;
+        left:           0;
+        border-style:   solid;
+        border-color:   #42566e transparent transparent transparent;
+        border-radius:  50%;
+        -webkit-box-sizing:     border-box;
+                box-sizing:     border-box;
+    }
 
 .spinner__default__3HVrD
 {
-  width:                10px;
-  height:               10px;
-  min-height:           10px;
-  border-width:         3px;
+    width:                10px;
+    height:               10px;
+    min-height:           10px;
+    border-width:         3px;
 }
 
 .spinner__default__3HVrD:after
-  {
-    width:              10px;
-    height:             10px;
-    border-width:       1px;
-    -webkit-animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
-            animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
-  }
+    {
+        width:              10px;
+        height:             10px;
+        border-width:       1px;
+        -webkit-animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
+                animation:          spinner__defaultSpinnerRingRotate__9mkaL .8s infinite ease-in-out;
+    }
 
-@-webkit-keyframes spinner__defaultSpinnerRingRotate__9mkaL {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.48);
-            transform: rotateZ(0deg) scale(1.48);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.48);
-            transform: rotateZ(360deg) scale(1.48);
-  }
+@-webkit-keyframes spinner__defaultSpinnerRingRotate__9mkaL
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.48);
+                transform: rotateZ(0deg) scale(1.48);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.48);
+                transform: rotateZ(360deg) scale(1.48);
+    }
 }
 
-@keyframes spinner__defaultSpinnerRingRotate__9mkaL {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.48);
-            transform: rotateZ(0deg) scale(1.48);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.48);
-            transform: rotateZ(360deg) scale(1.48);
-  }
+@keyframes spinner__defaultSpinnerRingRotate__9mkaL
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.48);
+                transform: rotateZ(0deg) scale(1.48);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.48);
+                transform: rotateZ(360deg) scale(1.48);
+    }
 }
 
 /* big */
 
 .spinner__size__big__1Gul4
 {
-  width:                    30px;
-  height:                   30px;
-  min-height:               30px;
-  border-width:             5px;
+    width:                    30px;
+    height:                   30px;
+    min-height:               30px;
+    border-width:             5px;
 }
 
 .spinner__size__big__1Gul4:after
-  {
-    width:                  30px;
-    height:                 30px;
-    border-width:           3px;
-    -webkit-animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
-            animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
-  }
+    {
+        width:                  30px;
+        height:                 30px;
+        border-width:           3px;
+        -webkit-animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
+                animation:              spinner__bigSpinnerRingRotate__3IVr6 .8s infinite ease-in-out;
+    }
 
-@-webkit-keyframes spinner__bigSpinnerRingRotate__3IVr6 {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.3);
-            transform: rotateZ(0deg) scale(1.3);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.3);
-            transform: rotateZ(360deg) scale(1.3);
-  }
+@-webkit-keyframes spinner__bigSpinnerRingRotate__3IVr6
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.3);
+                transform: rotateZ(0deg) scale(1.3);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.3);
+                transform: rotateZ(360deg) scale(1.3);
+    }
 }
 
-@keyframes spinner__bigSpinnerRingRotate__3IVr6 {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1.3);
-            transform: rotateZ(0deg) scale(1.3);
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1.3);
-            transform: rotateZ(360deg) scale(1.3);
-  }
+@keyframes spinner__bigSpinnerRingRotate__3IVr6
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1.3);
+                transform: rotateZ(0deg) scale(1.3);
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1.3);
+                transform: rotateZ(360deg) scale(1.3);
+    }
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -13531,22 +13476,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -13639,44 +13584,46 @@ only used in type__carousel for now
 }
 
 .progressIndicator__spinner__1AcMf:after
-  {
-    width:              100px;
-    height:             100px;
-    border-width:       8px;
-    -webkit-animation:          progressIndicator__defaultSpinnerRingRotate__3wT-S .8s infinite ease-in-out;
-            animation:          progressIndicator__defaultSpinnerRingRotate__3wT-S .8s infinite ease-in-out;
-    left:               -8px;
-    top:                -8px;
-  }
+    {
+        width:              100px;
+        height:             100px;
+        border-width:       8px;
+        -webkit-animation:          progressIndicator__defaultSpinnerRingRotate__3wT-S .8s infinite ease-in-out;
+                animation:          progressIndicator__defaultSpinnerRingRotate__3wT-S .8s infinite ease-in-out;
+        left:               -8px;
+        top:                -8px;
+    }
 
-@-webkit-keyframes progressIndicator__defaultSpinnerRingRotate__3wT-S {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1);
-            transform: rotateZ(0deg) scale(1); /* scale to voerride default spinner setup */
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1);
-            transform: rotateZ(360deg) scale(1);
-  }
+@-webkit-keyframes progressIndicator__defaultSpinnerRingRotate__3wT-S
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1);
+                transform: rotateZ(0deg) scale(1); /* scale to voerride default spinner setup */
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1);
+                transform: rotateZ(360deg) scale(1);
+    }
 }
 
-@keyframes progressIndicator__defaultSpinnerRingRotate__3wT-S {
-  0%
-  {
-    -webkit-transform: rotateZ(0deg) scale(1);
-            transform: rotateZ(0deg) scale(1); /* scale to voerride default spinner setup */
-  }
-  100%
-  {
-    -webkit-transform: rotateZ(360deg) scale(1);
-            transform: rotateZ(360deg) scale(1);
-  }
+@keyframes progressIndicator__defaultSpinnerRingRotate__3wT-S
+{
+    0%
+    {
+        -webkit-transform: rotateZ(0deg) scale(1);
+                transform: rotateZ(0deg) scale(1); /* scale to voerride default spinner setup */
+    }
+    100%
+    {
+        -webkit-transform: rotateZ(360deg) scale(1);
+                transform: rotateZ(360deg) scale(1);
+    }
 }
 .required__default__vzCL1
 {
-    
+
 }
 
 .required__required__38RK0::after
@@ -13693,22 +13640,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -13786,81 +13733,81 @@ only used in type__carousel for now
 { */
 
 .row__default__2TI-k
-    {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
+{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
-        /*& > *
+    /*& > *
         {
             flex:   1 0 0%;
         }*/
-    }
+}
 
 .row__alignX__left__3wE-R > *, .row__alignX__center__3uWl9 > *, .row__alignX__right__rmTDW > *
-        {
-            -webkit-box-flex:           0;
-            -webkit-flex:           0 0 auto;
-                -ms-flex:           0 0 auto;
-                    flex:           0 0 auto;
-        }
+    {
+        -webkit-box-flex:           0;
+        -webkit-flex:           0 0 auto;
+            -ms-flex:           0 0 auto;
+                flex:           0 0 auto;
+    }
 
 .row__alignX__left__3wE-R
-    {
-        -webkit-box-pack:    start;
-        -webkit-justify-content:    flex-start;
-            -ms-flex-pack:    start;
-                justify-content:    flex-start;
-    }
+{
+    -webkit-box-pack:    start;
+    -webkit-justify-content:    flex-start;
+        -ms-flex-pack:    start;
+            justify-content:    flex-start;
+}
 
 .row__alignX__center__3uWl9
-    {
-        -webkit-box-pack:    center;
-        -webkit-justify-content:    center;
-            -ms-flex-pack:    center;
-                justify-content:    center;
-    }
+{
+    -webkit-box-pack:    center;
+    -webkit-justify-content:    center;
+        -ms-flex-pack:    center;
+            justify-content:    center;
+}
 
 .row__alignX__right__rmTDW
-    {
-        -webkit-box-pack:    end;
-        -webkit-justify-content:    flex-end;
-            -ms-flex-pack:    end;
-                justify-content:    flex-end;
-    }
+{
+    -webkit-box-pack:    end;
+    -webkit-justify-content:    flex-end;
+        -ms-flex-pack:    end;
+            justify-content:    flex-end;
+}
 
 .row__alignY__top__hIIvK
-    {
-        -webkit-box-align:    start;
-        -webkit-align-items:    flex-start;
-            -ms-flex-align:    start;
-                align-items:    flex-start;
-    }
+{
+    -webkit-box-align:    start;
+    -webkit-align-items:    flex-start;
+        -ms-flex-align:    start;
+            align-items:    flex-start;
+}
 
 .row__alignY__middle__1Dowt
-    {
-        -webkit-box-align:    center;
-        -webkit-align-items:    center;
-            -ms-flex-align:    center;
-                align-items:    center;
-    }
+{
+    -webkit-box-align:    center;
+    -webkit-align-items:    center;
+        -ms-flex-align:    center;
+            align-items:    center;
+}
 
 .row__alignY__bottom__29dlr
-    {
-        -webkit-box-align:    end;
-        -webkit-align-items:    flex-end;
-            -ms-flex-align:    end;
-                align-items:    flex-end;
-    }
+{
+    -webkit-box-align:    end;
+    -webkit-align-items:    flex-end;
+        -ms-flex-align:    end;
+            align-items:    flex-end;
+}
 
 .row__wrap__3NoB0
-    {
-        -webkit-flex-wrap:  wrap;
-            -ms-flex-wrap:  wrap;
-                flex-wrap:  wrap;
-    }
+{
+    -webkit-flex-wrap:  wrap;
+        -ms-flex-wrap:  wrap;
+            flex-wrap:  wrap;
+}
 
 /* } */
 
@@ -13952,22 +13899,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -14017,7 +13964,6 @@ only used in type__carousel for now
 
 .section__content__1c1XH
 {
-/*  */
 }
 
 .section__level__1__2r6Zy
@@ -14070,22 +14016,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -14213,16 +14159,16 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__handleLabel__2uauA
     {
-        display:    none;
+        display:            none;
     }
 
 /* Ticks */
 
 .slider__default__20oIL .slider__ticksContainer__xPkAF
     {
-        width:      100%;
-        height:     100%;
-        position:   relative;
+        width:              100%;
+        height:             100%;
+        position:           relative;
     }
 
 .slider__default__20oIL .slider__tick__1De3L
@@ -14244,16 +14190,16 @@ only used in type__carousel for now
 
 .slider__default__20oIL .slider__stepLabelsContainer__2EG-O
     {
-        position:       relative;
+        position:           relative;
     }
 
 .slider__default__20oIL .slider__stepLabel__1t8SF
     {
-        font-size:      1.4rem;
-        line-height:    2.4rem;
-        color:          #597494;
+        font-size:          1.4rem;
+        line-height:        2.4rem;
+        color:              #597494;
 
-        position:       absolute;
+        position:           absolute;
     }
 
 .slider__orientation__horizontal__WBsKX .slider__trackContainer__3nwI6
@@ -14459,13 +14405,13 @@ only used in type__carousel for now
 
 .slider__disabled__19QJe .slider__trackFill__3sE-C
     {
-        background:     color( var(--GS-4) a( 35% ) );
+        background:         color( var(--GS-4) a( 35% ) );
     }
 
 .slider__disabled__19QJe .slider__handle__1ztac
     {
-        background:     #ffffff;
-        cursor:         default;
+        background:         #ffffff;
+        cursor:             default;
     }
 
 .slider__disabled__19QJe .slider__handle__1ztac:active
@@ -14480,12 +14426,12 @@ only used in type__carousel for now
 
 .slider__disabled__19QJe .slider__handleLabel__2uauA
     {
-        color:          color( var(--GS-2) a( 50% ) );
+        color:              color( var(--GS-2) a( 50% ) );
     }
 
 .slider__disabled__19QJe .slider__ticksContainer__xPkAF
     {
-        display:        none;
+        display:            none;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -14497,22 +14443,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -14576,7 +14522,7 @@ only used in type__carousel for now
 
         width:          8rem;
         margin-top:     0.8rem;
-        margin-bottom:  0.8rem
+        margin-bottom:  0.8rem;
     }
 
 .sliderGroup__default__2Y9lA .sliderGroup__labelWrapper__3FQgB
@@ -14797,22 +14743,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -14928,7 +14874,7 @@ only used in type__carousel for now
 
 .sorter__down__1kOK3
 {
-    margin-top: -0.5rem
+    margin-top: -0.5rem;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -14940,22 +14886,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -15024,14 +14970,14 @@ only used in type__carousel for now
 
 .statusIndicator__status__active__1iEpf
 {
-    color:          #1bbab0;
-    border-color:   #1bbab0;
+    color:              #1bbab0;
+    border-color:       #1bbab0;
 }
 
 .statusIndicator__status__alert__1r2mY
 {
-    color:         #ffd46b;
-    border-color:  #ffd46b;
+    color:              #ffd46b;
+    border-color:       #ffd46b;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -15289,22 +15235,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -15421,48 +15367,48 @@ only used in type__carousel for now
 
 .tabButton__role__default__2fpg8
 {
-    background: #19a2e2;
-    color:      #ffffff;
+    background:         #19a2e2;
+    color:              #ffffff;
 }
 
 .tabButton__role__default__2fpg8.tabButton__fakeHovered__1ple-, .tabButton__role__default__2fpg8:hover
     {
-        background: #1589c0;
-        color:      #ffffff;
+        background:     #1589c0;
+        color:          #ffffff;
     }
 
 .tabButton__role__secondary__qOFLb
 {
-    background: #eef1f4;
-    color:      #8296ae;
+    background:         #eef1f4;
+    color:              #8296ae;
 }
 
 .tabButton__role__secondary__qOFLb.tabButton__fakeHovered__1ple-, .tabButton__role__secondary__qOFLb:hover
     {
-        background: #c7d0db;
-        color:      #8296ae;
+        background:     #c7d0db;
+        color:          #8296ae;
     }
 
 .tabButton__role__secondary__qOFLb .tabButton__icon__1FrZd
     {
-        fill:   #8296ae;
-        color:  #8296ae;
+        fill:           #8296ae;
+        color:          #8296ae;
     }
 
 .tabButton__role__secondary__qOFLb .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:   rgba(130, 150, 174, 0.25);
+            border-color:           rgba(130, 150, 174, 0.25);
         }
 
 .tabButton__role__secondary__qOFLb .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
             {
-                border-top-color:  #8296ae;
+                border-top-color:   #8296ae;
             }
 
 .tabButton__role__promoted__2euaE
 {
-    background: #1bbab0;
-    color:      #ffffff;
+    background:     #1bbab0;
+    color:          #ffffff;
 }
 
 .tabButton__role__promoted__2euaE.tabButton__fakeHovered__1ple-, .tabButton__role__promoted__2euaE:hover
@@ -15473,8 +15419,8 @@ only used in type__carousel for now
 
 .tabButton__role__critical__1Nfi0
 {
-    background: #ff5460;
-    color:      #ffffff;
+    background:     #ff5460;
+    color:          #ffffff;
 }
 
 .tabButton__role__critical__1Nfi0.tabButton__fakeHovered__1ple-, .tabButton__role__critical__1Nfi0:hover
@@ -15485,8 +15431,8 @@ only used in type__carousel for now
 
 .tabButton__role__warning__tcJkS
 {
-    background: #ff965a;
-    color:      #ffffff;
+    background:     #ff965a;
+    color:          #ffffff;
 }
 
 .tabButton__role__warning__tcJkS.tabButton__fakeHovered__1ple-, .tabButton__role__warning__tcJkS:hover
@@ -15515,7 +15461,7 @@ only used in type__carousel for now
 
 .tabButton__role__subtle__1sbdu.tabButton__fakeHovered__1ple-, .tabButton__role__subtle__1sbdu:hover
     {
-        color:      #ffffff;
+        color:          #ffffff;
     }
 
 .tabButton__role__subtle__1sbdu.tabButton__fakeHovered__1ple- .tabButton__content__2nWC-, .tabButton__role__subtle__1sbdu:hover .tabButton__content__2nWC-
@@ -15525,19 +15471,19 @@ only used in type__carousel for now
 
 .tabButton__role__subtle__1sbdu.tabButton__fakeHovered__1ple- .tabButton__icon__1FrZd, .tabButton__role__subtle__1sbdu:hover .tabButton__icon__1FrZd
         {
-            fill:   #ffffff;
-            color:  #ffffff;
+            fill:       #ffffff;
+            color:      #ffffff;
         }
 
 .tabButton__role__subtle__1sbdu .tabButton__icon__1FrZd
     {
-        fill:   #19a2e2;
-        color:  #19a2e2;
+        fill:           #19a2e2;
+        color:          #19a2e2;
     }
 
 .tabButton__role__subtle__1sbdu .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:   rgba(25, 162, 226, 0.25);
+            border-color:           rgba(25, 162, 226, 0.25);
         }
 
 .tabButton__role__subtle__1sbdu .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15547,18 +15493,18 @@ only used in type__carousel for now
 
 .tabButton__role__control__T5uU2
 {
-    color:  #4b627d;
+    color:          #4b627d;
 }
 
 .tabButton__role__control__T5uU2 .tabButton__icon__1FrZd
     {
-        fill:   #4b627d;
-        color:  #4b627d;
+        fill:       #4b627d;
+        color:      #4b627d;
     }
 
 .tabButton__role__control__T5uU2.tabButton__fakeHovered__1ple-, .tabButton__role__control__T5uU2:hover
     {
-        color:  #19a2e2;
+        color:      #19a2e2;
     }
 
 .tabButton__role__control__T5uU2.tabButton__fakeHovered__1ple- .tabButton__icon__1FrZd, .tabButton__role__control__T5uU2:hover .tabButton__icon__1FrZd
@@ -15569,7 +15515,7 @@ only used in type__carousel for now
 
 .tabButton__role__control__T5uU2 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
         {
-            border-color:   rgba(75, 98, 125, 0.25);
+            border-color:           rgba(75, 98, 125, 0.25);
         }
 
 .tabButton__role__control__T5uU2 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15602,7 +15548,7 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__secondary__qOFLb
     {
-        color:  #afbccb;
+        color:      #afbccb;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__secondary__qOFLb .tabButton__icon__1FrZd
@@ -15649,7 +15595,7 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__subtle__1sbdu
     {
-        color:  #75c7ed;
+        color:              #75c7ed;
     }
 
 .tabButton__disabled__34KRw.tabButton__role__subtle__1sbdu .tabButton__content__2nWC-
@@ -15660,8 +15606,8 @@ only used in type__carousel for now
 
 .tabButton__disabled__34KRw.tabButton__role__subtle__1sbdu .tabButton__icon__1FrZd
         {
-            fill:   #75c7ed;
-            color:  #75c7ed;
+            fill:           #75c7ed;
+            color:          #75c7ed;
         }
 
 .tabButton__loadingOverlay__NO9GT
@@ -15698,7 +15644,7 @@ only used in type__carousel for now
 
 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov
     {
-        border-color:   rgba(255, 255, 255, 0.5);
+        border-color:           rgba(255, 255, 255, 0.5);
     }
 
 .tabButton__loadingOverlay__NO9GT .tabButton__spinner__kPSov::after
@@ -15749,17 +15695,17 @@ only used in type__carousel for now
 
 .tabButton__active__2GsXf
 {
-    color:                  #19a2e2;
-    border-bottom:          0.1rem solid #19a2e2;
-    pointer-events:         none;
-    cursor:                 default;
+    color:          #19a2e2;
+    border-bottom:  0.1rem solid #19a2e2;
+    pointer-events: none;
+    cursor:         default;
 }
 
 .tabButton__subtitle__1YUUD
 {
-	font-weight: 		normal;
-    text-transform:     none;
-    text-transform:     initial;
+    font-weight: 	normal;
+    text-transform: none;
+    text-transform: initial;
 }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -15771,22 +15717,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -15812,22 +15758,22 @@ only used in type__carousel for now
 
 .tableCell__default__2dIPU
 {
-    padding-top:    1rem;
-    padding-bottom: 1rem;
+    padding-top:    0.8rem;
+    padding-bottom: 0.8rem;
     /* background-color:     var( --PC-WHITE ); */
 
     /*@media( min-width: $shark )
     {*/
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /*}*/
 
     /*@media( min-width: $shark )
     {*/
-        /* &:first-child
+    /* &:first-child
         {
             padding-left: 0;
         } */
@@ -15851,8 +15797,6 @@ only used in type__carousel for now
                 flex:           0 0 33.33333%;
 
         font-family:    Nessie-Bold;
-        top:            0.5rem;
-        margin-top:     -0.8rem;
 
         font-size:      1.2rem;
         line-height:    1.6rem;
@@ -15862,20 +15806,20 @@ only used in type__carousel for now
     }
 
 .tableCell__default__2dIPU::before
-        {
-            display:    none;
-        }
+    {
+        display:    none;
+    }
 
 .tableCell__header__2c3IP /* required until we have a TableHeader text component */
 {
-    display:        none;
+    /* display:        none; */
 
     /*@media( min-width: $shark )
     {*/
-        display:    -webkit-box;
-        display:    -webkit-flex;
-        display:    -ms-flexbox;
-        display:    flex;
+    display:    -webkit-box;
+    display:    -webkit-flex;
+    display:    -ms-flexbox;
+    display:    flex;
     /*}*/
 }
 
@@ -16038,22 +15982,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -16098,19 +16042,19 @@ only used in type__carousel for now
 
 .tabs__header__31DDx
 {
-    display:            -webkit-box;
-    display:            -webkit-flex;
-    display:            -ms-flexbox;
-    display:            flex;
-    -webkit-box-orient:     horizontal;
-    -webkit-box-direction:     normal;
-    -webkit-flex-direction:     row;
-        -ms-flex-direction:     row;
-            flex-direction:     row;
+    display:        -webkit-box;
+    display:        -webkit-flex;
+    display:        -ms-flexbox;
+    display:        flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 
-    border-bottom:      solid 0.1rem #98a8bc;
+    border-bottom:  solid 0.1rem #98a8bc;
 
-    margin-bottom:		1.6rem;
+    margin-bottom:	1.6rem;
 }
 
 .tabs__content__1I5gV
@@ -16127,22 +16071,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -16212,7 +16156,7 @@ only used in type__carousel for now
 
         letter-spacing: 0.04rem;
         white-space:    nowrap;
-        color: #19a2e2;
+        color:          #19a2e2;
     }
 
 .tag__default__308m5 .tag__delete__1EIsa
@@ -16228,12 +16172,12 @@ only used in type__carousel for now
 
 .tag__disabled__1SfAy
 {
-    background:     #eef1f4;
+    background:         #eef1f4;
 }
 
 .tag__disabled__1SfAy .tag__label__33UX_
     {
-        color:      #98a8bc;
+        color:          #98a8bc;
     }
 /*----------------------------------------------------------------------------//
 //    $color definitions
@@ -16975,22 +16919,22 @@ only used in type__carousel for now
 
 
 
-     /* greyscale colors */
+    /* greyscale colors */
 
 
-     /* bluescale colors */
+    /* bluescale colors */
 
-     /* redscale colors */
+    /* redscale colors */
 
-     /* orangescale colors */
+    /* orangescale colors */
 
-     /* yellowscale colors */
+    /* yellowscale colors */
 
-     /* limescale colors */
+    /* limescale colors */
 
-     /* greenscale colors */
+    /* greenscale colors */
 
-     /* navyscale colors */
+    /* navyscale colors */
 }
 
 /*------------------------------------//
@@ -17173,7 +17117,7 @@ only used in type__carousel for now
 
 .valuedTextInput__error__3d4pL .valuedTextInput__valueLabel__6keAU::before, .valuedTextInput__error__3d4pL .valuedTextInput__valueLabel__6keAU::after
         {
-            background:     #ff5460;
+            background: #ff5460;
         }
 
 .valuedTextInput__disabled__3CMPp .valuedTextInput__valueLabel__6keAU
@@ -17186,7 +17130,7 @@ only used in type__carousel for now
 
 .valuedTextInput__disabled__3CMPp .valuedTextInput__valueLabel__6keAU::before, .valuedTextInput__disabled__3CMPp .valuedTextInput__valueLabel__6keAU::after
         {
-            background:     #d7dde5;
+            background: #d7dde5;
         }
 
 /*# sourceMappingURL=displayComponentStyles.css.map*/
