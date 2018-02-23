@@ -1448,6 +1448,47 @@ legend.label__default + *
         {
             left:  2rem;
         }
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
+{
+    /* primary colors */
+
+
+
+     /* greyscale colors */
+
+
+     /* bluescale colors */
+
+     /* redscale colors */
+
+     /* orangescale colors */
+
+     /* yellowscale colors */
+
+     /* limescale colors */
+
+     /* greenscale colors */
+
+     /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
 
 .iconWithTooltip__default
 {
@@ -1467,12 +1508,32 @@ legend.label__default + *
     font:           inherit;
     line-height:    inherit;
 
-    margin-bottom:  2rem;
+    margin-bottom:  1.6rem;
+
 }
 
-    .iconWithTooltip__default:last-child
+.iconWithTooltip__default:last-child
     {
         margin-bottom:  0;
+    }
+
+.iconWithTooltip__default .iconWithTooltip__content
+    {
+        -webkit-box-flex:                1;
+        -webkit-flex:                1 1 auto;
+            -ms-flex:                1 1 auto;
+                flex:                1 1 auto;
+        max-width:           100%;
+        min-width:           0;
+    }
+
+.iconWithTooltip__default .iconWithTooltip__iconWithTooltip
+    {
+        display:            none;
+        -webkit-box-flex:               0;
+        -webkit-flex:               0 0 auto;
+            -ms-flex:               0 0 auto;
+                flex:               0 0 auto;
     }
 
 .iconWithTooltip__iconVisible > .iconWithTooltip__iconWithTooltip
@@ -1519,48 +1580,30 @@ legend.label__default + *
 
 .iconWithTooltip__iconVisible.iconWithTooltip__position__left > .iconWithTooltip__content
         {
-            margin-left:    1rem;
+            margin-left:    0.8rem;
         }
 
 .iconWithTooltip__iconVisible.iconWithTooltip__position__right > .iconWithTooltip__content
         {
-            margin-right:   1rem;
+            margin-right:   0.8rem;
         }
 
 .iconWithTooltip__iconVisible.iconWithTooltip__position__topRight > .iconWithTooltip__iconWithTooltip, .iconWithTooltip__iconVisible.iconWithTooltip__position__topLeft > .iconWithTooltip__iconWithTooltip
         {
             position:   absolute;
-            top:        -1.2rem;
+            top:        50%;
+            margin-top: -1.2rem;
         }
 
 .iconWithTooltip__iconVisible.iconWithTooltip__position__topRight > .iconWithTooltip__iconWithTooltip
         {
-            right:  -1.2rem;
+            right:  0.8rem;
         }
 
 .iconWithTooltip__iconVisible.iconWithTooltip__position__topLeft > .iconWithTooltip__iconWithTooltip
         {
-            left:   -1.2rem;
+            left:   0.8rem;
         }
-
-.iconWithTooltip__content
-{
-    -webkit-box-flex:                1;
-    -webkit-flex:                1 1 auto;
-        -ms-flex:                1 1 auto;
-            flex:                1 1 auto;
-    max-width:           100%;
-    min-width:           0;
-}
-
-.iconWithTooltip__iconWithTooltip
-{
-    display:            none;
-    -webkit-box-flex:               0;
-    -webkit-flex:               0 0 auto;
-        -ms-flex:               0 0 auto;
-            flex:               0 0 auto;
-}
 /*----------------------------------------------------------------------------//
 //    $color definitions
 //----------------------------------------------------------------------------*/
