@@ -2,12 +2,11 @@
 
 .default
 {
-	position: 		relative;
-
-	min-height:     var( --line-height-l );
+    position: 		relative;
+    min-height:     var( --line-height-l );
+    margin-bottom:  var( --spacing-7 );
 
     @extend %Nessie-Bold;
-
     font-size:      var( --typo-7 );
     line-height:    var( --line-height-l );
     letter-spacing: 0.05rem;
@@ -25,25 +24,10 @@
 
 .role__promoted
 {
-	color:	var( --PC-GREEN );
+    color:	var( --PC-GREEN );
 }
 
 .role__critical
 {
-	color:	var( --PC-RED );
-}
-
-.spacing__S
-{
-    margin-bottom: var( --spacing-2 );
-}
-
-.spacing__M
-{
-    margin-bottom: var( --spacing-5 );
-}
-
-.spacing__L
-{
-    margin-bottom: var( --spacing-7 );
+    color:	var( --PC-RED );
 }
