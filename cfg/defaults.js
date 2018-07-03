@@ -31,8 +31,9 @@ function getDefaultModules()
             //     } ]
             // },
             {
-                test : /\.jsx?$/,
-                use  : 'happypack/loader?id=js'
+                test    : /\.jsx?$/,
+                exclude : /node_modules/, // add this line
+                use     : 'happypack/loader?id=js'
             },
             {
                 test : /\.(css|sass|scss|less|styl)$/,

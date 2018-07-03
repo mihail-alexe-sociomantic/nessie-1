@@ -141,6 +141,7 @@
     "react-addons-css-transition-group": "~15.6.0",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-virtualized": "^9.20.0",
     "release-it": "^3.0.2",
     "replace": "^0.3.0",
     "rimraf": "^2.6.2",

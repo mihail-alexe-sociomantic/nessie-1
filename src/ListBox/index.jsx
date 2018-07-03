@@ -13,59 +13,163 @@ import {
     killFocus,
     mapAria,
 } from '../utils';
-import styles from './listBox.css';
+import styles                                               from './listBox.css';
+
+import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 
 
-const ListBox = ( {
-    aria,
-    activeOption,
-    children,
-    className,
-    cssMap,
-    isFocusable,
-    isMultiselect,
-    id = generateId( 'ListBox' ),
-    onClickOption,
-    onMouseOutOption,
-    onMouseOverOption,
-    onKeyPress,
-    options,
-    selection,
-} ) =>
+class ListBox extends React.Component
 {
-    let realSelection = selection;
-    if ( Array.isArray( selection ) )
+    static get propTypes()
     {
-        realSelection = isMultiselect ? selection : selection[ 0 ];
+        return propTypes;
     }
+    static get defaultProps()
+    {
+        return defaultProps;
+    }
+
+    constructor( props )
+    {
+        super();
+
+        this.cache = new CellMeasurerCache( {
+            fixedWidth    : true,
+            defaultHeight : 100
+        } );
+
+        const {
+            activeOption,
+            children,
+            isMultiselect,
+            onClickOption,
+            onMouseOutOption,
+            onMouseOverOption,
+            options,
+            selection
+        } = props;
+
+        let realSelection = selection;
+        if ( Array.isArray( selection ) )
+        {
+            realSelection = isMultiselect ? selection : selection[ 0 ];
+        }
+
+        this.renderRow = renderRow.bind( this, updateOptions(
+            children || buildOptions( options ),
+            {
+                activeOption,
+                onClickOption,
+                onMouseOutOption,
+                onMouseOverOption,
+                selection : realSelection,
+            } ) );
+    }
+
+    componentWillReceiveProps( newProps )
+    {
+        const {
+            activeOption,
+            children,
+            isMultiselect,
+            onClickOption,
+            onMouseOutOption,
+            onMouseOverOption,
+            options,
+            selection
+        } = newProps;
+
+        let realSelection = selection;
+        if ( Array.isArray( selection ) )
+        {
+            realSelection = isMultiselect ? selection : selection[ 0 ];
+        }
+
+        this.renderRow = renderRow.bind( this, updateOptions(
+            children || buildOptions( options ),
+            {
+                activeOption,
+                onClickOption,
+                onMouseOutOption,
+                onMouseOverOption,
+                selection : realSelection,
+            } ) );
+    }
+
+    render()
+    {
+        const {
+            aria,
+            activeOption,
+            children,
+            className,
+            cssMap,
+            isFocusable,
+            isMultiselect,
+            id = generateId( 'ListBox' ),
+            onKeyPress,
+            options
+        } = this.props;
+
+        const count = Math.max(
+            ( children || [] ).length,
+            ( options || [] ).length );
+
+        return (
+            /* <div
+                { ...mapAria( {
+                    ...aria,
+                    activeDescendant : isFocusable ? activeOption : null,
+                    multiSelectable  : isMultiselect,
+                    role             : 'listbox',
+                } ) }
+                className   = { buildClassName( className, cssMap ) }
+                id          = { id }
+                onKeyPress  = { onKeyPress }
+                onMouseDown = { !isFocusable && killFocus }
+                tabIndex    = { isFocusable ? '0' : '-1' }>*/
+            <AutoSizer>
+                { ( { width, height } ) =>
+                    <List
+                        width = { width }
+                        height = { height }
+                        deferredMeasurementCache = { this.cache }
+                        rowHeight = { this.cache.rowHeight }
+                        rowRenderer = { this.renderRow }
+                        rowCount = { count }
+                        overscanRowCount = { 3 } />
+                }
+            </AutoSizer>
+        // </div>
+        );
+    }
+}
+
+/**
+ *
+ * @param {*} param0 - props
+ * @return {Object}
+ */
+function renderRow( options, {
+    index,
+    key,
+    parent
+} )
+{
     return (
-        <ul
-            { ...mapAria( {
-                ...aria,
-                activeDescendant : isFocusable ? activeOption : null,
-                multiSelectable  : isMultiselect,
-                role             : 'listbox',
-            } ) }
-            className   = { buildClassName( className, cssMap ) }
-            id          = { id }
-            onKeyPress  = { onKeyPress }
-            onMouseDown = { !isFocusable && killFocus }
-            tabIndex    = { isFocusable ? '0' : '-1' }>
-            { updateOptions( children || buildOptions( options ),
-                {
-                    activeOption,
-                    onClickOption,
-                    onMouseOutOption,
-                    onMouseOverOption,
-                    selection : realSelection,
-                } )
-            }
-        </ul>
+        <CellMeasurer
+            key = { key }
+            cache = { this.cache }
+            parent = { parent }
+            columnIndex = { 0 }
+            rowIndex = { index }
+        >
+            { options[ index ] }
+        </CellMeasurer>
     );
-};
+}
 
-
-ListBox.propTypes = {
+const propTypes = {
     aria              : PropTypes.objectOf( PropTypes.string ),
     /**
     *  Highlights option
@@ -109,7 +213,7 @@ ListBox.propTypes = {
     ] ),
 };
 
-ListBox.defaultProps = {
+const defaultProps = {
     aria              : undefined,
     activeOption      : undefined,
     children          : undefined,
